@@ -1,0 +1,249 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+position: relative;}
+
+/* ページトップ ボタン*/
+
+.scrolltop-pc_container{
+  position: fixed;
+  top: auto;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.scrolltop-pc{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 50%;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.scrolltop-pc:after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 47.5%;
+  top: 50%;
+  margin-top: -4px;
+  margin-left: -7px;
+}
+
+
+/* ヘッダー内　目次へ戻る */
+
+.l-header{
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.l-header_inner{
+  display: flex;
+  align-items: center;
+  width: 1200px;
+}
+.l-header-left{
+  padding-top: 0;
+}
+
+.c-header-linklist{
+  padding-left: 50px;
+
+}
+
+.back_link_box {
+  margin-right: 41px;
+  position: relative;
+}
+
+@media screen and (min-width: 1550px) {
+  .back_link_box {
+    position: absolute;
+    right: 41px;
+    top: 32px;
+    margin-right:0;
+  }
+
+}
+
+
+.back_link {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #ADADAD;
+  width: 108px;
+  font-size: 14px;
+  font-weight: 500;
+
+  text-align: center;
+  padding: 8px 0 8px 8px;
+  display: block;
+  color: #313131;
+  position: relative;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.back_link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid #313131;
+  border-top: 1px solid #313131;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 10px;
+  top: calc(50% - 4px);
+}
+
+
+.l-item_all{
+  position: relative;
+}
+
+.l-breadcrumb{
+  margin-top:-13px;
+}
+
+.l-item-categorybtn{
+  margin: 0 auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ADADAD;
+}
+
+.l-item-categorybtn-list{
+  max-width: 960px;
+  margin: 0 auto;
+  gap: 60px;
+  flex-wrap:nowrap
+
+}
+
+.l-item-categorybtn-list li{
+max-width: 280px;
+width: 30%;
+text-align: center;
+
+
+}
+
+.l-item-categorybtn-list img{
+  box-shadow:10px 10px 0 #C6A83F;
+}
+
+.l-item-categorybtn-list li a::before{
+background: none;
+color: #000;
+
+}
+
+
+.l-item-categorybtn-list .l-category-name{
+  position: relative;
+  display: inline-block;
+  color: #000;
+  text-decoration: underline;
+  margin-top: 25px;
+  width: auto;
+}
+
+.l-category-name:after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #313131;
+  border-top: 1px solid #313131;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: -10px;
+  top: calc(50% - 4px);
+}
+
+.c-breadcrumb a{
+  color: #000000;
+}
+.c-breadcrumb li:after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #313131;
+  border-top: 1px solid #313131;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 0;
+  top: calc(50% - 4px);
+}
+
+.c-breadcrumb li{
+  display: inline-block;
+  position: relative;
+  padding: 2px 17px 2px 0;
+  margin-right: 10px;
+  color: #000000;
+  font-size: 14px;
+}
+
+.l-main-sort{
+  text-align: right;
+width: 215px;
+position: relative;
+display: flex;
+justify-content: end;
+padding: 0;
+position: absolute;
+right: 0;
+top: 0;
+
+
+}
+
+.l-main-sort::after {
+  content: "";
+  position: absolute;
+  right: 11px;
+  bottom: -1px;
+  top: 0;
+  margin: auto 0;
+  /* transform: rotate(135deg); */
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #313131;
+}
+
+.c-item-select{
+  width: 130px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    /* text-align: center; */
+    /* padding: 9px 14px 13px; */
+    color: #000000;
+    border: 1px solid #ADADAD;
+    background: #fff;
+    font-size: 15px;
+		border-radius: 6px;
+    margin-left: 20px;
+}
