@@ -34,75 +34,78 @@
 <body id="top">
 <div class="l-wrapall" id="l-wrap">
 
-<header class="l-header">
-    <div class="l-header_inner">
-        <form action="/presentage/item.php?pnumflag=1" method="post">
-            <input type="hidden" name="methods" id="methods" value="SEARCHLIST">
-            <input type="hidden" name="privilege_type" id="privilege_type" value="">
-            <div class="l-header-left">
-                <div class="c-header-mylist"><a href="./mylist.html"><img src="./images/common/icon_mylist_on_sp.png"><p class="is-text">マイリスト</p></a></div>
-                <div class="c-header-search js-header-search"><img src="./images/common/icon_search.png"><p class="is-text">サーチ</p></div>
-                
-                <h1 class="c-header-logo"><a href="./top.html"><img src="./images/assets/logo.png"></a></h1>
-                <div class="c-header-menu"><a href="#"><p class="is-line"><span></span></p><p class="is-text">メニュー</p></a></div>
-                <div class="c-header-search-wrap-sp">
-                    <span class="c-header-search-close-sp"></span>
-                    <div class="c-header-select-wrap">
-                        <select name="searchBunruiId3" id="searchBunruiId3" class="minimal c-header-select">
-                            <option value="">カテゴリを選ぶ</option>
-                            <option value="1">ファッション・ビューティ</option>
-                            <option value="2">雑貨・ホビー</option>
-                            <option value="3">リビング・ダイニング</option>
-                            <option value="4">健康・防災</option>
-                            <option value="5">家電</option>
-                            <option value="6">生鮮食品</option>
-                            <option value="7">食品</option>
-                            <option value="8">ドリンク・酒</option>
-                            <option value="9">旅行券・食事券</option>
-                        </select>
-                    </div>
-                    <div class="c-header-input-wrap">
-                        <input name="keyWord" id="keyWord" type="text" placeholder="キーワードから探す" value="" class="c-header-input-text">
-                        <div class="c-header-input-voice"></div>
-                        <input type="submit"  class="c-header-input-submit" value="">
+<header class="fix_wrap">
+    <div class="l-header">
+        <div class="l-header_inner">
+            <form action="/presentage/item.php?pnumflag=1" method="post">
+                <input type="hidden" name="methods" id="methods" value="SEARCHLIST">
+                <input type="hidden" name="privilege_type" id="privilege_type" value="">
+                <div class="l-header-left">
+                    <div class="c-header-mylist"><a href="./mylist.html"><img src="./images/common/icon_mylist_on_sp.png"><p class="is-text">マイリスト</p></a></div>
+                    <div class="c-header-search js-header-search"><img src="./images/common/icon_search.png"><p class="is-text">サーチ</p></div>
+                    
+                    <h1 class="c-header-logo"><a href="./top.html"><img src="./images/assets/logo.png"></a></h1>
+                    <div class="c-header-menu"><a href="#"><p class="is-line"><span></span></p><p class="is-text">メニュー</p></a></div>
+                    <div class="c-header-search-wrap-sp">
+                        <span class="c-header-search-close-sp"></span>
+                        <div class="c-header-select-wrap">
+                            <select name="searchBunruiId3" id="searchBunruiId3" class="minimal c-header-select">
+                                <option value="">カテゴリを選ぶ</option>
+                                <option value="1">ファッション・ビューティ</option>
+                                <option value="2">雑貨・ホビー</option>
+                                <option value="3">リビング・ダイニング</option>
+                                <option value="4">健康・防災</option>
+                                <option value="5">家電</option>
+                                <option value="6">生鮮食品</option>
+                                <option value="7">食品</option>
+                                <option value="8">ドリンク・酒</option>
+                                <option value="9">旅行券・食事券</option>
+                            </select>
+                        </div>
+                        <div class="c-header-input-wrap">
+                            <input name="keyWord" id="keyWord" type="text" placeholder="キーワードから探す" value="" class="c-header-input-text">
+                            <div class="c-header-input-voice"></div>
+                            <input type="submit"  class="c-header-input-submit" value="">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </form>
-        <ul class="c-header-linklist">
-            <li class="c-header-linklist-guide"><a href="./guide.html">ご利用ガイド</a></li>
-            <li class="c-header-linklist-mylist"><a href="./mylist.html">マイリスト</a></li>
-            <li class="c-header-linklist-logout"><a href="./login.html">ログアウト</a></li>
-        </ul>
-        <div class="sp_header_bg"></div>
+            </form>
+            <ul class="c-header-linklist">
+                <li class="c-header-linklist-guide"><a href="./guide.html">ご利用ガイド</a></li>
+                <li class="c-header-linklist-mylist"><a href="./mylist.html">マイリスト</a></li>
+                <li class="c-header-linklist-logout"><a href="./login.html">ログアウト</a></li>
+            </ul>
+            <div class="sp_header_bg"></div>
+        </div>
     </div>
+    <!-- sticky category  -->
+    <div class="l-main-stickywrap" >
+        <div class="l-main-sticky js-mainsticky">
+        <div class="l-main-tab">
+            <ul class="c-main-tab">
+                <li class="is-current"><a href="#">すべてのアイテム</a></li>
+                <li><a href="#">ファッション・ビューティー</a></li>
+                <li><a href="#">食品</a></li>
+                <li><a href="#">雑貨</a></li>
+                <li><a href="#">招待券・チャリティ</a></li>
+                <li><a href="#">特集</a></li>
+            </ul>
+        </div>
+        <!-- <div class="l-main-sort">
+            <dl class="c-main-sort">
+                <dt>並び替え：</dt>
+                <dd class="is-current"><span>いいねの数</span></dd>
+                <dd><a href="#">閲覧数</a></dd>
+                <dd><a href="#">人気順</a></dd>
+                <dd><a href="./category.html" class="js-sort-shake">シェイク</a></dd>
+            </dl>
+        </div> -->
+        </div>
+    </div>
+    <!-- /sticky category  -->
 </header>
 
-<!-- sticky category  -->
-<div class="l-main-stickywrap" >
-    <div class="l-main-sticky js-mainsticky">
-    <div class="l-main-tab">
-        <ul class="c-main-tab">
-            <li class="is-current"><a href="#">すべてのアイテム</a></li>
-            <li><a href="#">ファッション・ビューティー</a></li>
-            <li><a href="#">食品</a></li>
-            <li><a href="#">雑貨</a></li>
-            <li><a href="#">招待券・チャリティ</a></li>
-            <li><a href="#">特集</a></li>
-        </ul>
-    </div>
-    <!-- <div class="l-main-sort">
-        <dl class="c-main-sort">
-            <dt>並び替え：</dt>
-            <dd class="is-current"><span>いいねの数</span></dd>
-            <dd><a href="#">閲覧数</a></dd>
-            <dd><a href="#">人気順</a></dd>
-            <dd><a href="./category.html" class="js-sort-shake">シェイク</a></dd>
-        </dl>     
-    </div> -->
-    </div>
-</div>
-<!-- /sticky category  -->
+
 
     
 <main class="l-main">
@@ -167,10 +170,9 @@
         
         
         <div class="top-slider">
-            <div class="top-slider_item"><img src="images/assets/mv01.jpg" alt="" /></div>
-            <div class="top-slider_item"><img src="images/assets/mv01.jpg" alt="" /></div>
-            <div class="top-slider_item"><img src="images/assets/mv01.jpg" alt="" /></div>
-            <div class="top-slider_item"><img src="images/assets/mv01.jpg" alt="" /></div>
+            <div class="top-slider_item"><img src="./images/assets/mv01.jpg" alt="" /></div>
+            <div class="top-slider_item"><img src="./images/assets/mv02.jpg" alt="" /></div>
+            <div class="top-slider_item"><img src="./images/assets/mv03.jpg" alt="" /></div>
         </div>
 
 
@@ -180,7 +182,7 @@
                 <ul class="c-item-list-ul is-grid1">
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item1">
-                            <figure><img src="images/assets/item01.jpg"></figure>
+                            <figure><img src="./images/assets/item01.jpg"></figure>
                             <div class="c-item-name">フラワーリング</div>
                         </a>
                         <div class="c-item-mylist">
@@ -189,7 +191,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item2">
-                            <figure><img src="images/assets/item02.jpg"></figure>
+                            <figure><img src="./images/assets/item02.jpg"></figure>
                             <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -198,7 +200,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item3">
-                            <figure><img src="images/assets/item03.jpg"></figure>
+                            <figure><img src="./images/assets/item03.jpg"></figure>
                             <div class="c-item-name">山中塗 半月両面盆5枚セット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -207,7 +209,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item4">
-                            <figure><img src="images/assets/item04.jpg"></figure>
+                            <figure><img src="./images/assets/item04.jpg"></figure>
                             <div class="c-item-name">〈新江ノ島水族館〉ご家族入館券3名</div>
                             <div class="c-item-sold">在庫切れ</div>
                         </a>
@@ -217,7 +219,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item5">
-                            <figure><img src="images/assets/item05.jpg"></figure>
+                            <figure><img src="./images/assets/item05.jpg"></figure>
                             <div class="c-item-name">ウールHEUREUX　2WAYトートバッグ</div>
                             <div class="c-item-sold">在庫切れ</div>
                         </a>
@@ -227,7 +229,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item6">
-                            <figure><img src="images/assets/item06.jpg"></figure>
+                            <figure><img src="./images/assets/item06.jpg"></figure>
                             <div class="c-item-name">天然石ブレスレット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -236,7 +238,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item7">
-                            <figure><img src="images/assets/item07.jpg"></figure>
+                            <figure><img src="./images/assets/item07.jpg"></figure>
                             <div class="c-item-name">鍋</div>
                         </a>
                         <div class="c-item-mylist">
@@ -245,7 +247,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item8">
-                            <figure><img src="images/assets/item08.jpg"></figure>
+                            <figure><img src="./images/assets/item08.jpg"></figure>
                             <div class="c-item-name">イタリアスパークリングワイン 3本セット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -264,7 +266,7 @@
                 <ul class="c-item-list-ul is-grid1">
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item1">
-                            <figure><img src="images/assets/item01.jpg"></figure>
+                            <figure><img src="./images/assets/item01.jpg"></figure>
                             <div class="c-item-name">フラワーリング</div>
                         </a>
                         <div class="c-item-mylist">
@@ -273,7 +275,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item2">
-                            <figure><img src="images/assets/item02.jpg"></figure>
+                            <figure><img src="./images/assets/item02.jpg"></figure>
                             <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -282,7 +284,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item3">
-                            <figure><img src="images/assets/item03.jpg"></figure>
+                            <figure><img src="./images/assets/item03.jpg"></figure>
                             <div class="c-item-name">山中塗 半月両面盆5枚セット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -291,7 +293,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item4">
-                            <figure><img src="images/assets/item04.jpg"></figure>
+                            <figure><img src="./images/assets/item04.jpg"></figure>
                             <div class="c-item-name">〈新江ノ島水族館〉ご家族入館券3名</div>
                             <div class="c-item-sold">在庫切れ</div>
                         </a>
@@ -301,7 +303,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item5">
-                            <figure><img src="images/assets/item05.jpg"></figure>
+                            <figure><img src="./images/assets/item05.jpg"></figure>
                             <div class="c-item-name">ウールHEUREUX　2WAYトートバッグ</div>
                             <div class="c-item-sold">在庫切れ</div>
                         </a>
@@ -311,7 +313,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item6">
-                            <figure><img src="images/assets/item06.jpg"></figure>
+                            <figure><img src="./images/assets/item06.jpg"></figure>
                             <div class="c-item-name">天然石ブレスレット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -320,7 +322,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item7">
-                            <figure><img src="images/assets/item07.jpg"></figure>
+                            <figure><img src="./images/assets/item07.jpg"></figure>
                             <div class="c-item-name">鍋</div>
                         </a>
                         <div class="c-item-mylist">
@@ -329,7 +331,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item8">
-                            <figure><img src="images/assets/item08.jpg"></figure>
+                            <figure><img src="./images/assets/item08.jpg"></figure>
                             <div class="c-item-name">イタリアスパークリングワイン 3本セット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -338,7 +340,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item1">
-                            <figure><img src="images/assets/item01.jpg"></figure>
+                            <figure><img src="./images/assets/item01.jpg"></figure>
                             <div class="c-item-name">フラワーリング</div>
                         </a>
                         <div class="c-item-mylist">
@@ -347,7 +349,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item2">
-                            <figure><img src="images/assets/item02.jpg"></figure>
+                            <figure><img src="./images/assets/item02.jpg"></figure>
                             <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -356,7 +358,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item3">
-                            <figure><img src="images/assets/item03.jpg"></figure>
+                            <figure><img src="./images/assets/item03.jpg"></figure>
                             <div class="c-item-name">山中塗 半月両面盆5枚セット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -365,7 +367,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item4">
-                            <figure><img src="images/assets/item04.jpg"></figure>
+                            <figure><img src="./images/assets/item04.jpg"></figure>
                             <div class="c-item-name">〈新江ノ島水族館〉ご家族入館券3名</div>
                             <div class="c-item-sold">在庫切れ</div>
                         </a>
@@ -375,7 +377,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item5">
-                            <figure><img src="images/assets/item05.jpg"></figure>
+                            <figure><img src="./images/assets/item05.jpg"></figure>
                             <div class="c-item-name">ウールHEUREUX　2WAYトートバッグ</div>
                             <div class="c-item-sold">在庫切れ</div>
                         </a>
@@ -385,7 +387,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item6">
-                            <figure><img src="images/assets/item06.jpg"></figure>
+                            <figure><img src="./images/assets/item06.jpg"></figure>
                             <div class="c-item-name">天然石ブレスレット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -394,7 +396,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item7">
-                            <figure><img src="images/assets/item07.jpg"></figure>
+                            <figure><img src="./images/assets/item07.jpg"></figure>
                             <div class="c-item-name">鍋</div>
                         </a>
                         <div class="c-item-mylist">
@@ -403,7 +405,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item8">
-                            <figure><img src="images/assets/item08.jpg"></figure>
+                            <figure><img src="./images/assets/item08.jpg"></figure>
                             <div class="c-item-name">イタリアスパークリングワイン 3本セット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -412,7 +414,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item1">
-                            <figure><img src="images/assets/item01.jpg"></figure>
+                            <figure><img src="./images/assets/item01.jpg"></figure>
                             <div class="c-item-name">フラワーリング</div>
                         </a>
                         <div class="c-item-mylist">
@@ -421,7 +423,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item2">
-                            <figure><img src="images/assets/item02.jpg"></figure>
+                            <figure><img src="./images/assets/item02.jpg"></figure>
                             <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -430,7 +432,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item3">
-                            <figure><img src="images/assets/item03.jpg"></figure>
+                            <figure><img src="./images/assets/item03.jpg"></figure>
                             <div class="c-item-name">山中塗 半月両面盆5枚セット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -439,7 +441,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item4">
-                            <figure><img src="images/assets/item04.jpg"></figure>
+                            <figure><img src="./images/assets/item04.jpg"></figure>
                             <div class="c-item-name">〈新江ノ島水族館〉ご家族入館券3名</div>
                             <div class="c-item-sold">在庫切れ</div>
                         </a>
@@ -449,7 +451,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item5">
-                            <figure><img src="images/assets/item05.jpg"></figure>
+                            <figure><img src="./images/assets/item05.jpg"></figure>
                             <div class="c-item-name">ウールHEUREUX　2WAYトートバッグ</div>
                             <div class="c-item-sold">在庫切れ</div>
                         </a>
@@ -459,7 +461,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item6">
-                            <figure><img src="images/assets/item06.jpg"></figure>
+                            <figure><img src="./images/assets/item06.jpg"></figure>
                             <div class="c-item-name">天然石ブレスレット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -468,7 +470,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item7">
-                            <figure><img src="images/assets/item07.jpg"></figure>
+                            <figure><img src="./images/assets/item07.jpg"></figure>
                             <div class="c-item-name">鍋</div>
                         </a>
                         <div class="c-item-mylist">
@@ -477,7 +479,7 @@
                     </li>
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item8">
-                            <figure><img src="images/assets/item08.jpg"></figure>
+                            <figure><img src="./images/assets/item08.jpg"></figure>
                             <div class="c-item-name">イタリアスパークリングワイン 3本セット</div>
                         </a>
                         <div class="c-item-mylist">
@@ -1006,17 +1008,59 @@
 
 
     <!-- マイリスト /-->
-    <!-- <div class="l-mylistwrap">
-        <div class="l-mylist">
-            <h2 class="c-mylist-title">マイリスト<span>My list</span></h2>
-            <div class="c-mylist-linkwrap"><a href="./mylist.html" class="c-mylist-link">詳しくみる</a></div>
-
-            <div class="c-mylist-list-wrap">
-                <ul class="js-mylist-listwrap"></ul>
+        <div class="l-mylistwrap">
+            <div class="mylist_btn_wrap">
+                <span class="mylist_btn_arrow"></span>
+                <p class="mylist_btn_txt">
+                    <img src="./images/assets/icon_mylist_wh.svg" alt="">マイリスト
+                </p>
             </div>
-
+            <div class="l-mylist">
+                <div class="l-mylist_box">
+                    <h2 class="c-mylist-title">マイリスト</h2>
+                    <div class="c-mylist-linkwrap"><a href="./mylist.html" class="c-mylist-link">マイリストのアイテムを見る</a></div>
+                    <div class="c-mylist-list-wrap">
+                        <ul class="js-mylist-listwrap">
+                            <li class="c-mylist-list js-mylist-modal-open is-prepend">
+                                <figure><img src="./images/assets/mylist01.jpg"></figure>
+                                <div class="c-mylist-name">角バットセット</div>
+                                <div class="c-mylist-mylist">
+                                    <div data-mylistitem="WB006-108" class="c-mylist-mylist-btn js-mylistbtn is-on"></div>
+                                </div>
+                            </li>
+                            <li class="c-mylist-list js-mylist-modal-open is-prepend">
+                                <figure><img src="./images/assets/mylist02.jpg"></figure>
+                                <div class="c-mylist-name">角バットセット</div>
+                                <div class="c-mylist-mylist">
+                                    <div data-mylistitem="WB006-108" class="c-mylist-mylist-btn js-mylistbtn is-on"></div>
+                                </div>
+                            </li>
+                            <li class="c-mylist-list js-mylist-modal-open is-prepend">
+                                <figure><img src="./images/assets/mylist03.jpg"></figure>
+                                <div class="c-mylist-name">角バットセット</div>
+                                <div class="c-mylist-mylist">
+                                    <div data-mylistitem="WB006-108" class="c-mylist-mylist-btn js-mylistbtn is-on"></div>
+                                </div>
+                            </li>
+                            <li class="c-mylist-list js-mylist-modal-open is-prepend">
+                                <figure><img src="./images/assets/mylist04.jpg"></figure>
+                                <div class="c-mylist-name">角バットセット</div>
+                                <div class="c-mylist-mylist">
+                                    <div data-mylistitem="WB006-108" class="c-mylist-mylist-btn js-mylistbtn is-on"></div>
+                                </div>
+                            </li>
+                            <li class="c-mylist-list js-mylist-modal-open is-prepend">
+                                <figure><img src="./images/assets/mylist05.jpg"></figure>
+                                <div class="c-mylist-name">角バットセット</div>
+                                <div class="c-mylist-mylist">
+                                    <div data-mylistitem="WB006-108" class="c-mylist-mylist-btn js-mylistbtn is-on"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> -->
     <!-- /マイリスト -->
 
 
