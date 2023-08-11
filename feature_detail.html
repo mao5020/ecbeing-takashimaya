@@ -22,7 +22,7 @@
 
 <link rel="icon" href="./images/common/favicon.ico">
 <link rel="apple-touch-icon" href="./images/common/favicon.ico">
-<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" charset="UTF-8" media="only screen and (min-width: 750px)">
+<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" charset="UTF-8" media="only screen and (min-width: 750px) and (max-width: 999px)">
 <link href="./css/style_sp.css" rel="stylesheet" type="text/css" charset="UTF-8" media="screen and (max-width: 750px)">
 <link href="./css/slick.css" rel="stylesheet" type="text/css" media="all" charset="UTF-8">
 <script type='text/javascript' src='./javascript/jquery.min.js'></script>
@@ -31,7 +31,7 @@
 <script type='text/javascript' src='./javascript/style.js'></script>
 </head>
 
-<body id="top">
+<body id="feature">
 <div class="l-wrapall" id="l-wrap">
 
 <header class="l-header">
@@ -41,7 +41,6 @@
         <div class="l-header-left">
             <div class="c-header-mylist"><a href="./mylist.html"><img src="./images/common/icon_mylist_on_sp.png"><p class="is-text">マイリスト</p></a></div>
             <div class="c-header-search js-header-search"><img src="./images/common/icon_search.png"><p class="is-text">サーチ</p></div>
-            
             <h1 class="c-header-logo"><a href="./top.html"><img src="./images/common/logo.png"></a></h1>
             <div class="c-header-menu"><a href="#"><p class="is-line"><span></span></p><p class="is-text">メニュー</p></a></div>
             <div class="c-header-search-wrap-sp">
@@ -62,7 +61,6 @@
                 </div>
                 <div class="c-header-input-wrap">
                     <input name="keyWord" id="keyWord" type="text" placeholder="何をお探しですか？" value="" class="c-header-input-text">
-                    <div class="c-header-input-voice"></div>
                     <input type="submit"  class="c-header-input-submit" value="検 索">
                     <dl class="c-header-keyword">
                         <dt>話題のキーワード：</dt>
@@ -81,6 +79,8 @@
 
     
 <main class="l-main">
+
+
     <!-- 左ナビ /-->
     <div class="l-leftnavwrap">
 
@@ -133,54 +133,31 @@
         <!-- sp-category-nav  -->
         <div class="l-sp-category-nav">
             <ul class="c-sp-category-nav">
-                <li class="is-current"><a href="./top.html">すべての<br>アイテムを見る</a></li>
-                <li><a href="feature_top.html">特集</a></li>
+                <li><a href="./top.html">すべての<br>アイテムを見る</a></li>
+                <li class="is-current"><a href="#">特集</a></li>
                 <li><span class="js-category-navi">カテゴリ</span></li>
             </ul>     
         </div>
-        <!-- /tab  -->
+        <!-- /sp-category-nav  -->
 
 
-        <!-- sticky category  -->
-        <div class="l-main-stickywrap" >
-            <div class="l-main-sticky js-mainsticky">
-            <!-- tab  -->
-            <div class="l-main-tab">
-                <ul class="c-main-tab">
-                    <li class="is-current"><a href="#">すべての<br>アイテム</a></li>
-                    <li><a href="#">ファッション<br>・ビューティー</a></li>
-                    <li><a href="#">雑貨・ホビー</a></li>
-                    <li><a href="#">リビング・<br>ダイニング</a></li>
-                    <li><a href="#">健康・防災</a></li>
-                    <li><a href="#">家電</a></li>
-                    <li><a href="#">生鮮食品</a></li>
-                    <li><a href="#">食品</a></li>
-                    <li><a href="#">ドリンク・酒</a></li>
-                    <li><a href="#">旅行券<br>・食事券</a></li>
-                </ul>     
-            </div>
-            <!-- /tab  -->
-
-            <!-- sort  -->
-            <div class="l-main-sort">
-                <dl class="c-main-sort">
-                    <dt>並び替え：</dt>
-                    <dd class="is-current"><span>いいねの数</span></dd>
-                    <dd><a href="#">閲覧数</a></dd>
-                    <dd><a href="#">人気順</a></dd>
-                    <dd><a href="./category.html" class="js-sort-shake">シェイク</a></dd>
-                </dl>     
-            </div>
-            <!-- /sort  -->
-            </div>
+        <!-- breadcrumb  -->
+        <div class="l-breadcrumb">
+            <ul class="c-breadcrumb">
+                <li><a href="./top.html">TOP</a></li>
+                <li><a href="feature_top.html">特集</a></li>
+                <li class="is-current">ブランドセレクション</li>
+            </ul>     
         </div>
-        <!-- /sticky category  -->
+        <!-- /breadcrumb  -->
 
 
         <div class="l-item">
-            <h2 class="c-item-title">すべてのアイテム<span>All items</span></h2>
+            <h2 class="c-item-title is-feature"><img src="./images/feature/bnr01.jpg" alt="ブランドセレクション"></h2>
+
+
             <div class="l-itemwrap">
-                <ul class="c-item-list-ul is-grid1">
+                <ul class="c-item-list-ul is-grid-normal">
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item1">
                             <figure><img src="https://e-cgift.net/upload/item/PV026-044W/ma.jpg"></figure>
@@ -204,7 +181,7 @@
                     <li class="c-item-list grid-item">
                         <a href="#" class="js-modal-itemopen" data-item="item3">
                             <figure><img src="https://e-cgift.net/upload/item/P203-034/ma.jpg"></figure>
-                            <div class="c-item-name">山中塗 半月両面盆5枚セット</div>
+                            <div class="c-item-name">鮭匠ふじい　北海道産　いくらとたらこの詰合せ</div>
                         </a>
                         <div class="c-item-mylist">
                             <div class="c-item-mylist-btn js-itembtn"></div>
@@ -263,96 +240,20 @@
                             <div class="c-item-mylist-num">0</div>
                         </div>
                     </li>
-
-
-
-
-
-
                     <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item10">
-                            <figure><img src="https://e-cgift.net/upload/item/P315-452/ma.jpg"></figure>
-                            <div class="c-item-name">タニタ　体組成計</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/PV146-017W/ma.jpg"></figure>
-                            <div class="c-item-name">〈ツインバード〉ハンディアイロン＆スチーマー</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/PV715-418/ma.jpg"></figure>
-                            <div class="c-item-name">ツインバード　２WAYサイクロンクリーナー</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/PV529-012/ma.jpg"></figure>
-                            <div class="c-item-name">〈サボン〉ラグジュアリーセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/J153-012/ma.jpg"></figure>
-                            <div class="c-item-name">特別栽培米　山形県産 つや姫</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/P125-037/ma.jpg"></figure>
-                            <div class="c-item-name">カシオ　ソーラーウォッチ</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/PV534-224/ma.jpg"></figure>
-                            <div class="c-item-name">サボン ボディスクラブセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/PV723-417/ma.jpg"></figure>
-                            <div class="c-item-name">イタリアスパークリングワイン 3本セット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
+                        <a href="#" class="js-modal-itemopen" data-item="item9">
                             <figure><img src="https://e-cgift.net/upload/item/J136-213/ma.jpg"></figure>
-                            <div class="c-item-name">神田明神下 喜川　手焼きうなぎ蒲焼</div>
+                            <div class="c-item-name">うなぎ</div>
+                        </a>
+                        <div class="c-item-mylist">
+                            <div class="c-item-mylist-btn js-itembtn"></div>
+                            <div class="c-item-mylist-num">0</div>
+                        </div>
+                    </li>
+                                        <li class="c-item-list grid-item">
+                        <a href="#" class="js-modal-itemopen" data-item="item1">
+                            <figure><img src="https://e-cgift.net/upload/item/PV026-044W/ma.jpg"></figure>
+                            <div class="c-item-name">フラワーリング</div>
                         </a>
                         <div class="c-item-mylist">
                             <div class="c-item-mylist-btn js-itembtn"></div>
@@ -360,9 +261,9 @@
                         </div>
                     </li>
                     <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/P339-427/ma.jpg"></figure>
-                            <div class="c-item-name">キャプテンスタッグ　ダッチオーブン25cm</div>
+                        <a href="#" class="js-modal-itemopen" data-item="item2">
+                            <figure><img src="https://e-cgift.net/upload/item/J096-312/ma.jpg"></figure>
+                            <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
                         </a>
                         <div class="c-item-mylist">
                             <div class="c-item-mylist-btn js-itembtn"></div>
@@ -370,7 +271,59 @@
                         </div>
                     </li>
                     <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
+                        <a href="#" class="js-modal-itemopen" data-item="item3">
+                            <figure><img src="https://e-cgift.net/upload/item/P203-034/ma.jpg"></figure>
+                            <div class="c-item-name">鮭匠ふじい　北海道産　いくらとたらこの詰合せ</div>
+                        </a>
+                        <div class="c-item-mylist">
+                            <div class="c-item-mylist-btn js-itembtn"></div>
+                            <div class="c-item-mylist-num">0</div>
+                        </div>
+                    </li>
+                    <li class="c-item-list grid-item">
+                        <a href="#" class="js-modal-itemopen" data-item="item4">
+                            <figure><img src="https://e-cgift.net/upload/item/PV604-016/ma.jpg"></figure>
+                            <div class="c-item-name">〈新江ノ島水族館〉ご家族入館券3名</div>
+                            <div class="c-item-sold">在庫切れ</div>
+                        </a>
+                        <div class="c-item-mylist">
+                            <div class="c-item-mylist-btn js-itembtn"></div>
+                            <div class="c-item-mylist-num">0</div>
+                        </div>
+                    </li>
+                    <li class="c-item-list grid-item">
+                        <a href="#" class="js-modal-itemopen" data-item="item5">
+                            <figure><img src="https://e-cgift.net/upload/item/PV003-063W/ma.jpg"></figure>
+                            <div class="c-item-name">ウールHEUREUX　2WAYトートバッグ</div>
+                            <div class="c-item-sold">在庫切れ</div>
+                        </a>
+                        <div class="c-item-mylist">
+                            <div class="c-item-mylist-btn js-itembtn"></div>
+                            <div class="c-item-mylist-num">0</div>
+                        </div>
+                    </li>
+                    <li class="c-item-list grid-item">
+                        <a href="#" class="js-modal-itemopen" data-item="item6">
+                            <figure><img src="https://e-cgift.net/upload/item/PV003-287W/ma.jpg"></figure>
+                            <div class="c-item-name">天然石ブレスレット</div>
+                        </a>
+                        <div class="c-item-mylist">
+                            <div class="c-item-mylist-btn js-itembtn"></div>
+                            <div class="c-item-mylist-num">0</div>
+                        </div>
+                    </li>
+                    <li class="c-item-list grid-item">
+                        <a href="#" class="js-modal-itemopen" data-item="item7">
+                            <figure><img src="https://e-cgift.net/upload/item/P232-267/ma.jpg"></figure>
+                            <div class="c-item-name">鍋</div>
+                        </a>
+                        <div class="c-item-mylist">
+                            <div class="c-item-mylist-btn js-itembtn"></div>
+                            <div class="c-item-mylist-num">0</div>
+                        </div>
+                    </li>
+                    <li class="c-item-list grid-item">
+                        <a href="#" class="js-modal-itemopen" data-item="item8">
                             <figure><img src="https://e-cgift.net/upload/item/PV723-417/ma.jpg"></figure>
                             <div class="c-item-name">イタリアスパークリングワイン 3本セット</div>
                         </a>
@@ -380,708 +333,19 @@
                         </div>
                     </li>
                     <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/P343-215/ma.jpg"></figure>
-                            <div class="c-item-name">ドギーマン　コンパクトルーム</div>
+                        <a href="#" class="js-modal-itemopen" data-item="item9">
+                            <figure><img src="https://e-cgift.net/upload/item/J136-213/ma.jpg"></figure>
+                            <div class="c-item-name">うなぎ</div>
                         </a>
                         <div class="c-item-mylist">
                             <div class="c-item-mylist-btn js-itembtn"></div>
                             <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/PV182-76AW/ma.jpg"></figure>
-                            <div class="c-item-name">DVD3本セット「E.T.」+「幸せのちから」+お好みの1作品</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/PV080-036W/ma.jpg"></figure>
-                            <div class="c-item-name">DAKS　ボールペン＆　シャープペンセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/PV595-015/ma.jpg"></figure>
-                            <div class="c-item-name">〈ダルマイヤー〉カフェペア</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-
-
-
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/PV591-011/ma.jpg"></figure>
-                            <div class="c-item-name">〈ザ・コスモポリタン〉カフェペア</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/PV597-017/ma.jpg"></figure>
-                            <div class="c-item-name">〈パエゾ〉ランチペア</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/PV599-019/ma.jpg"></figure>
-                            <div class="c-item-name">〈KYOWA'S COFFEE〉貸切焙煎体験ペア</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#" class="js-modal-itemopen" data-item="item">
-                            <figure><img src="https://e-cgift.net/upload/item/PV554-419W/ma.jpg"></figure>
-                            <div class="c-item-name">スワロフスキー クリスタルスターライトペン</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">0</div>
-                        </div>
-                    </li>
-
-
-
-
-                    
-                </ul>
-            </div>
-        </div>
-
-
-
-        <div class="l-item">
-            <h2 class="c-item-title">ファッション・ビューティー<span>Fashion Beauty</span></h2>
-            <div class="l-itemwrap">
-                <ul class="c-item-list-ul js-grid is-grid2">
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/PV124-013/ma.jpg"></figure>
-                            <div class="c-item-name">メイクブラシセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/PV124-013/ma.jpg"></figure>
-                            <div class="c-item-name">メイクブラシセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/PV124-013/ma.jpg"></figure>
-                            <div class="c-item-name">メイクブラシセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/PV124-013/ma.jpg"></figure>
-                            <div class="c-item-name">メイクブラシセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/PV124-013/ma.jpg"></figure>
-                            <div class="c-item-name">メイクブラシセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/PV124-013/ma.jpg"></figure>
-                            <div class="c-item-name">メイクブラシセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/PV124-013/ma.jpg"></figure>
-                            <div class="c-item-name">メイクブラシセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/PV124-013/ma.jpg"></figure>
-                            <div class="c-item-name">メイクブラシセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/PV124-013/ma.jpg"></figure>
-                            <div class="c-item-name">メイクブラシセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
                         </div>
                     </li>
                 </ul>
             </div>
+
         </div>
-        <!--  -->
-
-
-        <div class="l-item">
-            <h2 class="c-item-title">雑貨・ホビー<span>Zakka Hobby</span></h2>
-            <div class="l-itemwrap">
-                <ul class="c-item-list-ul js-grid is-grid3">
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/WP004-105/ma.jpg"></figure>
-                            <div class="c-item-name">アクアキューブ</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/WP004-105/ma.jpg"></figure>
-                            <div class="c-item-name">アクアキューブ</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/WP004-105/ma.jpg"></figure>
-                            <div class="c-item-name">アクアキューブ</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/WP004-105/ma.jpg"></figure>
-                            <div class="c-item-name">アクアキューブ</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/WP004-105/ma.jpg"></figure>
-                            <div class="c-item-name">アクアキューブ</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/WP004-105/ma.jpg"></figure>
-                            <div class="c-item-name">メイクブラシセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/WP004-105/ma.jpg"></figure>
-                            <div class="c-item-name">メイクブラシセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/WP004-105/ma.jpg"></figure>
-                            <div class="c-item-name">メイクブラシセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/WP004-105/ma.jpg"></figure>
-                            <div class="c-item-name">メイクブラシセット</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--  -->
-
-
-        <div class="l-item">
-            <h2 class="c-item-title">リビング・ダイニング<span>Living Dining</span></h2>
-            <div class="l-itemwrap">
-                <ul class="c-item-list-ul js-grid is-grid4">
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--  -->
-
-
-
-
-        <div class="l-item">
-            <h2 class="c-item-title">リビング・ダイニング<span>Living Dining</span></h2>
-            <div class="l-itemwrap">
-                <ul class="c-item-list-ul js-grid is-grid5">
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--  -->
-
-
-
-
-        <div class="l-item">
-            <h2 class="c-item-title">リビング・ダイニング<span>Living Dining</span></h2>
-            <div class="l-itemwrap">
-                <ul class="c-item-list-ul js-grid is-grid6">
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--  -->
-
-
-
-
-
-
-        <div class="l-item">
-            <h2 class="c-item-title">リビング・ダイニング<span>Living Dining</span></h2>
-            <div class="l-itemwrap">
-                <ul class="c-item-list-ul js-grid is-grid7">
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                    <li class="c-item-list grid-item">
-                        <a href="#">
-                            <figure><img src="https://e-cgift.net/upload/item/P209-047/ma.jpg"></figure>
-                            <div class="c-item-name">四ツ引タンス</div>
-                        </a>
-                        <div class="c-item-mylist">
-                            <div class="c-item-mylist-btn js-itembtn"></div>
-                            <div class="c-item-mylist-num">1000</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--  -->
-
-
-
     </section>
     <!-- /メインカラム -->
 
@@ -2108,7 +1372,7 @@
 <footer>
     <div class="c-fixed-footer">
         <div class="c-fixed-footer-inner">
-            <a href="./mylist.html" class="c-fixed-mylist"><span>マイリスト</span></a>
+            <a href="#" class="c-fixed-mylist"><span>マイリスト</span></a>
             <a href="#" class="c-fixed-sort js-fixed-sort"><span>並び替え</span></a>
             <a href="#l-wrap" class="c-fixed-pageTop js-scrolltop"><span>トップ</span></a>
         </div>

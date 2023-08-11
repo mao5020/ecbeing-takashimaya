@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>e-Gift｜リンベル イーギフト</title>
+<meta name="Description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:site_name" content="">
+<meta property="og:image" content="">
+<meta property="fb:admins" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:url" content="">
+<meta name="twitter:image" content="" />
+<link rel="icon" href="./images/common/favicon.ico">
+<link rel="apple-touch-icon" href="./images/common/favicon.ico">
+<link href="./css/old_style.css" rel="stylesheet" type="text/css">
+<link href="./css/old_style_sp.css" rel="stylesheet" type="text/css" charset="UTF-8" media="screen and (max-width: 768px)">
+<script type='text/javascript' src='./javascript/jquery.min.js'></script>
+<script type='text/javascript' src='./javascript/style.js'></script>
+<script type="text/javascript">
+$(function(){
+	$('a[href^="#"]').on('click',function(){
+		var speed = 500;
+		var href= $(this).attr("href");
+		var target = $(href == "#" || href == "" ? 'html' : href);
+		var position = target.offset().top;
+		$("html, body").animate({scrollTop:position}, speed, "swing");
+		return false;
+	});
+});
+</script>
+</head>
+
+<body>
+<!-- PC MENU START -->
+<header class="l-header">
+    <form action="/presentage/item.php?pnumflag=1" method="post">
+        <input type="hidden" name="methods" id="methods" value="SEARCHLIST">
+        <input type="hidden" name="privilege_type" id="privilege_type" value="">
+        <div class="l-header-left">
+            <div class="c-header-mylist"><a href="./mylist.html"><img src="./images/common/icon_mylist_on_sp.png"><p class="is-text">マイリスト</p></a></div>
+            <div class="c-header-search js-header-search"><img src="./images/common/icon_search.png"><p class="is-text">サーチ</p></div>
+            <h1 class="c-header-logo"><a href="./top.html"><img src="./images/common/logo.png"></a></h1>
+            <div class="c-header-menu"><a href="#"><p class="is-line"><span></span></p><p class="is-text">メニュー</p></a></div>
+            <div class="c-header-search-wrap-sp">
+                <span class="c-header-search-close-sp"></span>
+                <div class="c-header-select-wrap">
+                    <select name="searchBunruiId3" id="searchBunruiId3" class="minimal c-header-select">
+                        <option value="">カテゴリを選択する</option>
+                        <option value="1">ファッション・ビューティ</option>
+                        <option value="2">雑貨・ホビー</option>
+                        <option value="3">リビング・ダイニング</option>
+                        <option value="4">健康・防災</option>
+                        <option value="5">家電</option>
+                        <option value="6">生鮮食品</option>
+                        <option value="7">食品</option>
+                        <option value="8">ドリンク・酒</option>
+                        <option value="9">旅行券・食事券</option>
+                    </select>
+                </div>
+                <div class="c-header-input-wrap">
+                    <input name="keyWord" id="keyWord" type="text" placeholder="何をお探しですか？" value="" class="c-header-input-text">
+                    <input type="submit"  class="c-header-input-submit" value="検 索">
+                    <dl class="c-header-keyword">
+                        <dt>話題のキーワード：</dt>
+                        <dd class="c-header-keyword-dd"><a href="">＃雑貨</a><a href="">＃インテリア</a><a href="">＃お肉</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </form>
+    <ul class="c-header-linklist">
+        <li class="c-header-linklist-guide"><a href="./guide.html">ご利用ガイド</a></li>
+        <li class="c-header-linklist-logout"><a href="./login.html">ログアウト</a></li>
+    </ul>
+    <div class="sp_header_bg"></div>
+</header>
+<!-- PC MENU END -->
+
+
+    <!-- 左ナビ /-->
+    <div class="l-leftnavwrap">
+
+        <nav class="l-leftnav">
+            <ul class="c-leftnav-large">
+                <li class="is-current"><a href="./top.html">すべてのアイテムを見る<span>All items</span></a></li>
+                <li><a href="./feature_top.html">特集<span>Feature</span></a></li>
+                <li class="js-leftnav-slide"><a href="./category.html" class="is-category">カテゴリ<span>Category</span></a></li>
+            </ul>
+            <ul class="c-leftnav-middle">
+                <li><a href="./category.html">ファッション・ビューティー</a></li>
+                <li><a href="./category.html">雑貨・ホビー</a></li>
+                <li><a href="./category.html">リビング・ダイニング</a></li>
+                <li><a href="./category.html">健康・防災</a></li>
+                <li><a href="./category.html">家電</a></li>
+                <li><a href="./category.html">生鮮食品</a></li>
+                <li><a href="./category.html">食品</a></li>
+                <li><a href="./category.html">ドリンク・酒</a></li>
+                <li><a href="./category.html">旅行券・食事券</a></li>
+            </ul>
+            <div class="l-leftnav-history">
+                <div class="c-leftnav-history-title">閲覧履歴</div>
+                <ul class="c-leftnav-history">
+                    <li data-item="item1"><figure><img src="https://e-cgift.net/upload/item/PV026-044W/ma.jpg">
+                        <figcaption>フラワーリング</figcaption></figure></li>
+                    <li data-item="item2"><figure><img src="https://e-cgift.net/upload/item/J096-312/ma.jpg">
+                        <figcaption>札幌バルナバハム　ハム・ソーセージセット</figcaption></figure></li>
+                    <li data-item="item3"><figure><img src="https://e-cgift.net/upload/item/P203-034/ma.jpg">
+                        <figcaption>山中塗 半月両面盆5枚セット</figcaption></figure></li>
+                    <li data-item="item4"><figure><img src="https://e-cgift.net/upload/item/P249-010/ma.jpg">
+                        <figcaption>テキストテキスト</figcaption></figure></li>
+                </ul>
+            </div>
+            <ul class="c-leftnav-footnav">
+                <li><a href="./faq.html">よくあるご質問</a></li>
+                <li><a href="./inquire.html">お問い合わせ</a></li>
+                <li><a href="./shurui.html">酒類販売管理者標識</a></li>
+                <li><a href="./privacypolicy.html">プライバシーポリシー</a></li>
+            </ul>
+            <div class="c-leftnav-login-sp"><a href="./login.html" class="c-leftnav-loginbtn"><span>ログアウト</span></a></div>
+            <div class="c-leftnav-logo"><a href="#"><img src="./images/common/logo_ringbell.png"></a></div>
+            <div class="c-leftnav-copy"><small>COPYRIGHT RINGBELL CO.,LTD.<br>ALL RIGHTS RESERVED.</small></div>
+        </nav>
+    </div>
+    <!-- /左ナビ -->
+
+
+<!-- BREAD CRUMB START -->
+<div class="l-breadcrumb">
+    <ul class="c-breadcrumb">
+        <li><a href="./top.html">TOP</a></li>
+        <li class="is-current">よくある質問</li>
+    </ul>     
+</div>
+<!-- BREAD CRUMB END --> 
+
+
+<!-- GUIDE TITLE START --> 
+<div class="guide_ttl">
+	<h2>よくある質問</h2>
+	<p class="guide_ttl_read">Faq</p>
+</div>
+<!-- GUIDE TITLE END --> 
+
+
+<!-- INFO CONT START --> 
+<form method="post" name="inquireForm" action="/presentage/inquire.php">
+<input type="hidden" value="conf1" id="methods" name="methods">
+<input type="hidden" value="3372a24350571442979ab67e0f50fffa" id="htdocs_page_token" name="htdocs_page_token">
+<div class="info_cnt" id="faq_page">
+
+	<div class="info_cnt_guide_menu">
+		<ul>
+			<li><a href="./guide.html">ご利用ガイド</a></li>
+			<li class="active">よくある質問</li>
+			<li><a href="./inquire.html">お問い合わせ</a></li>
+		</ul>
+	</div>
+
+	<div class="info_cnt_qa_link">
+		<h3>すごくよくあるご質問</h3>
+		<ul>
+			<li><a href="#link01">申し込みハガキ(IDとパスワード)を紛失してしまったのですが、どうしたらいいでしょうか?</a></li>
+			<li><a href="#link02">カタログギフトが同梱されている場合、カタログを紛失してしまったのですが、どうしたらいいでしょうか?</a></li>
+			<li><a href="#link03">申し込みハガキ(IDとパスワード)・カタログともに紛失してしまったのですが、どうしたらいいでしょうか?</a></li>
+			<li><a href="#link04">申し込んだ商品が届かないのですが、どうしたらいいでしょうか?</a></li>
+			<li><a href="#link05">申し込んだ商品が壊れていました(破損・不良商品・配送時の傷など)どうしたらいいでしょうか?</a></li>
+			<li><a href="#link06">申し込んだ商品がイメージと違っていて交換をしたいです。どうしたらいいでしょうか?</a></li>
+			<li><a href="#link07">申し込みハガキの期限が切れてしまってます。どうしたらいいでしょうか?</a></li>
+		</ul>
+		<h3>よくあるご質問</h3>
+		<h4>商品について</h4>
+		<ul>
+			<li><a href="#link08">商品の詳細について知りたいのですが?</a></li>
+		</ul>
+		<h4>配送について</h4>
+		<ul>
+			<li><a href="#link09">申し込んでからどのくらいで届きますか?</a></li>
+			<li><a href="#link10">のしや包装をして届けて欲しいのですができますか?</a></li>
+			<li><a href="#link11">同じ日に複数申し込んだのに1つしか届かなかったのですが?</a></li>
+		</ul>
+		<h3>お申込みについて</h3>
+		<h4>エラーが出てしまいうまく申し込みできないのですが?</h4>
+		<ul>
+			<li><a href="#link12">ブラウザの「戻る」ボタンを押すと、「ページの有効期限が切れました」と表示されました。</a></li>
+			<li><a href="#link13">セキュリティの警告が表示されました。</a></li>
+			<li><a href="#link14">申し込みの途中で画面が進まなくなってしまいました。</a></li>
+			<li><a href="#link15">申し込みの途中でエラーが出て、買物ができなくなってしまいました。</a></li>
+			<li><a href="#link16">パソコンの画面が白くなり何も表示されなくなってしまいます。なぜですか?</a></li>
+			<li><a href="#link17">ページ上の文字が読み取り不能な変な文字になってしまいました</a></li>
+			<li><a href="#link18">送られてきたメールの文字が、読み取り不能な変な文字になってしまいました。</a></li>
+			<li><a href="#link19">推奨環境は?</a></li>
+			<li><a href="#link20">申し込み完了する前に画面がフリーズしてしまったため注文できたか分かりません。</a></li>
+			<li><a href="#link21">申し込み完了メールがなかなか来ません、なぜですか?</a></li>
+			<li><a href="#link22">SSLについて</a></li>
+			<li><a href="#link23">Cookieについて</a></li>
+			<li><a href="#link24">JavaScriptについて</a></li>
+		</ul>
+		<h4><a href="#link25">記入した届け先の住所を間違えてしまったのですが?</a></h4>
+		<h3>お客様情報の管理について</h3>
+		<ul>
+			<li><a href="#link26">個人情報についてはどのように管理されてますか?</a></li>
+		</ul>
+	</div>
+
+	<div class="info_cnt_qa">
+		<h3>すごくよくあるご質問</h3>
+		<ul>
+			<li id="link01">
+				<dl>
+					<dt>
+						申し込みハガキ(IDとパスワード)を紛失してしまったのですが、どうしたらいいでしょうか?
+					</dt>
+					<dd>
+						<a href="">こちら</a>からお申し出ください。内容が確認次第に申し込みハガキを再発行いたします。
+					</dd>
+				</dl>
+			</li>
+			<li id="link02">
+				<dl>
+					<dt>
+						カタログギフトが同梱されている場合、カタログを紛失してしまったのですが、どうしたらいいでしょうか?
+					</dt>
+					<dd>
+						こちらからお申し出ください。カタログを再送付いたします。
+					</dd>
+				</dl>
+			</li>
+			<li id="link03">
+				<dl>
+					<dt>
+						申し込みハガキ(IDとパスワード)・カタログともに紛失してしまったのですが、どうしたらいいでしょうか?
+					</dt>
+					<dd>
+						こちらからお申し出ください。内容が確認次第に申し込みハガキとカタログを再発行いたします。
+					</dd>
+				</dl>
+			</li>
+			<li id="link04">
+				<dl>
+					<dt>
+						申し込んだ商品が届かないのですが、どうしたらいいでしょうか?
+					</dt>
+					<dd>
+						リンベルでは、お選びいただいた商品を通常、申し込み後約14日前後でお届けしております。グルメ商品の場合は、10日目以降のご希望日に宅配となります。商品のお届け日につきましては、サービスセンターまへお問い合わせください。3週間以上経過した場合、グルメ商品についてはご希望日に届かない場合は、お手数ですが、こちらからお問い合わせください。
+					</dd>
+				</dl>
+			</li>
+			<li id="link05">
+				<dl>
+					<dt>
+						申し込んだ商品が壊れていました(破損・不良商品・配送時の傷など)どうしたらいいでしょうか?
+					</dt>
+					<dd>
+						リンベルでは、大切な贈り物である商品の取り扱いに十分注意しておりますが、万が一、商品の不良・破損などがございましたら、恐れ入りますが、こちらからお問い合わせください。
+					</dd>
+				</dl>
+			</li>
+			<li id="link06">
+				<dl>
+					<dt>
+						申し込んだ商品がイメージと違っていて交換をしたいです。どうしたらいいでしょうか?
+					</dt>
+					<dd>
+						リンベルでは、お客様にご満足いただけるように、無料で交換できる「満足の保証」を実施しております。お届け商品のイメージが違う場合、こちらからお申し出ください。お取替えいたします。
+					</dd>
+				</dl>
+			</li>
+			<li id="link07">
+				<dl>
+					<dt>
+						申し込みハガキの期限が切れてしまってます。どうしたらいいでしょうか?
+					</dt>
+					<dd>
+						記載されている申し込み期限を過ぎてしまっている場合は、こちらからお問い合わせください。
+					</dd>
+				</dl>
+			</li>
+		</ul>
+		<h3>よくあるご質問</h3>
+		<h4>商品について</h4>
+		<ul>
+			<li id="link08">
+				<dl>
+					<dt>
+						商品の詳細について知りたいのですが?
+					</dt>
+					<dd>
+						各商品詳細ページをご覧ください。記載事項以外のご質問においてはこちらからお問い合わせください。
+					</dd>
+				</dl>
+			</li>
+		</ul>
+		<h4>配送について</h4>
+		<ul>
+			<li id="link09">
+				<dl>
+					<dt>
+						申し込んでからどのくらいで届きますか?
+					</dt>
+					<dd>
+						お選びいただいた商品を通常、申し込み後約14日前後でお届けしております。グルメ商品の場合は、10日目以降のご希望日に宅配となります。
+						<ul>
+							<li>
+								ゴールデンウィーク、年末年始など長期休暇の場合は、通常よりお時間をいただく場合がございます。
+							</li>
+							<li>
+								配送時間帯のご指定できませんので、ご了承ください。
+							</li>
+							<li>
+								産地、生産地の収穫・漁穫・天候等により、ご指定日を変更させていただく場合もございます。又、商品によっては品質を保つため少量ずつ直輸入しておりますので、次回輸入までお待ちいただくことがございます。
+							</li>
+							<li>
+								お届け希望日時は余裕をもってご指定いただくことをおすすめします。
+							</li>
+							<li>
+								商品は各産地・店舗からの直接配送となります。1度に2種類以上の商品をお申し込みいただいた場合は、個別のお届けとなりますのでご了承ください。
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+			<li id="link10">
+				<dl>
+					<dt>
+						のしや包装をして届けて欲しいのですができますか?
+					</dt>
+					<dd>
+						申し訳ございません。のしやギフト包装のサービスは行っておりません。ご了承ください。
+					</dd>
+				</dl>
+			</li>
+			<li id="link11">
+				<dl>
+					<dt>
+						同じ日に複数申し込んだのに1つしか届かなかったのですが?
+					</dt>
+					<dd>
+						商品は各産地・店舗からの直接配送もありますため、同じ日に2種類以上の商品をお申し込みいただいた場合も個別のお届けとなります。恐れ入りますが、ご了承ください。ご注文時にご指定いただいたお届けご希望日が過ぎても配送されない場合は、恐れ入りますがこちらからお問い合わせください。
+					</dd>
+				</dl>
+			</li>
+		</ul>
+		<h3>お申込みについて</h3>
+		<h4>エラーが出てしまいうまく申し込みできないのですが?</h4>
+		<ul>
+			<li id="link12">
+				<dl>
+					<dt>
+						ブラウザの「戻る」ボタンを押すと、「ページの有効期限が切れました」と表示されました。
+					</dt>
+					<dd>
+						申し訳ございません。一部のページではブラウザの「戻る」ボタンを押しても、前のページを表示できません。お手数ですが、ページ下の【戻る】ボタンをお使いください。
+					</dd>
+				</dl>
+			</li>
+			<li id="link13">
+				<dl>
+					<dt>
+						セキュリティの警告が表示されました。
+					</dt>
+					<dd>
+						お客様の個人情報保護のために、ご注文ページやお客様情報ページの暗号化を行なっています。暗号化を行なっているページを表示する際に、メッセージが表示されることがあります。特に問題ありませんので、「OK」を押してください。
+					</dd>
+				</dl>
+			</li>
+			<li id="link14">
+				<dl>
+					<dt>
+						申し込みの途中で画面が進まなくなってしまいました。
+					</dt>
+					<dd>
+						このサイトでは、「JavaScript」を使用しています。お使いのブラウザの設定を「セキュリティレベルを中にする」、または「JavaScriptを有効にする」にしてください。
+					</dd>
+				</dl>
+			</li>
+			<li id="link15">
+				<dl>
+					<dt>
+						申し込みの途中でエラーが出て、買物ができなくなってしまいました。
+					</dt>
+					<dd>
+						ご注文の途中でブラウザの「戻る」ボタンをお使いになると、「ページの有効期限が切れました」と表示されることがございます。その場合は、誠にお手数ですが、最初からご注文をやり直してください。
+					</dd>
+				</dl>
+			</li>
+			<li id="link16">
+				<dl>
+					<dt>
+						パソコンの画面が白くなり何も表示されなくなってしまいます。なぜですか?
+					</dt>
+					<dd>
+						アクセスが集中している時などは、お客様とサーバーとの間の接続状況に不具合があり、接続が不安定になる場合がございます。その場合は、少し時間をおいてから再度ご注文をやり直してください。
+					</dd>
+				</dl>
+			</li>
+			<li id="link17">
+				<dl>
+					<dt>
+						ページ上の文字が読み取り不能な変な文字になってしまいました。
+					</dt>
+					<dd>
+						お使いのブラウザの文字設定をご確認の上、以下の設定にしてください。
+						<ul>
+							<li>「表示(V)」￫「エンコード(D)」を選び、「日本語自動選択」を選ぶ。</li>
+							<li>「表示(V)」￫「文字コード(C)」￫「自動判別(A)」￫「日本語」を選ぶ。</li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+			<li id="link18">
+				<dl>
+					<dt>
+						送られてきたメールの文字が、読み取り不能な変な文字になってしまいました。
+					</dt>
+					<dd>
+						フリーメールのアドレスで会員登録された場合、メールが読み取れなくなることがあります。フリーメールサービスのサーバー側の設定の問題である可能性が高いと思われます。文字化けが発生する場合は、お手数ですがメールアドレスをフリーメール以外のアドレスに変更いただきますようお願いいたします。
+					</dd>
+				</dl>
+			</li>
+			<li id="link19">
+				<dl>
+					<dt>
+						推奨環境は?
+					</dt>
+					<dd>
+						Internet Explorer6.0以降、firefox2.0以降、safari2.0以降の環境でのご利用を推奨しています。
+					</dd>
+				</dl>
+			</li>
+			<li id="link20">
+				<dl>
+					<dt>
+						申し込み完了する前に画面がフリーズしてしまったため注文できたか分かりません。
+					</dt>
+					<dd>
+						時間帯によって、当社へのアクセスが多い場合にフリーズする場合がございます。ご迷惑をお掛けいたします。また、ご注文のご確認したい場合はお問い合わせください。
+					</dd>
+				</dl>
+			</li>
+			<li id="link21">
+				<dl>
+					<dt>
+						申し込み完了メールがなかなか来ません、なぜですか?
+					</dt>
+					<dd>
+						時間帯によって多少、メールの到着までにお時間をいただいております。しばらくお待ちいただいても届かない場合、アドレスが間違っている可能性もございますのでお問い合わせください。
+					</dd>
+				</dl>
+			</li>
+			<li id="link22">
+				<dl>
+					<dt>
+						SSLについて
+					</dt>
+					<dd>
+						サイト上でプライバシー保護のためSSLを使用しております。お使いのブラウザのSSLの設定をご確認の上、以下の設定にしてください。
+						<ul>
+							<li>「ツール(T)」￫「インターネットオプション(O)」を選ぶ。</li>
+							<li>「詳細設定」タブを押す。</li>
+							<li>セキュリティ項目の「SSL2.0を使用する」「SSL3.0を使用する」にチェックをつけ、OKボタンを押す。</li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+			<li id="link23">
+				<dl>
+					<dt>
+						Cookieについて
+					</dt>
+					<dd>
+						お使いのブラウザのCookieの設定をご確認の上、以下の設定にしてください。
+						<ul>
+							<li>「ツール(T)」￫「インターネットオプション(O)」を選び、「プライバシー」タブを押す。</li>
+							<li>設定を「中」レベルにして「OK」ボタンを押す。</li>
+							<li>設定レベルが「カスタム」の場合は、「規定」ボタンを押し、設定を「中」レベルにして、「OK」ボタンを押す。イラスト付の説明はこちら</li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+			<li id="link24">
+				<dl>
+					<dt>
+						JavaScriptについて
+					</dt>
+					<dd>
+						Internet Explorer6.0の場合<br>
+						<ul>
+							<li>
+								「ツール(T)」￫「インターネットオプション(O)」を選び、「セキュリティ」タブを押す。
+							</li>
+							<li>
+								設定を「中」レベルにして「OK」ボタンを押す。
+							</li>
+							<li>
+								設定レベルが「カスタム」の場合は、「規定のレベル」ボタンを押し、設定を「中」レベルにして、「OK」ボタンを押す。
+							</li>
+						</ul>
+						Netscape7.1の場合
+						<ul>
+							<li>「編集(E)」￫「設定(E)」を選ぶ。</li>
+							<li>「詳細」￫「スクリプトとプラグイン」を選ぶ。</li>
+							<li>「Navitator」を選び「OK」ボタンを押す。</li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+		<h4>記入した届け先の住所を間違えてしまったのですが?</h4>
+		<ul>
+			<li id="link25">
+				<dl>
+					<dt>
+						記入した届け先の住所を間違えてしまったのですが
+					</dt>
+					<dd>
+						恐れ入りますが、電話またはこちらからご連絡ください。
+					</dd>
+				</dl>
+			</li>
+		</ul>
+		<h3>お客様情報の管理について</h3>
+		<ul>
+			<li id="link26">
+				<dl>
+					<dt>
+						個人情報についてはどのように管理されてますか?
+					</dt>
+					<dd>
+						お申込みの際にお客様よりいただきました個人情報につきましては、サービスのご提供に関する資料や商品配送などの、弊社の業務以外の目的で使用することはございません。またその情報は一定の期間厳重に保管管理し、第三者に提供、譲渡することはございません。業務委託を行う場合は、適切な管理に努めます。詳しくはプライバシーポリシーをご確認ください。
+					</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+</form>
+<!-- INFO CONT END -->
+
+<!-- FOOTER START -->
+<footer><!-- 
+<div class="page_top"><a href="#index">PAGE TOP</a></div> -->
+<ul>
+		<li><a href="./guide.html">ご利用ガイド</a></li>
+	<li><a href="./faq.html">よくある質問</a></li>
+	<li><a href="./inquire.html">お問い合わせ</a></li>
+	<li><a href="./privacypolicy.html">プライバシーポリシー</a></li>
+	<li><a href="./company.html">会社概要</a></li>
+	</ul>
+<div class="ringbell">RINGBELL</div>
+<address>COPYRIGHT© RINGBELL. ALL RIGHTS RESERVED.</address>
+</footer>
+<!-- FOOTER END -->
+
+
+</body>
+</html>
