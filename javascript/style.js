@@ -16,6 +16,12 @@ $(function(){
 		});
 	});
 
+	$(document).ready(function() {
+		$('.mylist_btn_wrap').on('click', function() {
+				$('.l-mylistwrap').toggleClass('js-mylist-show');
+		});
+});
+
 	// spメニュー表示
     $('.c-header-menu a').on('click', function() {
         $('.sp_header_bg').addClass('is-show');
@@ -64,27 +70,27 @@ $(function(){
 
 
 	// common-pc：左右カラムの追従（現状はclassの付与のみで追従させない）
-	const fixedElement = function() {
-		if($('.l-leftnav').length || $('.l-mylist').length ){
-            let fixedElementWin = $(window),
-                headerElm = $('.l-header'),
-                headerElmHeight = headerElm.outerHeight(),
-                headerElmPos = headerElm.offset().top,
-                fixedClass = 'is-fixed',
-                scrollValue,
-                scrollValueSet;
-            fixedElementWin.on('scroll', function() {
-                scrollValue = $(this).scrollTop();
-                scrollValueSet = scrollValue - 100;
-                if ( scrollValue > headerElmHeight ) {
-                    $('.l-leftnav,.l-mylist').addClass(fixedClass);
-                    $('.l-mylist').css('top',scrollValueSet);
-                } else {
-                    $('.l-leftnav,.l-mylist').removeClass(fixedClass);
-                }
-            });
-	    }
-	}
+	// const fixedElement = function() {
+	// 	if($('.l-leftnav').length || $('.l-mylist').length ){
+  //           let fixedElementWin = $(window),
+  //               headerElm = $('.l-header'),
+  //               headerElmHeight = headerElm.outerHeight(),
+  //               headerElmPos = headerElm.offset().top,
+  //               fixedClass = 'is-fixed',
+  //               scrollValue,
+  //               scrollValueSet;
+  //           fixedElementWin.on('scroll', function() {
+  //               scrollValue = $(this).scrollTop();
+  //               scrollValueSet = scrollValue - 100;
+  //               if ( scrollValue > headerElmHeight ) {
+  //                   $('.l-leftnav,.l-mylist').addClass(fixedClass);
+  //                   $('.l-mylist').css('top',scrollValueSet);
+  //               } else {
+  //                   $('.l-leftnav,.l-mylist').removeClass(fixedClass);
+  //               }
+  //           });
+	//     }
+	// }
 
 
 	// common-pc：追従カテゴリ

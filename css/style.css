@@ -156,6 +156,10 @@ input[type="submit"].c-header-input-submit{
 	background:url(../images/assets/icon_guide.svg) no-repeat 0 50%;
 }
 
+.c-header-linklist li:hover{
+	text-decoration: underline;
+}
+
 .c-header-linklist-mylist{
 	display: flex;
 	align-items: center;
@@ -310,6 +314,7 @@ input[type="submit"].c-header-input-submit{
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	padding-top: 164px;
 }
 #category2 .l-main,
 #mylist .l-main{
@@ -389,6 +394,10 @@ input[type="submit"].c-header-input-submit{
 	line-height: 1.4;
 	transition: .2s;
 }
+.c-main-tab li:hover a{
+	color: #313131;
+}
+
 /* .c-main-tab li a:hover{
 	background:#dcdcdc;
 } */
@@ -436,7 +445,11 @@ input[type="submit"].c-header-input-submit{
 	left: 125%;
 }
 
-
+.c-main-tab li:hover:nth-of-type(3)::after,
+.c-main-tab li:hover:nth-of-type(4)::after,
+.c-main-tab li:hover:nth-of-type(6)::after{
+	border-color: transparent transparent #313131 #313131;
+}
 
 /* sort */ 
 .l-main-sort{
@@ -1559,27 +1572,42 @@ input[type="submit"].c-modal-last-input-submit{
 
 /* mylist */ 
 .l-mylistwrap{
-    width: 260px;
-    min-width: 260px;
-    display: block;
-    position: relative;
-    background:#eee;
+	display: flex;
+	position: fixed;
+	right: -270px;
+	z-index: 999;
+	transition: 0.3s all;
 }
+
+.js-mylist-show.l-mylistwrap{
+	position: fixed;
+	right: -1px;
+
+}
+
 .l-mylist{
-    width: 260px;
-    min-width: 260px;
-    top: 0;
-    right: 0;
-    background:#eee;
-    height: 90%;
-    overflow-y: auto;
-    padding:25px 20px 0;
-    box-sizing: border-box;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+	width: 290px;
+	min-width: 290px;
+	position: relative;
+	width: 230px;
+	min-width: 230px;
+	margin: 0 auto;
+	top: 0;
+	right: 0;
+	background:#eee;
+	height: 90%;
+	overflow-y: auto;
+	padding:25px 20px;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 	scrollbar-base-color: #fff;
 	scrollbar-face-color: #eee;
 	scrollbar-shadow-color: #fff;
+	border-radius: 10px 0 0 0;
+}
+
+.l-mylist_box{
+	background:#eee;
 }
 .l-mylist.is-fixed{
 	position: absolute;
@@ -1601,10 +1629,10 @@ input[type="submit"].c-modal-last-input-submit{
 
 .c-mylist-title{
     text-align: center;
-    color: #333333;
-    font-size: 18px;
+    color: #313131;
+    font-size: 16px;
     font-weight: normal;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .c-mylist-title span{
 	display: block;
@@ -1616,41 +1644,44 @@ input[type="submit"].c-modal-last-input-submit{
     font-weight: 600;
 }
 .c-mylist-link{
+	width: 230px;
 	text-align:center;
-	padding: 8px 0;
+	height: 34px;
+	line-height: 34px;
 	display: block;
 	color: #333;
-	border-radius: 3px;
-	border:1px solid #333;
+	border-radius: 999px;
+	border:1px solid #D0D0D0;
+	background-color: #fff;
 	margin-bottom: 20px;
 	position: relative;
 	text-decoration: none;
 	transition: .2s;
+	box-sizing: border-box;
 }
 .c-mylist-link:after{
     content: "";
     display: block;
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: 5px;
+    height: 5px;
     border-right: 1px solid #333;
     border-top: 1px solid #333;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     right: 10px;
-    top: calc(50% - 4px);
+    top: calc(50% - 3px);
 }
 .c-mylist-link:hover{
 	background:#dcdcdc;
 }
 .c-mylist-list{
-	padding: 20px;
+	/* padding: 20px; */
 	background:#fff;
 	border-radius: 6px;
-	box-shadow:0px 0px 4px 1px #e3e3e3;
 	position: relative;
-	margin-bottom: 20px;
-	transition: 0.6s;
+	margin-bottom: 30px;
+	/* transition: 0.6s; */
 }
 
 @-webkit-keyframes fadeInDown {
@@ -1703,11 +1734,14 @@ input[type="submit"].c-modal-last-input-submit{
 	transform-origin: center bottom;
 	-webkit-animation-duration: 1.8s;
 	animation-duration: 1.8s;
+	width: 200px;
+	margin: 0 auto;
+	padding-bottom: 30px;
 }
 
 
 .c-mylist-list figure{
-	padding:0 20px;
+	width: 200px;
 	margin-bottom: 15px;
 }
 .c-mylist-list figure img{
@@ -1722,7 +1756,7 @@ input[type="submit"].c-modal-last-input-submit{
 	position: absolute;
 	top:20px;
 	right: 40px;
-	background: rgba(255,255,255,0.7);
+	background: rgba(255,255,255,0.85);
 	width: 25px;
 	height: 25px;
 	text-align: center;
@@ -1731,17 +1765,17 @@ input[type="submit"].c-modal-last-input-submit{
 	justify-content: center;
 	flex-direction: column;
 	box-sizing: border-box;
-	border-radius: 0 0 0 6px;
+	border-radius: 999px;
 }
 .c-mylist-mylist-btn{
-	background:url(../images/common/icon_mylist_off.png) no-repeat 0 0;
+	background:url(../images/assets/icon_mylist.svg) no-repeat 0 0;
 	background-size: 15px 13px;
 	height: 13px;
 	width:15px;
 	cursor: pointer;
 }
 .c-mylist-mylist-btn.is-on{
-	background:url(../images/common/icon_mylist_on.png) no-repeat 0 0;
+	background:url(../images/assets/icon_mylist_ed.svg) no-repeat 0 0;
 	background-size: 15px 13px;
 }
 
@@ -2163,6 +2197,10 @@ input[type="submit"].c-modal-last-input-submit{
 /* -----------------------------
 	takashimaya 
 ----------------------------- */ 
+.l-wrapall{
+	overflow: hidden;
+}
+
 .l-header_inner{
 	width: 100%;
 	max-width: 1200px;
@@ -2216,11 +2254,11 @@ a{
   display: block;
   position: absolute;
   top: 0;
-	left: 94%;
+	left: 0;
   bottom: 0;
   margin: auto;
   padding: 0;
-  width: 20px;
+  width: 100%;
   height: 38px;
   color: transparent;
   z-index: 1;
@@ -2255,20 +2293,20 @@ a{
 /* next */
 
 .top-slider .slick-next {
-  right: 26px;
+  left: 287px;
 }
 .top-slider .slick-next::after {
-  right: 238px;
+  /* right: 238px; */
   transform: rotate(45deg);
 }
 
 /* prev */
 
 .top-slider .slick-prev {
-  left: 26px;
+	left: -344px;
 }
 .top-slider .slick-prev::after {
-  left: 238px;
+  /* left: 238px; */
   transform: rotate(-135deg);
 }
 
@@ -2377,4 +2415,90 @@ footer{
 	color: #fff;
 	font-size: 12px;
 	text-align: center;
+}
+
+.c-mylist-list-wrap{
+	height: calc(100vh - 304px);  
+	overflow-y: auto;  /* 縦方向のスクロールを許可 */
+	width: 230px;
+}
+
+.c-mylist-list-wrap::-webkit-scrollbar{
+	display: none;
+}
+
+.c-mylist-title, .c-mylist-linkwrap{
+	max-height: 100vh;  /* この値は適宜調整してください。表示させたい高さに合わせます。 */
+	overflow-y: auto;  /* 縦方向のスクロールを許可 */
+	width: 245px;
+	position: sticky;  /* 固定表示する要素を指定 */
+	top: 0;  /* 上端に固定 */
+	z-index: 1;  /* 他の要素よりも前面に表示させるため */
+}
+
+.c-mylist-list-wrap ul{
+	background-color: #fff;
+	width: 230px;
+	padding: 15px 0 0 0;
+}
+
+.l-mylist_container{
+	position: relative;
+}
+
+.mylist_btn_wrap{
+	margin-top: 335px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #BE000F;
+	width: 36px;
+	height: 190px;
+	padding: 15px 5px 25px;
+	box-sizing: border-box;
+	border-radius: 4px 0 0 4px;
+	cursor: pointer;
+}
+
+.mylist_btn_txt{
+	color: #fff;
+	font-size: 14px;
+	-ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	border-top: solid 1px #fff;
+	padding-top: 22px;
+	margin-top: 17px;
+}
+
+.mylist_btn_arrow{
+	display: block;
+	margin-left: 10px;
+	width: 8px;
+	height: 8px;
+	border-right: 1px solid #fff;
+	border-top: 1px solid #fff;
+	-webkit-transform:rotate(-135deg);
+	transform: rotate(-135deg);
+}
+
+.js-mylist-show .mylist_btn_arrow{
+	margin-left: 7px;
+	width: 8px;
+	height: 8px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.fix_wrap{
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	z-index: 999;
+}
+
+.c-mylist-name{
+	color: #313131;
 }
