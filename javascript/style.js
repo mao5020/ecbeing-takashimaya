@@ -1,5 +1,26 @@
 $(function(){
 
+	// FVスライダー
+	$(function () {
+		$(".top-slider").slick({
+			arrows: true,
+			autoplay: false,
+			autoplaySpeed: 2000,
+			centerMode: true,
+			centerPadding: "22%",
+			dots: true,
+			slidesToShow: 1,
+			// fade: true,
+			speed: 400,
+			variableWidth: true,
+		});
+	});
+
+	$(document).ready(function() {
+		$('.mylist_btn_wrap').on('click', function() {
+				$('.l-mylistwrap').toggleClass('js-mylist-show');
+		});
+});
 
 	// spメニュー表示
     $('.c-header-menu a').on('click', function() {
@@ -49,49 +70,49 @@ $(function(){
 
 
 	// common-pc：左右カラムの追従（現状はclassの付与のみで追従させない）
-	const fixedElement = function() {
-		if($('.l-leftnav').length || $('.l-mylist').length ){
-            let fixedElementWin = $(window),
-                headerElm = $('.l-header'),
-                headerElmHeight = headerElm.outerHeight(),
-                headerElmPos = headerElm.offset().top,
-                fixedClass = 'is-fixed',
-                scrollValue,
-                scrollValueSet;
-            fixedElementWin.on('scroll', function() {
-                scrollValue = $(this).scrollTop();
-                scrollValueSet = scrollValue - 100;
-                if ( scrollValue > headerElmHeight ) {
-                    $('.l-leftnav,.l-mylist').addClass(fixedClass);
-                    $('.l-mylist').css('top',scrollValueSet);
-                } else {
-                    $('.l-leftnav,.l-mylist').removeClass(fixedClass);
-                }
-            });
-	    }
-	}
+	// const fixedElement = function() {
+	// 	if($('.l-leftnav').length || $('.l-mylist').length ){
+  //           let fixedElementWin = $(window),
+  //               headerElm = $('.l-header'),
+  //               headerElmHeight = headerElm.outerHeight(),
+  //               headerElmPos = headerElm.offset().top,
+  //               fixedClass = 'is-fixed',
+  //               scrollValue,
+  //               scrollValueSet;
+  //           fixedElementWin.on('scroll', function() {
+  //               scrollValue = $(this).scrollTop();
+  //               scrollValueSet = scrollValue - 100;
+  //               if ( scrollValue > headerElmHeight ) {
+  //                   $('.l-leftnav,.l-mylist').addClass(fixedClass);
+  //                   $('.l-mylist').css('top',scrollValueSet);
+  //               } else {
+  //                   $('.l-leftnav,.l-mylist').removeClass(fixedClass);
+  //               }
+  //           });
+	//     }
+	// }
 
 
 	// common-pc：追従カテゴリ
-	const fixedMainSticky = function() {
-		if($('.js-mainsticky').length ){
-            let mainStickyWin = $(window),
-                mainStickyElm = $('.js-mainsticky'),
-                mainStickyElmHeight = mainStickyElm.outerHeight(),
-                mainStickyElmPos = mainStickyElm.offset().top,
-                fixedClass = 'is-fixed',
-                mainStickyScrollValue;
-            mainStickyWin.on('scroll', function() {
-                mainStickyScrollValue = $(this).scrollTop();
-                if ( mainStickyScrollValue > mainStickyElmPos ) {
-                    $(mainStickyElm).addClass(fixedClass);
-                } else {
-                    $(mainStickyElm).removeClass(fixedClass);
-                    $('.l-main-sort').removeClass('is-show');
-                }
-            });
-	    }
-	}
+	// const fixedMainSticky = function() {
+	// 	if($('.js-mainsticky').length ){
+  //           let mainStickyWin = $(window),
+  //               mainStickyElm = $('.js-mainsticky'),
+  //               mainStickyElmHeight = mainStickyElm.outerHeight(),
+  //               mainStickyElmPos = mainStickyElm.offset().top,
+  //               fixedClass = 'is-fixed',
+  //               mainStickyScrollValue;
+  //           mainStickyWin.on('scroll', function() {
+  //               mainStickyScrollValue = $(this).scrollTop();
+  //               if ( mainStickyScrollValue > mainStickyElmPos ) {
+  //                   $(mainStickyElm).addClass(fixedClass);
+  //               } else {
+  //                   $(mainStickyElm).removeClass(fixedClass);
+  //                   $('.l-main-sort').removeClass('is-show');
+  //               }
+  //           });
+	//     }
+	// }
 
 
 	// common：masonry描画
