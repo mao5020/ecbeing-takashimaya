@@ -156,6 +156,10 @@ input[type="submit"].c-header-input-submit{
 	background:url(../images/assets/icon_guide.svg) no-repeat 0 50%;
 }
 
+.c-header-linklist li:hover{
+	text-decoration: underline;
+}
+
 .c-header-linklist-mylist{
 	display: flex;
 	align-items: center;
