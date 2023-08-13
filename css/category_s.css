@@ -393,7 +393,7 @@
 
 .c-itemdetail-allergy,
 .c-modal-item-allergy {
-
+  display: inline-block;
   background-color: #F0F0F0;
   padding: 5px 14px;
 }
