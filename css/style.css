@@ -2758,6 +2758,602 @@ top: 0;
 }
 
 /* -----------------------------
+	takashimaya_login
+----------------------------- */ 
+.login_body {
+  background-image: url(../images/login/login_bg_img.jpg);
+  background-color: #CDE9E5;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
+  color: #313131;
+  font-size: 12px;
+  position: relative;
+}
+
+a {
+  color: #313131;
+}
+
+.back_link_box {
+  position: absolute;
+  top: 32px;
+  right: 41px;
+}
+
+.back_link {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #ADADAD;
+  width: 108px;
+  font-size: 14px;
+  font-weight: 500;
+
+  text-align: center;
+  padding: 8px 0 8px 8px;
+  display: block;
+  color: #313131;
+  position: relative;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.back_link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid #313131;
+  border-top: 1px solid #313131;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 10px;
+  top: calc(50% - 4px);
+}
+
+.inner_login {
+  background-color: #FAF5E4;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+  padding: 116px 0 112px;
+}
+
+.cnt {
+  background-color: #fff;
+  border-radius: 20px;
+  width: calc(100vw - 278px);
+  max-width: 622px;
+  margin: 50px auto;
+  padding: 50px 71px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+
+.cnt dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.cnt dt {
+  padding-right: 30px;
+  color: #313131;
+  font-size: 20px;
+  width: 130px;
+}
+
+.cnt dd {
+  position: relative;
+}
+
+.cnt_id {
+  padding-bottom: 30px;
+}
+
+.cnt dd:first-child {
+  padding-bottom: 30px;
+}
+
+.cnt input {
+  width: 350px;
+  height: 40px;
+  border: 1px solid #ADADAD;
+  border-radius: 5px;
+  background-color: #FAFAFA;
+}
+
+.login_logo {
+  width: 186px;
+  padding-bottom: 16px;
+}
+
+.logo_sub_ttl {
+  font-size: 20px;
+  color: #313131;
+}
+
+.login_enter {
+  background-color: #A38A32;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 480px;
+  height: 60px;
+  margin: 0 auto 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_enter a {
+  color: #fff;
+}
+
+.c-login-eye {
+  background: url(../images/common/icon_eye.png) no-repeat 0 0;
+  background-size: 24px 16px;
+  width: 24px;
+  height: 16px;
+  position: absolute;
+  bottom: 11px;
+  right: 15px;
+  opacity: 0.4;
+}
+
+.cmt1 {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+}
+
+.cmt1 a {
+  text-decoration: underline;
+}
+
+.cmt2 {
+  max-width: 482px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 70px;
+}
+
+.cmt2 li {
+  font-size: 12px;
+  text-indent: -1em;
+  list-style: none;
+  color: #333;
+  padding-bottom: 10px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.cmt2 li:before {
+  content: "※";
+  padding-right: 3px;
+}
+
+/* -----------------------------
+	takashimaya_mylist
+----------------------------- */ 
+
+.mylist_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.mylist_box{
+  padding-right: 28px;
+  padding-bottom: 10px;
+}
+
+.c-mylist-explan-title{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 8px;
+}
+
+.c-mylist-txt{
+  font-size: 16px;
+
+}
+
+.icon_explan{
+  width: 25px;
+  height: 25px;
+}
+/* -----------------------------
+	takashimaya_modal
+----------------------------- */ 
+
+/* モーダル用デザインCSS　仮あて
+ */
+
+ .modal_container{
+  max-width: 1060px;
+  margin: 0 auto 100px;
+  padding: 54px 46px;
+  box-sizing: border-box;
+ }
+
+ .flex_wrap{
+  flex-wrap: wrap;
+ }
+
+.l-modal-item_btn_area{
+  width: 100%;
+  max-width: 960px;
+  padding: 38px 0 66px;
+  margin: 0 auto;
+}
+
+
+.modal_slider .slick-arrow{
+
+  height:400px;
+
+}
+.modal-btn-l
+{
+width: 350px;
+
+}
+
+.share-btn-l{
+
+  width: 190px;
+
+}
+
+/* モーダル用スライダー */
+
+.modal_slider{
+  margin: 0 auto;
+}
+
+.modal_txt_area{
+  width: 50%;
+  max-width: 550px;
+}
+
+.justify-content-center{
+
+  justify-content: center;
+  gap: 30px;
+
+}
+
+.c-modal-item-relation-title{
+  border-bottom: 1px solid #313131;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.modal-slider-item-imgwrap,
+.modal-slider-img img {
+  max-width: 100%;
+  width: 400px;
+}
+
+.modal-slider_item{
+  width: 400px;
+  height: 400px;
+}
+
+.modal-slider_item img{
+  width: 400px;
+  height: 400px;
+}
+
+
+/* -----------------------------
+	takashimaya_modal
+----------------------------- */ 
+/* モーダル用スライダー */
+
+
+.l-itemdetail-item-imgwrap,
+.c-itemdetail-img img {
+  max-width: 100%;
+  width: 400px;
+}
+
+.c-itemdetail-img .cri-liveact-player {
+  min-height: 400px;
+}
+
+.modal-slider {
+  margin: 0 auto;
+}
+
+
+.modal-slider_box {
+  display: block;
+  width: 100%;
+
+  height: 100%;
+}
+
+.modal-slider .slick-slide img {
+  margin: 0 auto;
+}
+
+.modal-slider .slick-slide {
+  margin-right: 1vw !important;
+  margin-left: 1vw !important;
+}
+
+.modal-slider .slick-next:before,
+.modal-slider .slick-prev::before {
+  display: none;
+}
+
+
+
+.modal-slider .slick-arrow {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  height: 320px;
+  color: transparent;
+  z-index: 1;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+
+.modal-slider .slick-arrow:hover {
+  opacity: 0.7;
+}
+
+/* 共通設定 */
+
+.modal-slider .slick-next::before,
+.modal-slider .slick-next::after,
+.modal-slider .slick-prev::before,
+.modal-slider .slick-prev::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+
+.modal-slider .slick-next::after,
+.modal-slider .slick-prev::after {
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-radius: 2px;
+}
+
+.arrow_wt .slick-next::after,
+.arrow_wt .slick-prev::after {
+  border-top: 3px solid #E2E2E2;
+  border-right: 3px solid #E2E2E2;
+  border-radius: 2px;
+}
+
+
+
+/* next */
+
+.modal-slider .slick-next {
+  right: 25px;
+}
+
+.modal-slider .slick-next::after {
+  transform: rotate(45deg);
+}
+
+.slick-next {
+  right: 20px;
+}
+
+
+/* prev */
+
+.modal-slider .slick-prev {
+
+  left: 10px;
+
+}
+
+.modal-slider .slick-prev::after {
+  transform: rotate(-135deg);
+}
+
+
+.modal_txt_area {
+  width: 50%;
+  max-width: 550px;
+}
+
+.justify-content-center {
+
+  justify-content: center;
+  gap: 30px;
+
+}
+
+.c-modal-item-relation-title {
+  border-bottom: 1px solid #313131;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.modal-slider-item-imgwrap,
+.modal-slider-img img {
+  max-width: 100%;
+  width: 400px;
+}
+
+.modal-slider_item {
+  width: 400px;
+  height: 400px;
+}
+
+.modal-slider_item img {
+  width: 400px;
+  height: 400px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 60%);
+  padding: 100px 0;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 100px 0;
+  overflow: scroll;
+  background: rgba(0, 0, 0, 60%);
+}
+
+.modal__bg {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+
+
+
+
+/* モーダル用デザインCSS */
+
+.modal_box {
+  max-width: 1060px;
+  margin: 0 auto 100px;
+  padding: 54px 46px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+.l-modal-item_btn_area {
+  width: 100%;
+  max-width: 960px;
+  padding: 38px 0 66px;
+  margin: 0 auto;
+}
+
+
+.modal-slider .slick-arrow {
+
+  height: 400px;
+
+}
+
+.modal-btn-l {
+  width: 350px;
+
+}
+
+.share-btn-l {
+
+  width: 190px;
+
+}
+
+
+
+/*モーダル本体の擬似要素の指定*/
+.modal-container:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+/*モーダル本体に「active」クラス付与した時のスタイル*/
+.modal-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*モーダル枠の指定*/
+.modal-body {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 1060px;
+  width: 90%;
+}
+
+/*モーダルを閉じるボタンの指定*/
+.modal-close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -40px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*モーダル内のコンテンツの指定*/
+.modal-content {
+  text-align: left;
+}
+
+/* モーダルウィンドウ表示中に記事本体を固定 */
+body.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+
+/* -----------------------------
 	takashimaya_category_s
 ----------------------------- */ 
 
@@ -3289,302 +3885,3 @@ top: 0;
   margin-left: 0;
 }
 
-
-/* -----------------------------
-	takashimaya_login
------------------------------ */ 
-.login_body {
-  background-image: url(../images/login/login_bg_img.jpg);
-  background-color: #CDE9E5;
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: inherit;
-  color: #313131;
-  font-size: 12px;
-  position: relative;
-}
-
-a {
-  color: #313131;
-}
-
-.back_link_box {
-  position: absolute;
-  top: 32px;
-  right: 41px;
-}
-
-.back_link {
-  background-color: #FFFFFF;
-  border-radius: 5px;
-  border: 1px solid #ADADAD;
-  width: 108px;
-  font-size: 14px;
-  font-weight: 500;
-
-  text-align: center;
-  padding: 8px 0 8px 8px;
-  display: block;
-  color: #313131;
-  position: relative;
-  text-decoration: none;
-  transition: .2s;
-}
-
-.back_link::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-right: 1px solid #313131;
-  border-top: 1px solid #313131;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  left: 10px;
-  top: calc(50% - 4px);
-}
-
-.inner_login {
-  background-color: #FAF5E4;
-  margin: 0 auto;
-  max-width: 900px;
-  text-align: center;
-  padding: 116px 0 112px;
-}
-
-.cnt {
-  background-color: #fff;
-  border-radius: 20px;
-  width: calc(100vw - 278px);
-  max-width: 622px;
-  margin: 50px auto;
-  padding: 50px 71px;
-  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
-}
-
-.cnt dl {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding-bottom: 50px;
-  width: 100%;
-}
-
-.cnt dt {
-  padding-right: 30px;
-  color: #313131;
-  font-size: 20px;
-  width: 130px;
-}
-
-.cnt dd {
-  position: relative;
-}
-
-.cnt_id {
-  padding-bottom: 30px;
-}
-
-.cnt dd:first-child {
-  padding-bottom: 30px;
-}
-
-.cnt input {
-  width: 350px;
-  height: 40px;
-  border: 1px solid #ADADAD;
-  border-radius: 5px;
-  background-color: #FAFAFA;
-}
-
-.login_logo {
-  width: 186px;
-  padding-bottom: 16px;
-}
-
-.logo_sub_ttl {
-  font-size: 20px;
-  color: #313131;
-}
-
-.login_enter {
-  background-color: #A38A32;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  width: 100%;
-  max-width: 480px;
-  height: 60px;
-  margin: 0 auto 47px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.login_enter a {
-  color: #fff;
-}
-
-.c-login-eye {
-  background: url(../images/common/icon_eye.png) no-repeat 0 0;
-  background-size: 24px 16px;
-  width: 24px;
-  height: 16px;
-  position: absolute;
-  bottom: 11px;
-  right: 15px;
-  opacity: 0.4;
-}
-
-.cmt1 {
-  font-size: 14px;
-  line-height: 19px;
-  font-weight: 500;
-}
-
-.cmt1 a {
-  text-decoration: underline;
-}
-
-.cmt2 {
-  max-width: 482px;
-  margin: 0 auto;
-  text-align: left;
-  padding: 0 70px;
-}
-
-.cmt2 li {
-  font-size: 12px;
-  text-indent: -1em;
-  list-style: none;
-  color: #333;
-  padding-bottom: 10px;
-  font-weight: 500;
-  line-height: 16px;
-}
-
-.cmt2 li:before {
-  content: "※";
-  padding-right: 3px;
-}
-
-/* -----------------------------
-	takashimaya_mylist
------------------------------ */ 
-
-.mylist_container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.mylist_box{
-  padding-right: 28px;
-  padding-bottom: 10px;
-}
-
-.c-mylist-explan-title{
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 8px;
-}
-
-.c-mylist-txt{
-  font-size: 16px;
-
-}
-
-.icon_explan{
-  width: 25px;
-  height: 25px;
-}
-/* -----------------------------
-	takashimaya_modal
------------------------------ */ 
-
-/* モーダル用デザインCSS　仮あて
- */
-
- .modal_container{
-  max-width: 1060px;
-  margin: 0 auto 100px;
-  padding: 54px 46px;
-  box-sizing: border-box;
- }
-
- .flex_wrap{
-  flex-wrap: wrap;
- }
-
-.l-modal-item_btn_area{
-  width: 100%;
-  max-width: 960px;
-  padding: 38px 0 66px;
-  margin: 0 auto;
-}
-
-
-.modal_slider .slick-arrow{
-
-  height:400px;
-
-}
-.modal-btn-l
-{
-width: 350px;
-
-}
-
-.share-btn-l{
-
-  width: 190px;
-
-}
-
-/* モーダル用スライダー */
-
-.modal_slider{
-  margin: 0 auto;
-}
-
-.modal_txt_area{
-  width: 50%;
-  max-width: 550px;
-}
-
-.justify-content-center{
-
-  justify-content: center;
-  gap: 30px;
-
-}
-
-.c-modal-item-relation-title{
-  border-bottom: 1px solid #313131;
-  font-size: 20px;
-  font-weight: bold;
-  color: #000;
-}
-
-.modal-slider-item-imgwrap,
-.modal-slider-img img {
-  max-width: 100%;
-  width: 400px;
-}
-
-.modal-slider_item{
-  width: 400px;
-  height: 400px;
-}
-
-.modal-slider_item img{
-  width: 400px;
-  height: 400px;
-}

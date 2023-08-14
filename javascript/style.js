@@ -1028,19 +1028,78 @@ $(function () {
   });
 });
 
-	// スライダー
-	$(function () {
-		$(".category-slider").slick({
-			arrows: true,
-			autoplay: false,
-			autoplaySpeed: 2000,
-			centerMode: true,
-			centerPadding: "22%",
-			dots: true,
-			slidesToShow: 1,
-			// fade: true,
-			speed: 400,
-			variableWidth: true,
-			// infinite:false
-		});
+// スライダー
+$(function () {
+	$(".category-slider").slick({
+		arrows: true,
+		autoplay: false,
+		autoplaySpeed: 2000,
+		centerMode: true,
+		centerPadding: "22%",
+		dots: true,
+		slidesToShow: 1,
+		// fade: true,
+		speed: 400,
+		variableWidth: true,
+		// infinite:false
 	});
+});
+
+// モーダル
+$(function() {
+	// スクロールバーの幅を計算
+	function getScrollbarWidth() {
+		var outer = $('<div>').css({visibility: 'hidden', width: 100, overflow: 'scroll'}).appendTo('body');
+		var widthWithScroll = $('<div>').css({width: '100%'}).appendTo(outer).outerWidth();
+		outer.remove();
+		return 100 - widthWithScroll;
+	}
+
+	// モーダルウィンドウを開く
+	$('.js-modal-open').on('click', function() {
+		if ($(window).height() < $(document).height()) {  // スクロールバーが存在する場合
+			var scrollbarWidth = getScrollbarWidth();
+			$('body').css({
+				'overflow': 'hidden',
+				'padding-right': scrollbarWidth + 'px'  // スクロールバーの幅の分だけ右のパディングを追加
+			});
+		} else {
+			$('body').css('overflow', 'hidden');
+		}
+
+		var target = $(this).data('target');
+		var modal = document.getElementById(target);
+		$(modal).fadeIn();
+
+		return false;
+	});
+
+	// モーダルウィンドウを閉じる
+	$('.js-modal-close').on('click', function() {
+		$('body').css({
+			'overflow': '',
+			'padding-right': ''  // パディングを元に戻す
+		});
+
+		$('.js-modal').fadeOut();
+		return false;
+	});
+});
+
+// モーダル内スライダー
+$(function () {
+  $(".modal-slider").slick({
+    arrows: true,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    centerPadding: "47%",
+    dots: true,
+    slidesToShow: 1,
+    // fade: true,
+    speed: 400,
+    variableWidth: true,
+    // infinite:false
+  });
+
+});
