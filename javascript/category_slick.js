@@ -1,4 +1,4 @@
-	// スライダー
+	// 小カテゴリスライダー
 	$(function () {
 		$(".category-slider").slick({
 			arrows: true,
@@ -13,4 +13,5 @@
 			variableWidth: true,
 			// infinite:false
 		});
+
 	});
