@@ -978,7 +978,6 @@ $(function(){
 	}
 
 
-
 	$(window).on('load', function() {
 		scrollTop();
 		fixedElement();
@@ -1013,6 +1012,35 @@ $(function(){
 		viewTablet();
 		demoDelete();
 	});
-
-
 });
+
+// カテゴリ アコーディオン
+// $(function () {
+//   $(".more").click(function () {
+//       $(this).fadeOut();
+//       $(".content").removeClass("hide");
+//   });
+// });
+$(function () {
+  $(".more").click(function () {
+      $(this).fadeOut();
+      $(this).parent(".content").removeClass("hide");
+  });
+});
+
+	// スライダー
+	$(function () {
+		$(".category-slider").slick({
+			arrows: true,
+			autoplay: false,
+			autoplaySpeed: 2000,
+			centerMode: true,
+			centerPadding: "22%",
+			dots: true,
+			slidesToShow: 1,
+			// fade: true,
+			speed: 400,
+			variableWidth: true,
+			// infinite:false
+		});
+	});
