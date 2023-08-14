@@ -1,62 +1,135 @@
-
-/* モーダル用デザインCSS　仮あて
- */
-
- .modal_container{
-  max-width: 1060px;
-  margin: 0 auto 100px;
-  padding: 54px 46px;
-  box-sizing: border-box;
- }
-
- .flex_wrap{
-  flex-wrap: wrap;
- }
-
-.l-modal-item_btn_area{
-  width: 100%;
-  max-width: 960px;
-  padding: 38px 0 66px;
-  margin: 0 auto;
-}
-
-
-.modal_slider .slick-arrow{
-
-  height:400px;
-
-}
-.modal-btn-l
-{
-width: 350px;
-
-}
-
-.share-btn-l{
-
-  width: 190px;
-
-}
-
 /* モーダル用スライダー */
 
-.modal_slider{
+
+.l-itemdetail-item-imgwrap,
+.c-itemdetail-img img {
+  max-width: 100%;
+  width: 400px;
+}
+
+.c-itemdetail-img .cri-liveact-player {
+  min-height: 400px;
+}
+
+.modal-slider {
   margin: 0 auto;
 }
 
-.modal_txt_area{
+
+.modal-slider_box {
+  display: block;
+  width: 100%;
+
+  height: 100%;
+}
+
+.modal-slider .slick-slide img {
+  margin: 0 auto;
+}
+
+.modal-slider .slick-slide {
+  margin-right: 1vw !important;
+  margin-left: 1vw !important;
+}
+
+.modal-slider .slick-next:before,
+.modal-slider .slick-prev::before {
+  display: none;
+}
+
+
+
+.modal-slider .slick-arrow {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  height: 320px;
+  color: transparent;
+  z-index: 1;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+
+.modal-slider .slick-arrow:hover {
+  opacity: 0.7;
+}
+
+/* 共通設定 */
+
+.modal-slider .slick-next::before,
+.modal-slider .slick-next::after,
+.modal-slider .slick-prev::before,
+.modal-slider .slick-prev::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+
+.modal-slider .slick-next::after,
+.modal-slider .slick-prev::after {
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-radius: 2px;
+}
+
+.arrow_wt .slick-next::after,
+.arrow_wt .slick-prev::after {
+  border-top: 3px solid #E2E2E2;
+  border-right: 3px solid #E2E2E2;
+  border-radius: 2px;
+}
+
+
+
+/* next */
+
+.modal-slider .slick-next {
+  right: 25px;
+}
+
+.modal-slider .slick-next::after {
+  transform: rotate(45deg);
+}
+
+.slick-next {
+  right: 20px;
+}
+
+
+/* prev */
+
+.modal-slider .slick-prev {
+
+  left: 10px;
+
+}
+
+.modal-slider .slick-prev::after {
+  transform: rotate(-135deg);
+}
+
+
+.modal_txt_area {
   width: 50%;
   max-width: 550px;
 }
 
-.justify-content-center{
+.justify-content-center {
 
   justify-content: center;
   gap: 30px;
 
 }
 
-.c-modal-item-relation-title{
+.c-modal-item-relation-title {
   border-bottom: 1px solid #313131;
   font-size: 20px;
   font-weight: bold;
@@ -69,12 +142,176 @@ width: 350px;
   width: 400px;
 }
 
-.modal-slider_item{
+.modal-slider_item {
   width: 400px;
   height: 400px;
 }
 
-.modal-slider_item img{
+.modal-slider_item img {
   width: 400px;
   height: 400px;
+}
+
+
+
+/*モーダルを開くボタン*/
+.modal-open {
+  /* position: fixed;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+	width: 300px;
+	height: 50px;
+	font-weight: bold;
+	color: #fff;
+	background: #000;
+	margin: auto;
+	cursor: pointer;
+	transform: translate(-50%,-50%); */
+}
+
+/*モーダル本体の指定 + モーダル外側の背景の指定*/
+
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 60%);
+  padding: 100px 0;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 100px 0;
+  overflow: scroll;
+  background: rgba(0, 0, 0, 60%);
+}
+
+.modal__bg {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+
+
+
+
+/* モーダル用デザインCSS */
+
+.modal_box {
+  max-width: 1060px;
+  margin: 0 auto 100px;
+  padding: 54px 46px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+.l-modal-item_btn_area {
+  width: 100%;
+  max-width: 960px;
+  padding: 38px 0 66px;
+  margin: 0 auto;
+}
+
+
+.modal-slider .slick-arrow {
+
+  height: 400px;
+
+}
+
+.modal-btn-l {
+  width: 350px;
+
+}
+
+.share-btn-l {
+
+  width: 190px;
+
+}
+
+
+
+/*モーダル本体の擬似要素の指定*/
+.modal-container:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+/*モーダル本体に「active」クラス付与した時のスタイル*/
+.modal-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*モーダル枠の指定*/
+.modal-body {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 1060px;
+  width: 90%;
+}
+
+/*モーダルを閉じるボタンの指定*/
+.modal-close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -40px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*モーダル内のコンテンツの指定*/
+.modal-content {
+
+  text-align: left;
+
+}
+
+
+/* モーダルウィンドウ表示中に記事本体を固定 */
+body.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
 }
