@@ -397,19 +397,44 @@ input[type="submit"].c-header-input-submit{
 .c-main-tab li:hover a{
 	color: #313131;
 }
+.c-main-tab li.active > a {
+  color: #313131;
+}
 
-/* .c-main-tab li a:hover{
-	background:#dcdcdc;
-} */
-/* .c-main-tab li:first-child{
-	margin:-10px 10px 0 0;
-} */
-/* .c-main-tab li:first-child a{
-	height: 60px;
-} */
-/* .c-main-tab li.is-current a{
-	color:#313131;
-} */
+ul.main_tab01,
+ul.main_tab02,
+ul.main_tab03{
+  display: none;
+  background-color: #fff;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 50px 90px;
+  /* display: flex; */
+  flex-wrap: wrap;
+  row-gap: 20px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.main_tab01.is-visible,
+.main_tab02.is-visible,
+.main_tab03.is-visible {
+  display: flex;
+  transition: all 0.3s;
+}
+
+.main_tab01 li,
+.main_tab02 li,
+.main_tab03 li{
+  font-size: 14px;
+  width: 25%;
+}
+
+.main_tab01 li a:hover,
+.main_tab02 li a:hover,
+.main_tab03 li a:hover{
+  color: #BE000F;
+}
+
 
 .c-main-tab li:nth-of-type(3)::after{
 	content: "";
@@ -448,6 +473,12 @@ input[type="submit"].c-header-input-submit{
 .c-main-tab li:hover:nth-of-type(3)::after,
 .c-main-tab li:hover:nth-of-type(4)::after,
 .c-main-tab li:hover:nth-of-type(6)::after{
+	border-color: transparent transparent #313131 #313131;
+}
+
+.c-main-tab li.active:nth-of-type(3)::after,
+.c-main-tab li.active:nth-of-type(4)::after,
+.c-main-tab li.active:nth-of-type(6)::after{
 	border-color: transparent transparent #313131 #313131;
 }
 
