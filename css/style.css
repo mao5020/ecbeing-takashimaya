@@ -2830,7 +2830,7 @@ a {
   transition: .2s;
 }
 
-.back_link::before {
+.back_link_login::before {
   content: "";
   display: block;
   position: absolute;
@@ -3913,3 +3913,14 @@ body.fixed {
 .c-modal-item-btn-share {
   margin-left: 0;
 }
+
+
+  /* パソコンで見たときは"pc"のclassがついた画像が表示される */
+
+  .sp {
+    display: none;
+  }
+
+  .sp-only {
+    display: none;
+  }
