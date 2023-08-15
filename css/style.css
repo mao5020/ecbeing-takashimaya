@@ -1785,8 +1785,8 @@ input[type="submit"].c-modal-last-input-submit{
 }
 .c-mylist-mylist{
 	position: absolute;
-	top:20px;
-	right: 40px;
+	top:10px;
+	right: 10px;
 	background: rgba(255,255,255,0.85);
 	width: 25px;
 	height: 25px;
