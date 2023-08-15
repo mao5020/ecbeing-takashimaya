@@ -182,6 +182,7 @@ input[type="submit"].c-header-input-submit{
 	width: 260px;
 	min-width: 260px;
 	background: #eee;
+  display: none;
 }
 
 /*.l-leftnav.is-fixed{
