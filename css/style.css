@@ -1,4 +1,4 @@
-v/*
+vback_link_boxv/*
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
@@ -220,7 +220,7 @@ input[type="submit"].c-header-input-submit{
 	background: #2e2c2c;
 	background: -moz-linear-gradient(top,  #2e2c2c 0%, #323232 100%);
 	background: -webkit-linear-gradient(top,  #2e2c2c 0%,#323232 100%);
-	background: linear-gradient(to bottom,  #2e2c2c 0%,#323232 100%); 
+	background: linear-gradient(to bottom,  #2e2c2c 0%,#323232 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2c2c', endColorstr='#323232',GradientType=0 );
 	color:#fff;
 }
@@ -451,7 +451,7 @@ input[type="submit"].c-header-input-submit{
 	border-color: transparent transparent #313131 #313131;
 }
 
-/* sort */ 
+/* sort */
 .l-main-sort{
 	padding: 0 20px 0 0;
 }
@@ -460,7 +460,7 @@ input[type="submit"].c-header-input-submit{
 	border-bottom: 1px solid #303030;
 	padding: 15px 0;
 	display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 .c-main-sort dt,
 .c-main-sort dd{
@@ -475,7 +475,7 @@ input[type="submit"].c-header-input-submit{
 }
 
 
-/* breadcrumb */ 
+/* breadcrumb */
 .l-breadcrumb{
 	margin-top: -20px;
 }
@@ -512,7 +512,7 @@ input[type="submit"].c-header-input-submit{
 }
 
 
-/* itmelist */ 
+/* itmelist */
 .c-item-title{
 	text-align: center;
 	font-size: 28px;
@@ -606,7 +606,7 @@ _:-ms-fullscreen, :root .c-item-list-ul.is-grid1 .c-item-list:nth-child(24n){
 	min-height: 160px; */
 	/* width: 256px; */
 	height: auto;
-	width: calc((100% - 90px) / 4); 
+	width: calc((100% - 90px) / 4);
 }
 .is-grid1 .c-item-list.grid-item {
 	height:auto;
@@ -717,7 +717,7 @@ _:-ms-fullscreen, :root .c-item-list-ul.is-grid1 .c-item-list:nth-child(24n){
 	font-size: 24px;
 	text-align:center;
 	line-height: 1.6;
-	margin-bottom: 15px;	
+	margin-bottom: 15px;
 }
 .c-itemdetail-mylist-empty-text{
 	font-size: 12px;
@@ -789,7 +789,7 @@ _:-ms-fullscreen, :root .c-item-list-ul.is-grid1 .c-item-list:nth-child(24n){
 }
 
 
-/* modal */ 
+/* modal */
 .l-modal-item{
 	position: fixed;
 	top:0;
@@ -1021,7 +1021,7 @@ _:-ms-fullscreen, :root .c-item-list-ul.is-grid1 .c-item-list:nth-child(24n){
 .c-modal-item-btn-submit,
 .c-modal-item-btn-mylist{
 	box-sizing: border-box;
-	width: 35%;	
+	width: 35%;
 }
 .c-modal-item-btn-mylist,
 .c-modal-item-btn-relation,
@@ -1031,11 +1031,11 @@ _:-ms-fullscreen, :root .c-item-list-ul.is-grid1 .c-item-list:nth-child(24n){
 }
 .c-modal-item-btn-relation{
 	box-sizing: border-box;
-	width: 16%;	
+	width: 16%;
 }
 .c-modal-item-btn-share{
 	box-sizing: border-box;
-	width: 14%;	
+	width: 14%;
 }
 @media screen and (max-width:1680px){
 	#category2 .l-item .l-modal-item-btn{
@@ -1066,7 +1066,7 @@ _:-ms-fullscreen, :root .c-item-list-ul.is-grid1 .c-item-list:nth-child(24n){
 	padding: 15px 5px 13px;
 	background:#ac8445;
 	border:1px solid #ac8445;
-	color: #fff; 
+	color: #fff;
 	text-decoration: none;
 	font-size: 15px;
 	letter-spacing: 1px;
@@ -1271,7 +1271,7 @@ _:-ms-fullscreen, :root .c-item-list-ul.is-grid1 .c-item-list:nth-child(24n){
 }
 
 
-/* 関連商品 */ 
+/* 関連商品 */
 .l-modal-item-relation{
 	display: none;
 }
@@ -1530,7 +1530,7 @@ input[type="submit"].c-modal-last-input-submit{
 }
 .c-modal-movie-close{
 	width: 460px;
-	height:550px; 
+	height:550px;
 }
 .c-modal-last-close::before,
 .c-modal-last-close::after,
@@ -1570,7 +1570,7 @@ input[type="submit"].c-modal-last-input-submit{
 }
 
 
-/* mylist */ 
+/* mylist */
 .l-mylistwrap{
 	display: flex;
 	position: fixed;
@@ -1695,7 +1695,7 @@ input[type="submit"].c-modal-last-input-submit{
   to{
   	transform:scale(1,1);
 	-webkit-transform: scale(1,1);
-	-ms-transform: scale(1,1);	
+	-ms-transform: scale(1,1);
   }
   90% {
   	 opacity: 1;
@@ -1716,7 +1716,7 @@ input[type="submit"].c-modal-last-input-submit{
   to{
   	transform:scale(1,1);
 	-webkit-transform: scale(1,1);
-	-ms-transform: scale(1,1);	
+	-ms-transform: scale(1,1);
   }
   90% {
   	opacity: 1;
@@ -2124,7 +2124,7 @@ input[type="submit"].c-modal-last-input-submit{
 .c-mylist-explan-modalbg.is-show,
 .c-mylist-explan-modalbg.is-show .c-mylist-explan-modal{
     opacity: 1;
-    visibility: visible;  
+    visibility: visible;
 }
 
 .c-mylist-explan-modalbg-close {
@@ -2196,7 +2196,7 @@ input[type="submit"].c-modal-last-input-submit{
 
 /* -----------------------------
 	takashimaya_TOP
------------------------------ */ 
+----------------------------- */
 .l-wrapall{
 	overflow: hidden;
 }
@@ -2418,7 +2418,7 @@ footer{
 }
 
 .c-mylist-list-wrap{
-	height: calc(100vh - 304px);  
+	height: calc(100vh - 304px);
 	overflow-y: auto;  /* 縦方向のスクロールを許可 */
 	width: 230px;
 }
@@ -2506,7 +2506,7 @@ footer{
 
 /* -----------------------------
 	takashimaya_category_L
------------------------------ */ 
+----------------------------- */
 
 html{
   scroll-behavior: smooth;
@@ -2759,7 +2759,7 @@ top: 0;
 
 /* -----------------------------
 	takashimaya_login
------------------------------ */ 
+----------------------------- */
 .login_body {
   background-image: url(../images/login/login_bg_img.jpg);
   background-color: #CDE9E5;
@@ -2776,13 +2776,13 @@ a {
   color: #313131;
 }
 
-.back_link_box {
+.back_link_box_login {
   position: absolute;
   top: 32px;
   right: 41px;
 }
 
-.back_link {
+.back_link_login {
   background-color: #FFFFFF;
   border-radius: 5px;
   border: 1px solid #ADADAD;
@@ -2942,7 +2942,7 @@ a {
 
 /* -----------------------------
 	takashimaya_mylist
------------------------------ */ 
+----------------------------- */
 
 .mylist_container{
   display: flex;
@@ -2974,7 +2974,7 @@ a {
 }
 /* -----------------------------
 	takashimaya_modal
------------------------------ */ 
+----------------------------- */
 
 /* モーダル用デザインCSS　仮あて
  */
@@ -2999,6 +2999,7 @@ a {
 
 
 .modal_slider .slick-arrow{
+  width: 30px;
 
   height:400px;
 
@@ -3059,7 +3060,7 @@ width: 350px;
 
 /* -----------------------------
 	takashimaya_modal
------------------------------ */ 
+----------------------------- */
 /* モーダル用スライダー */
 
 
@@ -3142,19 +3143,14 @@ width: 350px;
   border-radius: 2px;
 }
 
-.arrow_wt .slick-next::after,
-.arrow_wt .slick-prev::after {
-  border-top: 3px solid #E2E2E2;
-  border-right: 3px solid #E2E2E2;
-  border-radius: 2px;
-}
 
 
 
 /* next */
 
 .modal-slider .slick-next {
-  right: 25px;
+  right: 0;
+  padding-right: 35px;
 }
 
 .modal-slider .slick-next::after {
@@ -3169,9 +3165,7 @@ width: 350px;
 /* prev */
 
 .modal-slider .slick-prev {
-
-  left: 10px;
-
+  left: 0;
 }
 
 .modal-slider .slick-prev::after {
@@ -3283,9 +3277,8 @@ width: 350px;
 
 
 .modal-slider .slick-arrow {
-
   height: 400px;
-
+  width: 35px;
 }
 
 .modal-btn-l {
@@ -3355,7 +3348,7 @@ body.fixed {
 
 /* -----------------------------
 	takashimaya_category_s
------------------------------ */ 
+----------------------------- */
 
 /* PC_カテゴリ_商品一覧：絞り込みボタン */
 .l-itemrefine-wrap {
@@ -3553,6 +3546,7 @@ body.fixed {
   z-index: 1;
   transition: opacity 0.5s;
   z-index: 1;
+  width: 30px;
 }
 
 .category-slider .slick-arrow:hover {
@@ -3582,8 +3576,8 @@ body.fixed {
   border-radius: 2px;
 }
 
-.arrow_wt .slick-next::after,
-.arrow_wt .slick-prev::after {
+.arrow_gr .slick-next::after,
+.arrow_gr .slick-prev::after {
   border-top: 3px solid #E2E2E2;
   border-right: 3px solid #E2E2E2;
   border-radius: 2px;
@@ -3593,7 +3587,11 @@ body.fixed {
 
 /* next */
 
-.category-slider .slick-next {}
+.category-slider .slick-next {
+  padding-right: 30px;
+  right: 0;
+  width: 30px;
+}
 
 .category-slider .slick-next::after {
   transform: rotate(45deg);
@@ -3607,11 +3605,11 @@ body.fixed {
 /* prev */
 
 .category-slider .slick-prev {
-  /* left: -344px; */
+  left: -3px;
+  width: 30px;
 }
 
 .category-slider .slick-prev::after {
-  /* left: 238px; */
   transform: rotate(-135deg);
 }
 
@@ -3621,10 +3619,10 @@ body.fixed {
 
 .slick-prev {
   left: 0;
-
 }
 
-.slick-dots li.slick-active button:before {
+
+.yellow .slick-dots li.slick-active button:before {
   color: #A38A32;
 }
 
@@ -3644,8 +3642,8 @@ body.fixed {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
+.yellow .slick-dots li button:hover:before,
+.yellow .slick-dots li button:focus:before {
   color: #A38A32;
 }
 
@@ -3884,4 +3882,3 @@ body.fixed {
 .c-modal-item-btn-share {
   margin-left: 0;
 }
-
