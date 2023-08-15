@@ -2444,7 +2444,7 @@ footer{
 
 .footer_copy{
 	color: #fff;
-	font-size: 12px;
+	font-size: 15px;
 	text-align: center;
 }
 
@@ -2606,54 +2606,6 @@ position: relative;}
 
 }
 
-.back_link_box {
-  margin-right: 41px;
-  position: relative;
-}
-
-@media screen and (min-width: 1550px) {
-  .back_link_box {
-    position: absolute;
-    right: 41px;
-    top: 32px;
-    margin-right:0;
-  }
-
-}
-
-
-.back_link {
-  background-color: #FFFFFF;
-  border-radius: 5px;
-  border: 1px solid #ADADAD;
-  width: 108px;
-  font-size: 14px;
-  font-weight: 500;
-
-  text-align: center;
-  padding: 8px 0 8px 8px;
-  display: block;
-  color: #313131;
-  position: relative;
-  text-decoration: none;
-  transition: .2s;
-}
-
-.back_link::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-right: 1px solid #313131;
-  border-top: 1px solid #313131;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  left: 10px;
-  top: calc(50% - 4px);
-}
-
-
 .l-item_all{
   position: relative;
 }
@@ -2792,12 +2744,9 @@ top: 0;
 	takashimaya_login
 ----------------------------- */
 .login_body {
-  background-image: url(../images/login/login_bg_img.jpg);
+
   background-color: #CDE9E5;
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: inherit;
+
   color: #313131;
   font-size: 12px;
   position: relative;
@@ -2807,42 +2756,6 @@ a {
   color: #313131;
 }
 
-.back_link_box_login {
-  position: absolute;
-  top: 32px;
-  right: 41px;
-}
-
-.back_link_login {
-  background-color: #FFFFFF;
-  border-radius: 5px;
-  border: 1px solid #ADADAD;
-  width: 108px;
-  font-size: 14px;
-  font-weight: 500;
-
-  text-align: center;
-  padding: 8px 0 8px 8px;
-  display: block;
-  color: #313131;
-  position: relative;
-  text-decoration: none;
-  transition: .2s;
-}
-
-.back_link_login::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-right: 1px solid #313131;
-  border-top: 1px solid #313131;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  left: 10px;
-  top: calc(50% - 4px);
-}
 
 .inner_login {
   background-color: #FAF5E4;
@@ -2907,6 +2820,16 @@ a {
 .logo_sub_ttl {
   font-size: 20px;
   color: #313131;
+}
+
+
+.container_login{
+  background-image: url(../images/login/login_bg_img.jpg);
+  background-color: #CDE9E5;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
 }
 
 .login_enter {
