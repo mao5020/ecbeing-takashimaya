@@ -103,15 +103,7 @@ $(function(){
 	}
 
 
-	// SPカテゴリ第２階層：絞り込みスライド
-    const categoryItemRefine = function() {
-		$('.js-category-itemrefine').on('click',function(){
-    		let categoryItemRefineArea = $('.l-itemrefine-list-wrap');
-    		$(this).toggleClass('is-show');
-	    	$(categoryItemRefineArea).slideToggle();
-			return false;
-		});
-	}
+
 	// SP：カテゴリナビ表示
     const naviSpCategory = function() {
     	let naviSpCategoryFlag = false,
@@ -169,7 +161,14 @@ $(function(){
 			// fade: true,
 			speed: 400,
 			variableWidth: true,
-			// infinite:false
+			responsive: [
+				{
+					breakpoint: 750, // 399px以下のサイズに適用
+					settings: {
+						slidesToShow: 1,
+					},
+				},
+			],
 		});
 	});
 	
@@ -274,38 +273,67 @@ $(function(){
 		});
 	});
 
-
+	// SPカテゴリ第２階層：絞り込みスライド
+	const categoryItemRefine = function() {
+		$('.js-category-itemrefine').on('click',function(){
+    		let categoryItemRefineArea = $('.l-itemrefine-list-wrap');
+    		$(this).toggleClass('is-show');
+	    	$(categoryItemRefineArea).slideToggle();
+			return false;
+		});
+	}
 	$(window).on('load', function() {
 		scrollTop();
-		fixedElement();
-		fixedMainSticky();
-		renderMasonry();
-		itemMylistBtn();
-		itemModalMylistBtn();
-		itemMylistRemoveBtn();
-		modalItemView();
-		modalItemHide();
-		modalItemSlidedown();
-		modalItemRelation();
-		modalRelationMylistBtn();
-		modalItemShare();
-		spFooterSticky();
-		spFooterSort();
-		itemDetailRefine();
-		itemDetailView();
-		mylistRelation();
-		myListRefine();
-		myListMylistBtn();
-		myListExplanModal();
-		myListExplanModalDel();
-		itemDetailSticky();
+		// fixedElement();
+		// fixedMainSticky();
+		// renderMasonry();
+		// itemMylistBtn();
+		// itemModalMylistBtn();
+		// itemMylistRemoveBtn();
+		// modalItemView();
+		// modalItemHide();
+		// modalItemSlidedown();
+		// modalItemRelation();
+		// modalRelationMylistBtn();
+		// modalItemShare();
+		// spFooterSticky();
+		// spFooterSort();
+		// itemDetailRefine();
+		// itemDetailView();
+		// mylistRelation();
+		// myListRefine();
+		// myListMylistBtn();
+		// myListExplanModal();
+		// myListExplanModalDel();
+		// itemDetailSticky();
 		categoryItemRefine();
-		itemShakeAnime();
-		modalItemLast();
-		privacypolicyAgree();
+		// itemShakeAnime();
+		// modalItemLast();
+		// privacypolicyAgree();
 		naviSpCategory();
-		viewLoading();
+		// viewLoading();
 		viewTablet();
-		demoDelete();
+		// demoDelete();
+	});
+});
+
+$(document).ready(function(){
+	$(".c-itemdetail-list").each(function(){
+			// それぞれのc-itemdetail-listに対するc-itemdetail-titleを取得
+			var title = $(this).find(".c-itemdetail-title");
+			
+			// それぞれのl-itemdetail-item-imgwrapの上に移動
+			title.insertBefore($(this).find(".l-itemdetail-item-imgwrap"));
+	});
+});
+
+$(document).ready(function(){
+	$(".c-itemdetail-list").each(function(){
+			// それぞれのc-itemdetail-listに対するc-modal-item-btn-mylistとc-modal-item-btn-shareを取得
+			var btnMyList = $(this).find(".c-modal-item-btn-mylist");
+			var btnShare = $(this).find(".c-modal-item-btn-share");
+			
+			// これら2つの要素をc-modal-item-btn-underという新しいdivでラップ
+			btnMyList.add(btnShare).wrapAll('<div class="c-modal-item-btn-under"></div>');
 	});
 });

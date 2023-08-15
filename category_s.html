@@ -28,6 +28,8 @@
     media="only screen and (min-width: 750px)">
   <link href="./css/style_sp.css" rel="stylesheet" type="text/css" charset="UTF-8"
     media="screen and (max-width: 750px)">
+  <link href="./css/style_sp_category_s.css" rel="stylesheet" type="text/css" charset="UTF-8"
+    media="screen and (max-width: 750px)">
 
   <script type='text/javascript' src='./javascript/jquery.min.js'></script>
   <script type='text/javascript' src='./javascript/masonry.pkgd.min.js'></script>
@@ -41,164 +43,133 @@
 
     <header class="fix_wrap">
       <div class="l-header">
-        <div class="l-header_inner">
-          <form action="/presentage/item.php?pnumflag=1" method="post">
-            <input type="hidden" name="methods" id="methods" value="SEARCHLIST">
-            <input type="hidden" name="privilege_type" id="privilege_type" value="">
-            <div class="l-header-left">
-              <div class="c-header-mylist"><a href="./mylist.html"><img src="./images/common/icon_mylist_on_sp.png">
-                  <p class="is-text">マイリスト</p>
-                </a></div>
-              <div class="c-header-search js-header-search"><img src="./images/common/icon_search.png">
-                <p class="is-text">サーチ</p>
-              </div>
-
-              <h1 class="c-header-logo"><a href="./top.html"><img src="./images/assets/logo.png"></a></h1>
-              <div class="c-header-menu"><a href="#">
-                  <p class="is-line"><span></span></p>
-                  <p class="is-text">メニュー</p>
-                </a></div>
-              <div class="c-header-search-wrap-sp">
-                <span class="c-header-search-close-sp"></span>
-                <div class="c-header-select-wrap">
-                  <select name="searchBunruiId3" id="searchBunruiId3" class="minimal c-header-select">
-                    <option value="">カテゴリを選ぶ</option>
-                    <option value="1">ファッション・ビューティ</option>
-                    <option value="2">雑貨・ホビー</option>
-                    <option value="3">リビング・ダイニング</option>
-                    <option value="4">健康・防災</option>
-                    <option value="5">家電</option>
-                    <option value="6">生鮮食品</option>
-                    <option value="7">食品</option>
-                    <option value="8">ドリンク・酒</option>
-                    <option value="9">旅行券・食事券</option>
-                  </select>
-                </div>
-                <div class="c-header-input-wrap">
-                  <input name="keyWord" id="keyWord" type="text" placeholder="キーワードから探す" value=""
-                    class="c-header-input-text">
-                  <div class="c-header-input-voice"></div>
-                  <input type="submit" class="c-header-input-submit" value="">
-                </div>
-              </div>
-            </div>
-          </form>
-          <ul class="c-header-linklist">
-            <li class="c-header-linklist-guide"><a href="./guide.html">ご利用ガイド</a></li>
-            <li class="c-header-linklist-mylist"><a href="./mylist.html">マイリスト</a></li>
-            <li class="c-header-linklist-logout"><a href="./login.html">ログアウト</a></li>
-          </ul>
-          <!-- <div class="back_link_box">
-                    <a href="./top.html" class="back_link">
-                        目次へ戻る
-                    </a>
-                </div> -->
-          <div class="sp_header_bg"></div>
-        </div>
-        <div class="back_link_box">
-          <a href="./top.html" class="back_link">
-            目次へ戻る
-          </a>
-        </div>
+          <div class="l-header_inner">
+              <form action="/presentage/item.php?pnumflag=1" method="post">
+                  <input type="hidden" name="methods" id="methods" value="SEARCHLIST">
+                  <input type="hidden" name="privilege_type" id="privilege_type" value="">
+                  <div class="l-header-left">
+                      <!-- <div class="c-header-mylist"><a href="./mylist.html"><img src="./images/common/icon_mylist_on_sp.png"><p class="is-text">マイリスト</p></a></div>
+                      <div class="c-header-search js-header-search"><img src="./images/common/icon_search.png"><p class="is-text">サーチ</p></div> -->
+                      
+                      <div class="c-header-menu"><a href="#"><p class="is-line"><span></span></p></a></div>
+                      <h1 class="c-header-logo"><a href="./top.html"><img src="./images/assets/logo.png"></a></h1>
+                      <div class="c-header-search-wrap-sp">
+                          <span class="c-header-search-close-sp"></span>
+                          <div class="c-header-select-wrap">
+                              <select name="searchBunruiId3" id="searchBunruiId3" class="minimal c-header-select">
+                                  <option value="">カテゴリを選ぶ</option>
+                                  <option value="1">ファッション・ビューティ</option>
+                                  <option value="2">雑貨・ホビー</option>
+                                  <option value="3">リビング・ダイニング</option>
+                                  <option value="4">健康・防災</option>
+                                  <option value="5">家電</option>
+                                  <option value="6">生鮮食品</option>
+                                  <option value="7">食品</option>
+                                  <option value="8">ドリンク・酒</option>
+                                  <option value="9">旅行券・食事券</option>
+                              </select>
+                          </div>
+                          <div class="c-header-input-wrap">
+                              <input name="keyWord" id="keyWord" type="text" placeholder="キーワードから探す" value="" class="c-header-input-text">
+                              <div class="c-header-input-voice"></div>
+                              <input type="submit"  class="c-header-input-submit" value="">
+                          </div>
+                      </div>
+                  </div>
+              </form>
+              <ul class="c-header-linklist">
+                  <li class="c-header-linklist-guide"><a href="./guide.html">ご利用ガイド</a></li>
+                  <li class="c-header-linklist-mylist"><a href="./mylist.html">マイリスト</a></li>
+                  <li class="c-header-linklist-logout"><a href="./login.html">ログアウト</a></li>
+              </ul>
+              <div class="sp_header_bg"></div>
+          </div>
       </div>
       <!-- sticky category  -->
       <div class="l-main-stickywrap" >
-        <div class="l-main-sticky js-mainsticky">
-            <div class="l-main-tab">
-                <ul class="c-main-tab">
-                    <li class="is-current"><a href="#">すべてのアイテム</a></li>
-                    <li><a href="#">ファッション・ビューティー</a></li>
-                    <li class="main_tab01" data-related-menu="main_tab01"><a href="#">食品</a></li>
-                    <li class="main_tab02" data-related-menu="main_tab02"><a href="#">雑貨</a></li>
-                    <li><a href="#">招待券・チャリティ</a></li>
-                    <li class="main_tab03" data-related-menu="main_tab02"><a href="#">特集</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <ul class="main_tab01">
-        <li><a href="#">01  </a></li>
-        <li><a href="#">和菓子</a></li>
-        <li><a href="#">惣菜・お弁当</a></li>
-        <li><a href="#">精肉・ハム・ソーセージ</a></li>
-        <li><a href="#">魚介・塩干物</a></li>
-        <li><a href="#">パン・ジャム</a></li>
-        <li><a href="#">フルーツ・野菜</a></li>
-        <li><a href="#">水・ドリンク</a></li>
-        <li><a href="#">ワイン・シャンパン</a></li>
-        <li><a href="#">ビール・洋酒</a></li>
-        <li><a href="#">日本酒・焼酎</a></li>
-        <li><a href="#">調味料</a></li>
-        <li><a href="#">米・米加工品</a></li>
-        <li><a href="#">麺類</a></li>
-        <li><a href="#">昆布・お吸い物</a></li>
-        <li><a href="#">うめぼし・漬物・佃煮</a></li>
-        <li><a href="#">のり・かつお削り・椎茸</a></li>
-        <li><a href="#">よりどりセット</a></li>
-        <li><a href="#">お買い得品</a></li>
-    </ul>
-    <ul class="main_tab02">
-        <li><a href="#">02</a></li>
-        <li><a href="#">和菓子</a></li>
-        <li><a href="#">惣菜・お弁当</a></li>
-        <li><a href="#">精肉・ハム・ソーセージ</a></li>
-        <li><a href="#">魚介・塩干物</a></li>
-        <li><a href="#">パン・ジャム</a></li>
-        <li><a href="#">フルーツ・野菜</a></li>
-        <li><a href="#">水・ドリンク</a></li>
-        <li><a href="#">ワイン・シャンパン</a></li>
-        <li><a href="#">ビール・洋酒</a></li>
-        <li><a href="#">日本酒・焼酎</a></li>
-        <li><a href="#">調味料</a></li>
-        <li><a href="#">米・米加工品</a></li>
-        <li><a href="#">麺類</a></li>
-        <li><a href="#">昆布・お吸い物</a></li>
-        <li><a href="#">うめぼし・漬物・佃煮</a></li>
-        <li><a href="#">のり・かつお削り・椎茸</a></li>
-        <li><a href="#">よりどりセット</a></li>
-        <li><a href="#">お買い得品</a></li>
-    </ul>
-    <ul class="main_tab03">
-        <li><a href="#">03</a></li>
-        <li><a href="#">和菓子</a></li>
-        <li><a href="#">惣菜・お弁当</a></li>
-        <li><a href="#">精肉・ハム・ソーセージ</a></li>
-        <li><a href="#">魚介・塩干物</a></li>
-        <li><a href="#">パン・ジャム</a></li>
-        <li><a href="#">フルーツ・野菜</a></li>
-        <li><a href="#">水・ドリンク</a></li>
-        <li><a href="#">ワイン・シャンパン</a></li>
-        <li><a href="#">ビール・洋酒</a></li>
-        <li><a href="#">日本酒・焼酎</a></li>
-        <li><a href="#">調味料</a></li>
-        <li><a href="#">米・米加工品</a></li>
-        <li><a href="#">麺類</a></li>
-        <li><a href="#">昆布・お吸い物</a></li>
-        <li><a href="#">うめぼし・漬物・佃煮</a></li>
-        <li><a href="#">のり・かつお削り・椎茸</a></li>
-        <li><a href="#">よりどりセット</a></li>
-        <li><a href="#">お買い得品</a></li>
-    </ul>
-
+          <div class="l-main-sticky js-mainsticky">
+              <div class="l-main-tab">
+                  <ul class="c-main-tab">
+                      <li class="is-current"><a href="#">すべてのアイテム</a></li>
+                      <li><a href="#">ファッション・ビューティー</a></li>
+                      <li class="main_tab01" data-related-menu="main_tab01"><a href="#">食品</a></li>
+                      <li class="main_tab02" data-related-menu="main_tab02"><a href="#">雑貨</a></li>
+                      <li><a href="#">招待券・チャリティ</a></li>
+                      <li class="main_tab03" data-related-menu="main_tab02"><a href="#">特集</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <ul class="main_tab01">
+          <li><a href="#">01  </a></li>
+          <li><a href="#">和菓子</a></li>
+          <li><a href="#">惣菜・お弁当</a></li>
+          <li><a href="#">精肉・ハム・ソーセージ</a></li>
+          <li><a href="#">魚介・塩干物</a></li>
+          <li><a href="#">パン・ジャム</a></li>
+          <li><a href="#">フルーツ・野菜</a></li>
+          <li><a href="#">水・ドリンク</a></li>
+          <li><a href="#">ワイン・シャンパン</a></li>
+          <li><a href="#">ビール・洋酒</a></li>
+          <li><a href="#">日本酒・焼酎</a></li>
+          <li><a href="#">調味料</a></li>
+          <li><a href="#">米・米加工品</a></li>
+          <li><a href="#">麺類</a></li>
+          <li><a href="#">昆布・お吸い物</a></li>
+          <li><a href="#">うめぼし・漬物・佃煮</a></li>
+          <li><a href="#">のり・かつお削り・椎茸</a></li>
+          <li><a href="#">よりどりセット</a></li>
+          <li><a href="#">お買い得品</a></li>
+      </ul>
+      <ul class="main_tab02">
+          <li><a href="#">02</a></li>
+          <li><a href="#">和菓子</a></li>
+          <li><a href="#">惣菜・お弁当</a></li>
+          <li><a href="#">精肉・ハム・ソーセージ</a></li>
+          <li><a href="#">魚介・塩干物</a></li>
+          <li><a href="#">パン・ジャム</a></li>
+          <li><a href="#">フルーツ・野菜</a></li>
+          <li><a href="#">水・ドリンク</a></li>
+          <li><a href="#">ワイン・シャンパン</a></li>
+          <li><a href="#">ビール・洋酒</a></li>
+          <li><a href="#">日本酒・焼酎</a></li>
+          <li><a href="#">調味料</a></li>
+          <li><a href="#">米・米加工品</a></li>
+          <li><a href="#">麺類</a></li>
+          <li><a href="#">昆布・お吸い物</a></li>
+          <li><a href="#">うめぼし・漬物・佃煮</a></li>
+          <li><a href="#">のり・かつお削り・椎茸</a></li>
+          <li><a href="#">よりどりセット</a></li>
+          <li><a href="#">お買い得品</a></li>
+      </ul>
+      <ul class="main_tab03">
+          <li><a href="#">03</a></li>
+          <li><a href="#">和菓子</a></li>
+          <li><a href="#">惣菜・お弁当</a></li>
+          <li><a href="#">精肉・ハム・ソーセージ</a></li>
+          <li><a href="#">魚介・塩干物</a></li>
+          <li><a href="#">パン・ジャム</a></li>
+          <li><a href="#">フルーツ・野菜</a></li>
+          <li><a href="#">水・ドリンク</a></li>
+          <li><a href="#">ワイン・シャンパン</a></li>
+          <li><a href="#">ビール・洋酒</a></li>
+          <li><a href="#">日本酒・焼酎</a></li>
+          <li><a href="#">調味料</a></li>
+          <li><a href="#">米・米加工品</a></li>
+          <li><a href="#">麺類</a></li>
+          <li><a href="#">昆布・お吸い物</a></li>
+          <li><a href="#">うめぼし・漬物・佃煮</a></li>
+          <li><a href="#">のり・かつお削り・椎茸</a></li>
+          <li><a href="#">よりどりセット</a></li>
+          <li><a href="#">お買い得品</a></li>
+      </ul>
       <!-- /sticky category  -->
-    </header>
-
+  </header>
+  
     <main class="l-main" id="page_top">
 
       <!-- メインカラム /-->
       <section class="l-mainitem">
-
-        <!-- sp-category-nav  -->
-        <div class="l-sp-category-nav">
-          <ul class="c-sp-category-nav">
-            <li class="is-current"><a href="./top.html">すべての<br>アイテムを見る</a></li>
-            <li><a href="feature_top.html">特集</a></li>
-            <li class="is-current"><span class="js-category-navi">カテゴリ</span></li>
-          </ul>
-        </div>
-        <!-- /sp-category-nav  -->
-
-
         <!-- breadcrumb  -->
         <div class="l-breadcrumb">
           <ul class="c-breadcrumb">
@@ -255,7 +226,7 @@
               </p>
             </div>
 
-            <ul class="c-itemdetail-ul yellow">
+            <ul class="c-itemdetail-ul yellow pc-only">
               <!-- item1 -->
 
               <li class="c-itemdetail-list" data-modalitem="item1">
@@ -267,7 +238,7 @@
                   <div class="category-slider_item"><img src="./images/assets/item_img.jpg" width=""></div>
                 </div>
                 <div class="l-modal-item-content">
-                  <h2 class="c-itemdetail-title">商品名が入ります商品名が入ります</h2>
+                  <h2 class="c-itemdetail-title">商品名が入ります商品名が入ります商品名が入ります商品名が入ります</h2>
                   <h3 class="c-itemdetail-subtitle">メインキャッチコピーが入ります。メインキャッチコピーが入ります。</h3>
                   <div class="">
 
@@ -284,21 +255,11 @@
                         <dt>アレルギー物質：</dt>
                         <dd>小麦粉</dd>
                         <dd>卵</dd>
-                        <!-- <dd>落花生</dd>
-                              <dd>かに</dd>
-                              <dd>そば</dd> -->
                         <dd>乳</dd>
                       </dl>
                       <p class="c-itemdetail-attention">
                         ※注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります
                       </p>
-                      <!-- <ul class="c-itemdetail-hashtag">
-                              <li><a href="#">#牛肉</a></li>
-                              <li><a href="#">#ステーキ</a></li>
-                              <li><a href="#">#ロース</a></li>
-                              <li><a href="#">#ジューシィ</a></li>
-                              <li><a href="#">#松坂牛</a></li>
-                          </ul> -->
                       <p class="c-itemdetail-apply-num">申込番号：ABCDEF-123</p>
 
                       <div class="more">
@@ -342,9 +303,7 @@
                   </div>
                   <div class="l-modal-item-btn">
                     <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a></div>
-                    <!-- <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加する</a></div> -->
-                    <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストからはずす</a></div>
-                    <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
+                    <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストから外す</a></div>
                     <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
                   </div>
                 </div>
@@ -431,21 +390,11 @@
                         <dt>アレルギー物質：</dt>
                         <dd>小麦粉</dd>
                         <dd>卵</dd>
-                        <!-- <dd>落花生</dd>
-              <dd>かに</dd>
-              <dd>そば</dd> -->
                         <dd>乳</dd>
                       </dl>
                       <p class="c-itemdetail-attention">
                         ※注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります
                       </p>
-                      <!-- <ul class="c-itemdetail-hashtag">
-              <li><a href="#">#牛肉</a></li>
-              <li><a href="#">#ステーキ</a></li>
-              <li><a href="#">#ロース</a></li>
-              <li><a href="#">#ジューシィ</a></li>
-              <li><a href="#">#松坂牛</a></li>
-          </ul> -->
                       <p class="c-itemdetail-apply-num">申込番号：ABCDEF-123</p>
 
                       <div class="more">
@@ -489,9 +438,9 @@
                   </div>
                   <div class="l-modal-item-btn">
                     <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a></div>
-                    <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                    <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                     </div>
-                    <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストからはずす</a></div> -->
+                    <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストから外す</a></div> -->
                     <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
                     <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
                   </div>
@@ -579,17 +528,12 @@
                         <dt>アレルギー物質：</dt>
                         <dd>小麦粉</dd>
                         <dd>卵</dd>
-                        <!-- <dd>落花生</dd>
-              <dd>かに</dd>
-              <dd>そば</dd> -->
                         <dd>乳</dd>
                       </dl>
                       <p class="c-itemdetail-attention">
                         ※注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります
                       </p>
-
                       <p class="c-itemdetail-apply-num">申込番号：ABCDEF-123</p>
-
                       <div class="more">
                         <p class="more-btn">続きを見る</p>
                       </div>
@@ -631,9 +575,9 @@
                   </div>
                   <div class="l-modal-item-btn">
                     <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a></div>
-                    <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                    <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                     </div>
-                    <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストからはずす</a></div> -->
+                    <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストから外す</a></div> -->
                     <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
                     <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
                   </div>
@@ -773,9 +717,9 @@
                   </div>
                   <div class="l-modal-item-btn">
                     <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a></div>
-                    <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                    <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                     </div>
-                    <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストからはずす</a></div> -->
+                    <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストから外す</a></div> -->
                     <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
                     <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
                   </div>
@@ -915,9 +859,9 @@
                   </div>
                   <div class="l-modal-item-btn">
                     <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a></div>
-                    <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                    <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                     </div>
-                    <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストからはずす</a></div> -->
+                    <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストから外す</a></div> -->
                     <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
                     <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
                   </div>
@@ -1057,9 +1001,9 @@
                   </div>
                   <div class="l-modal-item-btn">
                     <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a></div>
-                    <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                    <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                     </div>
-                    <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストからはずす</a></div> -->
+                    <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストから外す</a></div> -->
                     <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
                     <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
                   </div>
@@ -1198,9 +1142,9 @@
                   </div>
                   <div class="l-modal-item-btn">
                     <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a></div>
-                    <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                    <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                     </div>
-                    <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストからはずす</a></div> -->
+                    <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストから外す</a></div> -->
                     <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
                     <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
                   </div>
@@ -1420,7 +1364,7 @@
             <div class="l-modal-item-btn">
               <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a>
               </div>
-              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
               </div>
               <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
               <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -1558,7 +1502,7 @@
             <div class="l-modal-item-btn">
               <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a>
               </div>
-              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
               </div>
               <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
               <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -1693,7 +1637,7 @@
             <div class="l-modal-item-btn">
               <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a>
               </div>
-              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
               </div>
               <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
               <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -1827,7 +1771,7 @@
             </div>
             <div class="l-modal-item-btn">
               <div class="c-modal-item-btn-submit"><span>在庫切れ</span></div>
-              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
               </div>
               <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
               <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -1960,7 +1904,7 @@
             </div>
             <div class="l-modal-item-btn">
               <div class="c-modal-item-btn-submit"><span>在庫切れ</span></div>
-              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
               </div>
               <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
               <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -2100,7 +2044,7 @@
             <div class="l-modal-item-btn">
               <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a>
               </div>
-              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
               </div>
               <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
               <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -2235,7 +2179,7 @@
             </div>
             <div class="l-modal-item-btn">
               <div class="c-modal-item-btn-submit"><span>在庫切れ</span></div>
-              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
               </div>
               <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
               <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -2370,7 +2314,7 @@
             </div>
             <div class="l-modal-item-btn">
               <div class="c-modal-item-btn-submit"><span>在庫切れ</span></div>
-              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
               </div>
               <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
               <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -2506,7 +2450,7 @@
             </div>
             <div class="l-modal-item-btn">
               <div class="c-modal-item-btn-submit"><span>在庫切れ</span></div>
-              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+              <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
               </div>
               <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
               <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>

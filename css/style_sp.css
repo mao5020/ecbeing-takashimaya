@@ -12,7 +12,9 @@ html {
         display: block !important;
       }
 
-
+body{
+    color: #313131;
+}
 
 /* ヘッダー内 */
 .c-header-mylist,
@@ -1264,14 +1266,15 @@ html {
 
 .c-itemrefine-list {
     width: calc((100% - 2%) / 3);
-    margin-right: 1%;
+    /* margin-right: 1%; */
     font-size: 12px;
+    height: 40px;
 }
 .c-itemrefine-list:nth-child(3n) {
     margin-right: 0;
 }
 .c-itemrefine-list:nth-child(5n) {
-    margin-right: 1%;
+    /* margin-right: 1%; */
 }
 .c-itemdetail-list {
     flex-wrap: wrap;

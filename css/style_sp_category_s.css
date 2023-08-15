@@ -1,0 +1,205 @@
+/* base */
+.pc-only{
+  /* display: none; */
+}
+.l-main{
+  padding-top: 126px;
+}
+
+.l-main-stickywrap{
+  height: 45px;
+}
+
+.l-breadcrumb{
+  display: block;
+}
+
+.c-item-title span{
+  font-size: 16px;
+}
+
+.l-itemrefine-wrap{
+  border-radius: 0;
+  padding: 0;
+}
+
+.c-itemrefine-title{
+  border: none;
+}
+
+.c-itemrefine-list{
+  width: 160px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.c-itemrefine-list a{
+  font-size: 14px;
+  padding: 0;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.l-itemrefine-wrap .l-itemrefine-ul{
+  width: 100%;
+  padding: 30px 10px 10px;
+}
+
+.c-itemrefine-list .c-itemrefine-icon::before{
+  top: 3px;
+}
+
+.c-itemrefine-list .c-itemrefine-icon::after {
+  top: 7px;
+  background: url(../images/assets/sp_batsu_bk.svg) no-repeat;
+  background-size: contain;
+  width: 6px;
+  height: 6px;
+  left: 4px;
+}
+
+.c-itemrefine-list .c-itemrefine-icon{
+  left: 8px;
+}
+
+.c-itemrefine-list.is-current .c-itemrefine-icon::after{
+  top: 6px;
+}
+
+.l-itemrefine-wrap .c-itemrefine-title{
+  border-bottom: solid 1px #fff;
+  border-radius: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.l-itemdetail-wrap{
+  width: 93%;
+  margin: 0 auto;
+}
+
+.number_box{
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.c-itemdetail-list{
+  padding: 20px;
+}
+
+.c-itemdetail-title{
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.category-slider_item{
+  width: 300px;
+  height: 300px;
+}
+
+.c-itemdetail-subtitle{
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.c-itemdetail-text{
+  margin-bottom: 13px;
+  font-size: 15px;
+}
+
+.c-itemdetail-detail dt{
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.c-itemdetail-detail dd{
+  font-size: 15px;
+}
+
+.c-itemdetail-allergy{
+  padding: 3px 7px;
+}
+.c-itemdetail-allergy dd{
+  margin-left: 3px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.c-itemdetail-list .l-modal-item-content{
+  margin: 0;
+}
+
+.c-itemdetail-attention{
+  margin-bottom: 7px;
+}
+
+.c-itemdetail-apply-num{
+  color: #777777;
+  margin-bottom: 10px;
+}
+
+.c-itemdetail-sku-explain,
+.c-itemdetail-sku-text{
+  font-size: 12px;
+}
+
+.c-itemdetail-sku-explain dd{
+  margin-left: -5px;
+}
+
+.c-modal-item-btn-submit a{
+  font-size: 16px;
+  padding: 0;
+  line-height: 45px;
+}
+
+.l-modal-item-btn{
+  flex-direction: column;
+}
+
+.c-modal-item-btn-submit{
+  width: 100%;
+  height: 45px;
+}
+
+.c-modal-item-btn-under{
+  display: flex;
+}
+
+.c-modal-item-btn-mylist{
+  width: 75%;
+
+}
+
+.c-modal-item-btn-mylist a{
+  font-size: 16px;
+  padding: 0;
+  line-height: 45px;
+}
+
+.c-modal-item-btn-share{
+  width: 25%;
+}
+
+.c-modal-item-btn-submit a::before{
+  width: 5px;
+  background-size: cover;
+  margin-right: 10px;
+  height: 16px;
+}
+
+.c-modal-item-btn-mylist a::before{
+  width: auto;
+  background-size: contain;
+  margin-right: 5px;
+  height: 17px;
+}
+
+.content .more{
+  padding-bottom: 25px;
+}
