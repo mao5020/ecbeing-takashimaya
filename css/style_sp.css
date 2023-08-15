@@ -3,6 +3,17 @@ html {
  -webkit-text-size-adjust: 100%;
 }
 
+    /* スマートフォン・タブレットで見たときは"sp"のclassがついた画像が表示される */
+    .pc {
+        display: none !important;
+      }
+
+      .sp {
+        display: block !important;
+      }
+
+
+
 /* ヘッダー内 */
 .c-header-mylist,
 .c-header-menu {
@@ -333,7 +344,7 @@ html {
     width: 100px;
     max-width: 100px;
     min-width: 100px;
-    margin-right:20px; 
+    margin-right:20px;
 }
 .c-leftnav-history figcaption{
     margin-top: 10px;
@@ -431,14 +442,14 @@ html {
 }
 
 
-/* l-leftnav */ 
+/* l-leftnav */
 .l-leftnav,
 .l-leftnavwrap{
     width: auto;
     min-width: auto;
 }
 
-/* l-main */ 
+/* l-main */
 .l-main,
 #mylist .l-main,
 #category2 .l-main{
@@ -628,7 +639,7 @@ html {
 }
 
 
-/* breadcrumb */ 
+/* breadcrumb */
  .l-breadcrumb {
     display: none;
     margin:0 0 0 10px;
@@ -637,7 +648,7 @@ html {
     font-size: 11px;
 }
 
-/* c-item-list */ 
+/* c-item-list */
 .c-item-list {
     margin: 0;
 }
@@ -704,7 +715,7 @@ html {
 
 
 
-/* mylist */ 
+/* mylist */
 .l-mylistwrap{
     display: none;
 }
@@ -715,7 +726,7 @@ html {
     display: inline-block;
 }
 
-/* l-modal-item */ 
+/* l-modal-item */
 .l-modal-bg.is-show{
     z-index: 103;
 }
@@ -806,7 +817,7 @@ html {
 
 
 
-/* l-modal-item-btn */ 
+/* l-modal-item-btn */
 .l-modal-item-btn{
     padding: 0;
 }
@@ -1063,7 +1074,7 @@ html {
     transition: .4s;
 }
 #mylist .c-fixed-footer{
-    display: none;    
+    display: none;
 }
 .c-fixed-footer.is-fixed {
     bottom: 0;
@@ -1249,7 +1260,7 @@ html {
     width: 90%;
     margin: -10px auto 0;
     box-sizing: border-box;
-    border-radius: 5px;   
+    border-radius: 5px;
 }
 
 .c-itemrefine-list {
@@ -1378,3 +1389,234 @@ html {
     width: 100%;
     margin-bottom: 20px;
 }
+
+/* -----------------------------
+	takashimaya footer
+----------------------------- */
+
+footer{
+	background-color: #313131;
+	width: 100%;
+	height: auto;
+}
+
+.footer-inner{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 320px;
+	padding: 27px 20px 15px 20px;
+}
+
+.footer_content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap:17px 0;
+	margin-bottom: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer_content_item{
+    width: 50%;
+}
+.footer_content_item a{
+	color: #fff;
+	font-size: 14px;
+    line-height: 30px;
+}
+
+.footer_logo{
+	display: block;
+	margin: 0 auto;
+	width: 126px;
+	margin-bottom: 8px;
+}
+
+.footer_copy{
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+}
+
+
+/* -----------------------------
+	takashimaya_login
+----------------------------- */
+.login_body {
+    /* background-image: url(../images/login/login_bg_img_sp.jpg); */
+    background-color: #ECF6F7;
+    /* background-blend-mode: multiply; */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; */
+    color: #313131;
+    font-size: 15px;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+
+  a {
+    color: #313131;
+  }
+
+
+
+  .login_inner_sp_half{
+    width: 50%;
+    height: 100%;
+    background-color: #FAF5E4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .container_login{
+    background-image: url(../images/login/login_bg_img_sp.jpg);
+    background-color: #CDE9E5;
+    /* background-blend-mode: multiply; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: -2;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .inner_login {
+    background-color: transparent;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px ;
+  }
+
+  .cnt {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 290px;
+    margin: 34px auto;
+    padding: 25px 10px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 16%);
+  }
+
+  .cnt dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    width: 80%;
+    max-width: 210px;
+  }
+
+  .cnt dt {
+    padding-right: 30px;
+    color: #313131;
+    font-size: 15px;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 2px;
+  }
+
+  .cnt dd {
+    position: relative;
+    width: 100%;
+  }
+
+  .cnt_id {
+    padding-bottom: 13px;
+  }
+
+  .cnt dd:first-child {
+    padding-bottom: 13px;
+  }
+
+  .cnt input {
+    width: 100%;
+    height: 20px;
+    border: 1px solid #ADADAD;
+    border-radius: 3px;
+    background-color: #FAFAFA;
+    font-size: 15px;
+  }
+
+  .login_logo {
+    width: 93px;
+    padding-bottom: 8px;
+  }
+
+  .logo_sub_ttl {
+    font-size: 15px;
+    color: #313131;
+  }
+
+  .login_enter {
+    background-color: #A38A32;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 210px;
+    height: 30px;
+    margin: 0 auto 23.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login_enter a {
+    color: #fff;
+  }
+
+  .c-login-eye {
+    background: url(../images/common/icon_eye.png) no-repeat 0 0;
+    background-size: 12px 8px;
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    opacity: 0.4;
+  }
+
+  .cmt1 {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+  }
+
+  .cmt1 a {
+    text-decoration: underline;
+  }
+
+  .cmt2 {
+    max-width: 228px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 35px;
+  }
+
+  .cmt2 li {
+    font-size: 12px;
+    text-indent: -1em;
+    list-style: none;
+    color: #333;
+    padding-bottom: 19px;
+    font-weight: 500;
+    line-height: 15px;
+  }
+
+  .cmt2 li:last-child{
+    padding-bottom: 0;
+  }
+
+  .cmt2 li:before {
+    content: "※";
+    padding-right: 3px;
+  }
