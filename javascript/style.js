@@ -316,24 +316,3 @@ $(function(){
 		// demoDelete();
 	});
 });
-
-$(document).ready(function(){
-	$(".c-itemdetail-list").each(function(){
-			// それぞれのc-itemdetail-listに対するc-itemdetail-titleを取得
-			var title = $(this).find(".c-itemdetail-title");
-			
-			// それぞれのl-itemdetail-item-imgwrapの上に移動
-			title.insertBefore($(this).find(".l-itemdetail-item-imgwrap"));
-	});
-});
-
-$(document).ready(function(){
-	$(".c-itemdetail-list").each(function(){
-			// それぞれのc-itemdetail-listに対するc-modal-item-btn-mylistとc-modal-item-btn-shareを取得
-			var btnMyList = $(this).find(".c-modal-item-btn-mylist");
-			var btnShare = $(this).find(".c-modal-item-btn-share");
-			
-			// これら2つの要素をc-modal-item-btn-underという新しいdivでラップ
-			btnMyList.add(btnShare).wrapAll('<div class="c-modal-item-btn-under"></div>');
-	});
-});

@@ -35,6 +35,15 @@
   <script type='text/javascript' src='./javascript/masonry.pkgd.min.js'></script>
   <script type='text/javascript' src='./javascript/slick.min.js'></script>
   <script type='text/javascript' src='./javascript/style.js'></script>
+  <script>
+    // ビューポートの幅に応じてJSファイルを動的に読み込む
+    if (window.innerWidth <= 768) {  // 例: 768px以下のデバイスと判断
+        var script = document.createElement('script');
+        script.src = './javascript/style_sp.js';
+        script.type = 'text/javascript';
+        document.head.appendChild(script);
+    }
+</script>
 </head>
 
 <body id="category">
