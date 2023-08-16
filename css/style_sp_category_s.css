@@ -1,4 +1,9 @@
 /* base */
+
+.l-mylistwrap{
+  display: none;
+}
+
 .pc-only{
   /* display: none; */
 }
@@ -245,4 +250,46 @@
 
 .more-btn{
   line-height: 30px;
+}
+
+/* 大カテゴリー */
+.l-item-categorybtn-list img{
+  box-shadow: 5px 5px 0 #C6A83F;
+}
+
+.l-item-categorybtn-list{
+  gap: 15px;
+}
+
+.l-item-categorybtn-list li{
+  margin: 0;
+}
+
+.l-item-categorybtn-list .l-category-name{
+  margin-top: 14px;
+  font-size: 14px;
+  text-underline-offset: 4px;
+}
+
+.l-item-categorybtn{
+  border: none;
+}
+
+.l-main-sort{
+  position: inherit;
+  margin-bottom: 15px;
+  padding: 0 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c-item-select{
+  margin-left: 10px;
+}
+
+.l-main-sort::after{
+  right: 22px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #313131;
 }

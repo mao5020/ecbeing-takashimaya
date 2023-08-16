@@ -762,7 +762,7 @@ body {
 
 
 
-.is-grid1 .c-item-list:nth-child(1).grid-item,
+/* .is-grid1 .c-item-list:nth-child(1).grid-item,
 .is-grid1 .c-item-list:nth-child(19n).grid-item,
 .is-grid1 .c-item-list:nth-child(18n + 10).grid-item,
 .is-grid2 .c-item-list:nth-child(17n + 2).grid-item,
@@ -774,7 +774,7 @@ body {
 .is-grid8 .c-item-list:nth-child(17n + 8).grid-item,
 .is-grid9 .c-item-list:nth-child(18n + 9).grid-item {
     width: calc(100% / 3 * 2);
-}
+} */
 
 .is-grid1 .c-item-list:nth-child(4).grid-item,
 .is-grid1 .c-item-list:nth-child(19n).grid-item,
