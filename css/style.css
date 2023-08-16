@@ -317,6 +317,7 @@ input[type="submit"].c-header-input-submit{
 	justify-content: center;
 	padding-top: 164px;
 }
+
 #category2 .l-main,
 #mylist .l-main{
 	min-width: 1490px;
@@ -568,6 +569,7 @@ ul.main_tab03{
 	font-size: 14px;
 	color: #313131;
 	margin:10px 0 0;
+
 }
 .c-item-list{
 	position: relative;
