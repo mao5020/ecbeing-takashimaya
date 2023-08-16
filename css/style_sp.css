@@ -1076,7 +1076,7 @@ ul.main_tab03{
     position: fixed;
     right: 0;
     bottom: 0;
-    z-index: 999;
+    z-index: 120;
     transition: 0.3s all;
     flex-wrap: wrap;
     justify-content: end;
@@ -2210,7 +2210,7 @@ footer {
     display: block;
     margin: 0 auto;
     width: 200px;
-    margin-bottom: 8px;
+    margin-bottom: 13px;
 }
 
 .footer_copy {
@@ -2509,8 +2509,8 @@ a {
     box-sizing: border-box;
 }
 
-.all {
-    gap: 18px 10px;
+.l-item_all .c-item-list-ul{
+    gap:10px;
 }
 
 .l-item_all .c-item-list-ul {
