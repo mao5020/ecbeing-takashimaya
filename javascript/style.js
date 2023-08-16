@@ -167,6 +167,7 @@ $('.js-hamburger-nav-slide').on('click', function() {
 	}
 
 
+
 	// common-sp：フッター並び替え
 	const spFooterSort = function() {
 	    $(document).on('click','.js-fixed-sort',function(){
@@ -412,6 +413,7 @@ $('.js-hamburger-nav-slide').on('click', function() {
 
 	// SPカテゴリ第２階層：絞り込みスライド
 	const categoryItemRefine = function() {
+
 		$('.js-category-itemrefine').on('click',function(){
     		let categoryItemRefineArea = $('.l-itemrefine-list-wrap');
     		$(this).toggleClass('is-show');
