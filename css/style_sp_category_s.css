@@ -1,4 +1,9 @@
 /* base */
+
+.l-mylistwrap{
+  display: none;
+}
+
 .pc-only{
   /* display: none; */
 }
@@ -18,9 +23,14 @@
   font-size: 16px;
 }
 
+.l-item{
+  padding-top: 30px;
+}
+
 .l-itemrefine-wrap{
   border-radius: 0;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .c-itemrefine-title{
@@ -46,7 +56,8 @@
 
 .l-itemrefine-wrap .l-itemrefine-ul{
   width: 100%;
-  padding: 30px 10px 10px;
+  padding: 30px 10px 19px 10px;
+  gap: 15px;
 }
 
 .c-itemrefine-list .c-itemrefine-icon::before{
@@ -83,8 +94,9 @@
 }
 
 .number_box{
-  font-size: 12px;
-  margin-bottom: 10px;
+  font-size: 14px;
+  /* margin-bottom: 10px; */
+  padding: 0;
 }
 
 .c-itemdetail-list{
@@ -202,4 +214,82 @@
 
 .content .more{
   padding-bottom: 25px;
+}
+
+.l-item-filter{
+  padding-bottom: 20px;
+}
+
+.c-modal-item-btn-share a::before{
+  left: calc(50% - 9px);
+}
+
+.content.hide{
+  height: 80px;
+}
+
+
+
+/* マイリスト */
+.c-mylist-txt{
+  font-size: 14px;
+}
+
+.c-mylist-explan-title{
+  display: flex;
+  width: auto;
+}
+
+.mylist_box{
+  padding: 0;
+}
+
+.mylist_container{
+  margin-bottom: 10px;
+}
+
+.more-btn{
+  line-height: 30px;
+}
+
+/* 大カテゴリー */
+.l-item-categorybtn-list img{
+  box-shadow: 5px 5px 0 #C6A83F;
+}
+
+.l-item-categorybtn-list{
+  gap: 15px;
+}
+
+.l-item-categorybtn-list li{
+  margin: 0;
+}
+
+.l-item-categorybtn-list .l-category-name{
+  margin-top: 14px;
+  font-size: 14px;
+  text-underline-offset: 4px;
+}
+
+.l-item-categorybtn{
+  border: none;
+}
+
+.l-main-sort{
+  position: inherit;
+  margin-bottom: 15px;
+  padding: 0 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c-item-select{
+  margin-left: 10px;
+}
+
+.l-main-sort::after{
+  right: 22px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #313131;
 }
