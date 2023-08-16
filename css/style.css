@@ -956,6 +956,7 @@ _:-ms-fullscreen, :root .c-item-list-ul.is-grid1 .c-item-list:nth-child(24n){
 .c-itemdetail-text,
 .c-modal-item-text{
 	margin-bottom: 20px;
+  font-size: 16px;
 }
 .c-itemdetail-allergy,
 .c-modal-item-allergy{
@@ -968,9 +969,8 @@ _:-ms-fullscreen, :root .c-item-list-ul.is-grid1 .c-item-list:nth-child(24n){
 .c-itemdetail-allergy dd,
 .c-modal-item-allergy dd{
 	display: inline-block;
-	margin-left: 10px;
+  margin-right: 10px;
 	background:#dbdbdb;
-	padding: 4px 10px;
 	border-radius: 4px;
 }
 .c-itemdetail-detail,
@@ -980,11 +980,13 @@ _:-ms-fullscreen, :root .c-item-list-ul.is-grid1 .c-item-list:nth-child(24n){
 .c-itemdetail-detail dt,
 .c-modal-item-detail dt{
 	margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
 }
 .c-itemdetail-attention,
 .c-modal-item-attention{
 	background:#eeeeee;
-	padding:10px;
+	padding:20px;
 	border-radius: 4px;
 	margin-bottom: 20px;
 }
@@ -1004,6 +1006,9 @@ _:-ms-fullscreen, :root .c-item-list-ul.is-grid1 .c-item-list:nth-child(24n){
 .c-itemdetail-apply-num,
 .c-modal-item-apply-num{
 	margin-bottom: 15px;
+  color: #777777;
+  font-size: 16px;
+  font-weight: 700;
 }
 .l-itemdetail-item-sku,
 .l-modal-item-sku{
@@ -1033,6 +1038,9 @@ _:-ms-fullscreen, :root .c-item-list-ul.is-grid1 .c-item-list:nth-child(24n){
 	border:1px solid #999;
 	padding: 5px 25px 5px 10px;
 	position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  width: 160px;
 }
 .c-itemdetail-sku-explain dt,
 .c-itemdetail-sku-explain dd,
@@ -1926,6 +1934,7 @@ input[type="submit"].c-modal-last-input-submit{
     margin-right: 9px;
     text-align: center;
     margin-bottom: 10px;
+    letter-spacing: 0.05em;
 }
 .c-itemrefine-list:nth-child(5n) {
     margin-right: 0;
@@ -1933,7 +1942,7 @@ input[type="submit"].c-modal-last-input-submit{
 .c-itemrefine-list .c-itemrefine-icon {
     position: absolute;
     left: 5px;
-    top: 5px;
+    top: 6px;
     margin: auto 0;
 }
 .c-itemrefine-list a {
@@ -2547,7 +2556,9 @@ html{
 }
 
 body{
-position: relative;}
+  position: relative;
+  color: #313131;
+}
 
 /* ページトップ ボタン*/
 
@@ -3334,6 +3345,8 @@ body.fixed {
 
 .l-itemrefine-wrap .c-itemrefine-title p {
   margin: 0;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .l-itemrefine-list-wrap {
@@ -3365,7 +3378,7 @@ body.fixed {
 .c-itemrefine-list .c-itemrefine-icon {
   position: absolute;
   left: 5px;
-  top: 5px;
+  top: 6px;
   margin: auto 0;
 }
 
@@ -3374,7 +3387,7 @@ body.fixed {
   color: #A38A32;
   text-decoration: none;
   display: block;
-  padding: 7px 9px;
+  padding: 7px 9px 6px;
   border-radius: 22px;
   border: 1px solid #A38A32;
   position: relative;
@@ -3438,7 +3451,7 @@ body.fixed {
 }
 
 .filter_icon {
-  width: 14px;
+  width: 18px;
   margin-right: 11px;
 }
 
@@ -3562,7 +3575,7 @@ body.fixed {
 /* prev */
 
 .category-slider .slick-prev {
-  left: -3px;
+  left: -5px;
   width: 30px;
 }
 
@@ -3608,7 +3621,7 @@ body.fixed {
   border: 1px solid #ADADAD;
   border-radius: 20px;
   padding: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .c-itemdetail-title,
@@ -3728,6 +3741,9 @@ body.fixed {
 .c-itemdetail-attention,
 .c-modal-item-attention {
   background-color: #FAF5E4;
+  color: #313131;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
 }
 
 
@@ -3789,7 +3805,7 @@ body.fixed {
   background-size: 15px 15px;
   height: 15px;
   width: 15px;
-  padding-right: 25px;
+  padding-right: 10px;
   margin: 0;
 }
 
@@ -3840,6 +3856,10 @@ body.fixed {
   margin-left: 0;
 }
 
+
+#category .l-item{
+  border: none;
+}
 
   /* パソコンで見たときは"pc"のclassがついた画像が表示される */
 
