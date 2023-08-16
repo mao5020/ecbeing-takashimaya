@@ -28,8 +28,27 @@ body {
     display: none;
 }
 
+
+
 .c-header-search img {
     width: 18px;
+}
+
+.icon_search{
+    width: 14px;
+}
+
+.icon_guide{
+    width: 20px;
+}
+
+.icon_logout{
+    width: 20px;
+}
+.c-header-sp-menu_txt{
+    padding-top: 6px;
+    font-size: 12px;
+
 }
 
 .l-header {
@@ -136,36 +155,65 @@ body {
     height: 20px;
     /* padding-right: 8%; */
     z-index: 100;
+    min-width: 80px;
 }
 
 .c-header-logo img {
     /* width: 150px; */
     width: auto;
-    height: 15px;
+    height: 16px;
 }
+
+/* .header_inner_sp{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+} */
+
 
 .l-header-left {
     /* padding: 10px 0; */
     align-items: center;
+    /* display: flex;
+    justify-content: space-between;
+    width: 100%; */
 }
 
 .l-header form {
     width: 100%;
 }
 
+.l-header-list{
+    min-width: 220px;
+    position: absolute;
+    right: 0;
+    padding: 0 15px;
+}
+.l-header-list_inner{
+    display: flex;
+    justify-content: flex-end;
+    align-items:baseline;
+    gap: 15px;
+}
+
 .c-header-mylist,
-.c-header-search {
+.c-header-search,
+.c-header-guide,
+.c-header-logout
+ {
     text-align: center;
     margin-left: 3%;
     z-index: 100;
 }
 
 .c-header-mylist a,
-.c-header-search {
+.c-header-search,
+.c-header-guide,
+.c-header-logout  {
     text-decoration: none;
     color: #333;
     font-size: 10px;
-    display: block;
+    display: inline;
 }
 
 .c-header-mylist a img {
@@ -178,9 +226,9 @@ body {
 }
 
 .c-header-search .is-text {
-    font-size: 10px;
+    /* font-size: 10px;
     padding: 4px 0 0 2px;
-    font-weight: 500;
+    font-weight: 500; */
 }
 
 .c-header-menu {
@@ -470,14 +518,17 @@ body {
 .c-header-select {
     width: 100%;
     font-size: 16px;
+    border-radius: 5px;
 }
 
 .c-header-input-text {
-    width: 95%;
+    width: 100%;
     display: block;
     padding: 12px 2.5%;
     margin-bottom: 15px;
     font-size: 16px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
 }
 
 .c-header-keyword {
@@ -487,6 +538,18 @@ body {
 .c-header-input-submit {
     margin-bottom: 15px;
 }
+
+
+input[type="submit"].c-header-input-submit{
+	background: #313131;
+	padding: 10px 0;
+	color: #fff;
+	width: 60px;
+	border-radius: 5px;
+	position: relative;
+    margin: 0 auto;
+}
+
 
 .c-header-search-close-sp {
     position: relative;

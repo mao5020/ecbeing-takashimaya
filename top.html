@@ -52,10 +52,9 @@
                         <input type="hidden" name="methods" id="methods" value="SEARCHLIST">
                         <input type="hidden" name="privilege_type" id="privilege_type" value="">
                         <div class="l-header-left">
-                            <!-- <div class="c-header-mylist"><a href="./mylist.html"><img src="./images/common/icon_mylist_on_sp.png"><p class="is-text">マイリスト</p></a></div>
-                        <div class="c-header-search js-header-search"><img src="./images/common/icon_search.png"><p class="is-text">サーチ</p></div> -->
 
-                            <div class="c-header-menu"><a href="#">
+
+                                <div class="c-header-menu"><a href="#">
                                     <p class="is-line"><span></span></p>
                                 </a></div>
                             <h1 class="c-header-logo"><a href="./top.html"><img src="./images/assets/logo.png"></a></h1>
@@ -79,8 +78,30 @@
                                     <input name="keyWord" id="keyWord" type="text" placeholder="キーワードから探す" value=""
                                         class="c-header-input-text">
                                     <div class="c-header-input-voice"></div>
-                                    <input type="submit" class="c-header-input-submit" value="">
+                                    <input type="submit" class="c-header-input-submit pc" value="">
+                                    <input type="submit" class="c-header-input-submit sp" value="検索">
                                 </div>
+                            </div>
+
+                            <div class="sp l-header-list">
+                                <ul class="l-header-list_inner">
+                                    <li class="c-header-search js-header-search c-header-sp-menu">
+                                        <img src="./images/assets/icon_serch_bk_sp.svg" class="is-text icon_search" width="14">
+                                        <p class="c-header-sp-menu_txt">検索</p>
+                                    </li>
+                                    <li class="c-header-guide c-header-sp-menu">
+                                        <a href="./guide.html" class="">
+                                            <img src="./images/assets/icon_guide_bk_sp.svg" class="is-text icon_guide" width="20">
+                                            <p class="c-header-sp-menu_txt">ご利用ガイド</p>
+                                        </a>
+                                    </li>
+                                    <li class="c-header-logout c-header-sp-menu">
+                                        <a href="./login.html">
+                                            <img src="./images/assets/icon_logout_bk_sp.svg" class="is-text icon_logout"width="20">
+                                            <p class="c-header-sp-menu_txt">ログアウト</p>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </form>
