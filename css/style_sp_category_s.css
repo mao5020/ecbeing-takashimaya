@@ -21,6 +21,7 @@
 .l-itemrefine-wrap{
   border-radius: 0;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .c-itemrefine-title{
@@ -46,7 +47,8 @@
 
 .l-itemrefine-wrap .l-itemrefine-ul{
   width: 100%;
-  padding: 30px 10px 10px;
+  padding: 30px 10px 19px 10px;
+  gap: 15px;
 }
 
 .c-itemrefine-list .c-itemrefine-icon::before{
@@ -202,4 +204,19 @@
 
 .content .more{
   padding-bottom: 25px;
+}
+
+.l-item-filter{
+  padding-bottom: 20px;
+}
+
+.c-modal-item-btn-share a::before{
+  left: calc(50% - 9px);
+}
+
+.content.hide{
+  height: 80px;
+}
+
+.c-modal-item-btn-mylist a::before{
 }
