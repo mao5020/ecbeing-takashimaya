@@ -18,6 +18,10 @@
   font-size: 16px;
 }
 
+.l-item{
+  padding-top: 30px;
+}
+
 .l-itemrefine-wrap{
   border-radius: 0;
   padding: 0;
@@ -85,8 +89,9 @@
 }
 
 .number_box{
-  font-size: 12px;
-  margin-bottom: 10px;
+  font-size: 14px;
+  /* margin-bottom: 10px; */
+  padding: 0;
 }
 
 .c-itemdetail-list{
@@ -218,5 +223,26 @@
   height: 80px;
 }
 
-.c-modal-item-btn-mylist a::before{
+
+
+/* マイリスト */
+.c-mylist-txt{
+  font-size: 14px;
+}
+
+.c-mylist-explan-title{
+  display: flex;
+  width: auto;
+}
+
+.mylist_box{
+  padding: 0;
+}
+
+.mylist_container{
+  margin-bottom: 10px;
+}
+
+.more-btn{
+  line-height: 30px;
 }

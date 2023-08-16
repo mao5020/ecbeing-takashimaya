@@ -28,11 +28,22 @@
         media="only screen and (min-width: 750px)">
     <link href="./css/style_sp.css" rel="stylesheet" type="text/css" charset="UTF-8"
         media="screen and (max-width: 750px)">
+    <link href="./css/style_sp_category_s.css" rel="stylesheet" type="text/css" charset="UTF-8"
+    media="screen and (max-width: 750px)">
 
     <script type='text/javascript' src='./javascript/jquery.min.js'></script>
     <script type='text/javascript' src='./javascript/masonry.pkgd.min.js'></script>
     <script type='text/javascript' src='./javascript/slick.min.js'></script>
     <script type='text/javascript' src='./javascript/style.js'></script>
+    <script>
+        // ビューポートの幅に応じてJSファイルを動的に読み込む
+        if (window.innerWidth <= 768) {  // 例: 768px以下のデバイスと判断
+            var script = document.createElement('script');
+            script.src = './javascript/style_sp.js';
+            script.type = 'text/javascript';
+            document.head.appendChild(script);
+        }
+    </script>
 </head>
 
 <body id="category">
@@ -188,17 +199,6 @@
             <!-- メインカラム /-->
             <section class="l-mainitem">
 
-                <!-- sp-category-nav  -->
-                <div class="l-sp-category-nav">
-                    <ul class="c-sp-category-nav">
-                        <li class="is-current"><a href="./top.html">すべての<br>アイテムを見る</a></li>
-                        <li><a href="feature_top.html">特集</a></li>
-                        <li class="is-current"><span class="js-category-navi">カテゴリ</span></li>
-                    </ul>
-                </div>
-                <!-- /sp-category-nav  -->
-
-
                 <!-- breadcrumb  -->
                 <div class="l-breadcrumb">
                     <ul class="c-breadcrumb">
@@ -332,9 +332,9 @@
                                     <div class="l-modal-item-btn">
                                         <div class="c-modal-item-btn-submit"><a href="#"
                                                 class="js-modal-submit">このアイテムに決定する</a></div>
-                                        <!-- <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加する</a></div> -->
+                                        <!-- <div class="c-modal-item-btn-mylist is-category"><a href="#" class="js-modal-mylist">マイリストに追加</a></div> -->
                                         <div class="c-modal-item-btn-mylist"><a href="#"
-                                                class="js-modal-mylist">マイリストからはずす</a></div>
+                                                class="js-modal-mylist">マイリストから外す</a></div>
                                         <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
                                         <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a>
                                         </div>
@@ -497,9 +497,9 @@
                                         <div class="c-modal-item-btn-submit"><a href="#"
                                                 class="js-modal-submit">このアイテムに決定する</a></div>
                                         <div class="c-modal-item-btn-mylist is-category"><a href="#"
-                                                class="js-modal-mylist">マイリストに追加する</a>
+                                                class="js-modal-mylist">マイリストに追加</a>
                                         </div>
-                                        <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストからはずす</a></div> -->
+                                        <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストから外す</a></div> -->
                                         <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
                                         <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a>
                                         </div>
@@ -664,9 +664,9 @@
                                         <div class="c-modal-item-btn-submit"><a href="#"
                                                 class="js-modal-submit">このアイテムに決定する</a></div>
                                         <div class="c-modal-item-btn-mylist is-category"><a href="#"
-                                                class="js-modal-mylist">マイリストに追加する</a>
+                                                class="js-modal-mylist">マイリストに追加</a>
                                         </div>
-                                        <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストからはずす</a></div> -->
+                                        <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストから外す</a></div> -->
                                         <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
                                         <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a>
                                         </div>
@@ -823,9 +823,9 @@
                                         <div class="c-modal-item-btn-submit"><a href="#"
                                                 class="js-modal-submit">このアイテムに決定する</a></div>
                                         <div class="c-modal-item-btn-mylist is-category"><a href="#"
-                                                class="js-modal-mylist">マイリストに追加する</a>
+                                                class="js-modal-mylist">マイリストに追加</a>
                                         </div>
-                                        <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストからはずす</a></div> -->
+                                        <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストから外す</a></div> -->
                                         <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
                                         <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a>
                                         </div>
@@ -982,9 +982,9 @@
                                         <div class="c-modal-item-btn-submit"><a href="#"
                                                 class="js-modal-submit">このアイテムに決定する</a></div>
                                         <div class="c-modal-item-btn-mylist is-category"><a href="#"
-                                                class="js-modal-mylist">マイリストに追加する</a>
+                                                class="js-modal-mylist">マイリストに追加</a>
                                         </div>
-                                        <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストからはずす</a></div> -->
+                                        <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストから外す</a></div> -->
                                         <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
                                         <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a>
                                         </div>
@@ -1141,9 +1141,9 @@
                                         <div class="c-modal-item-btn-submit"><a href="#"
                                                 class="js-modal-submit">このアイテムに決定する</a></div>
                                         <div class="c-modal-item-btn-mylist is-category"><a href="#"
-                                                class="js-modal-mylist">マイリストに追加する</a>
+                                                class="js-modal-mylist">マイリストに追加</a>
                                         </div>
-                                        <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストからはずす</a></div> -->
+                                        <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストから外す</a></div> -->
                                         <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
                                         <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a>
                                         </div>
@@ -1299,9 +1299,9 @@
                                         <div class="c-modal-item-btn-submit"><a href="#"
                                                 class="js-modal-submit">このアイテムに決定する</a></div>
                                         <div class="c-modal-item-btn-mylist is-category"><a href="#"
-                                                class="js-modal-mylist">マイリストに追加する</a>
+                                                class="js-modal-mylist">マイリストに追加</a>
                                         </div>
-                                        <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストからはずす</a></div> -->
+                                        <!-- <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストから外す</a></div> -->
                                         <!-- <div class="c-modal-item-btn-relation"><a href="#" class="js-mylist-relation" >関連商品</a></div> -->
                                         <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a>
                                         </div>
@@ -1469,7 +1469,7 @@
                         <div class="l-modal-item-btn">
                             <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a>
                             </div>
-                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                             </div>
                             <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
                             <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -1607,7 +1607,7 @@
                         <div class="l-modal-item-btn">
                             <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a>
                             </div>
-                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                             </div>
                             <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
                             <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -1742,7 +1742,7 @@
                         <div class="l-modal-item-btn">
                             <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a>
                             </div>
-                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                             </div>
                             <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
                             <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -1876,7 +1876,7 @@
                         </div>
                         <div class="l-modal-item-btn">
                             <div class="c-modal-item-btn-submit"><span>在庫切れ</span></div>
-                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                             </div>
                             <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
                             <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -2009,7 +2009,7 @@
                         </div>
                         <div class="l-modal-item-btn">
                             <div class="c-modal-item-btn-submit"><span>在庫切れ</span></div>
-                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                             </div>
                             <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
                             <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -2149,7 +2149,7 @@
                         <div class="l-modal-item-btn">
                             <div class="c-modal-item-btn-submit"><a href="#" class="js-modal-submit">このアイテムに決定する</a>
                             </div>
-                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                             </div>
                             <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
                             <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -2284,7 +2284,7 @@
                         </div>
                         <div class="l-modal-item-btn">
                             <div class="c-modal-item-btn-submit"><span>在庫切れ</span></div>
-                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                             </div>
                             <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
                             <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -2419,7 +2419,7 @@
                         </div>
                         <div class="l-modal-item-btn">
                             <div class="c-modal-item-btn-submit"><span>在庫切れ</span></div>
-                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                             </div>
                             <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
                             <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>
@@ -2555,7 +2555,7 @@
                         </div>
                         <div class="l-modal-item-btn">
                             <div class="c-modal-item-btn-submit"><span>在庫切れ</span></div>
-                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加する</a>
+                            <div class="c-modal-item-btn-mylist"><a href="#" class="js-modal-mylist">マイリストに追加</a>
                             </div>
                             <div class="c-modal-item-btn-relation"><a href="#" class="js-modal-relation">関連商品</a></div>
                             <div class="c-modal-item-btn-share"><a href="#" class="js-modal-share">シェア</a></div>

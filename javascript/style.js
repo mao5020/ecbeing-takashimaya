@@ -205,6 +205,7 @@ $(function(){
 					breakpoint: 750, // 399px以下のサイズに適用
 					settings: {
 						slidesToShow: 1,
+						centerPadding: "0",
 					},
 				},
 			],
