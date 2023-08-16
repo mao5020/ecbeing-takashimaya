@@ -40,143 +40,209 @@
   <div id="category">
 
     <div class="l-wrapall" id="l-wrap">
-
-        <header class="fix_wrap">
-            <div class="l-header">
-                <div class="l-header_inner">
-                    <form action="/presentage/item.php?pnumflag=1" method="post">
-                        <input type="hidden" name="methods" id="methods" value="SEARCHLIST">
-                        <input type="hidden" name="privilege_type" id="privilege_type" value="">
-                        <div class="l-header-left">
-                            <div class="c-header-mylist"><a href="./mylist.html"><img
-                                        src="./images/common/icon_mylist_on_sp.png">
-                                    <p class="is-text">マイリスト</p>
-                                </a></div>
-                            <div class="c-header-search js-header-search"><img src="./images/common/icon_search.png">
-                                <p class="is-text">サーチ</p>
-                            </div>
-
-                            <h1 class="c-header-logo"><a href="./top.html"><img src="./images/assets/logo.png"></a></h1>
+      <header class="fix_wrap">
+        <div class="l-header">
+            <div class="l-header_inner">
+                <form action="/presentage/item.php?pnumflag=1" method="post">
+                    <input type="hidden" name="methods" id="methods" value="SEARCHLIST">
+                    <input type="hidden" name="privilege_type" id="privilege_type" value="">
+                    <div class="l-header-left">
                             <div class="c-header-menu"><a href="#">
-                                    <p class="is-line"><span></span></p>
-                                    <p class="is-text">メニュー</p>
-                                </a></div>
-                            <div class="c-header-search-wrap-sp">
-                                <span class="c-header-search-close-sp"></span>
-                                <div class="c-header-select-wrap">
-                                    <select name="searchBunruiId3" id="searchBunruiId3" class="minimal c-header-select">
-                                        <option value="">カテゴリを選ぶ</option>
-                                        <option value="1">ファッション・ビューティ</option>
-                                        <option value="2">雑貨・ホビー</option>
-                                        <option value="3">リビング・ダイニング</option>
-                                        <option value="4">健康・防災</option>
-                                        <option value="5">家電</option>
-                                        <option value="6">生鮮食品</option>
-                                        <option value="7">食品</option>
-                                        <option value="8">ドリンク・酒</option>
-                                        <option value="9">旅行券・食事券</option>
-                                    </select>
-                                </div>
-                                <div class="c-header-input-wrap">
-                                    <input name="keyWord" id="keyWord" type="text" placeholder="キーワードから探す" value=""
-                                        class="c-header-input-text">
-                                    <div class="c-header-input-voice"></div>
-                                    <input type="submit" class="c-header-input-submit" value="">
-                                </div>
+                                <p class="is-line"><span></span></p>
+                            </a></div>
+                        <h1 class="c-header-logo"><a href="./top.html"><img src="./images/assets/logo.png"></a></h1>
+                        <div class="c-header-search-wrap-sp">
+                            <span class="c-header-search-close-sp"></span>
+                            <div class="c-header-select-wrap">
+                                <select name="searchBunruiId3" id="searchBunruiId3" class="minimal c-header-select">
+                                    <option value="">カテゴリを選ぶ</option>
+                                    <option value="1">ファッション・ビューティ</option>
+                                    <option value="2">雑貨・ホビー</option>
+                                    <option value="3">リビング・ダイニング</option>
+                                    <option value="4">健康・防災</option>
+                                    <option value="5">家電</option>
+                                    <option value="6">生鮮食品</option>
+                                    <option value="7">食品</option>
+                                    <option value="8">ドリンク・酒</option>
+                                    <option value="9">旅行券・食事券</option>
+                                </select>
+                            </div>
+                            <div class="c-header-input-wrap">
+                                <input name="keyWord" id="keyWord" type="text" placeholder="キーワードから探す" value=""
+                                    class="c-header-input-text">
+                                <div class="c-header-input-voice"></div>
+                                <input type="submit" class="c-header-input-submit pc" value="">
+                                <input type="submit" class="c-header-input-submit sp" value="検索">
                             </div>
                         </div>
-                    </form>
-                    <ul class="c-header-linklist">
-                        <li class="c-header-linklist-guide"><a href="./guide.html">ご利用ガイド</a></li>
-                        <li class="c-header-linklist-mylist"><a href="./mylist.html">マイリスト</a></li>
-                        <li class="c-header-linklist-logout"><a href="./login.html">ログアウト</a></li>
+
+                        <div class="sp l-header-list">
+                            <ul class="l-header-list_inner">
+                                <li class="c-header-search js-header-search c-header-sp-menu">
+                                    <img src="./images/assets/icon_serch_bk_sp.svg" class="is-text icon_search" width="14">
+                                    <p class="c-header-sp-menu_txt">検索</p>
+                                </li>
+                                <li class="c-header-guide c-header-sp-menu">
+                                    <a href="./guide.html" class="">
+                                        <img src="./images/assets/icon_guide_bk_sp.svg" class="is-text icon_guide" width="20">
+                                        <p class="c-header-sp-menu_txt">ご利用ガイド</p>
+                                    </a>
+                                </li>
+                                <li class="c-header-logout c-header-sp-menu">
+                                    <a href="./login.html">
+                                        <img src="./images/assets/icon_logout_bk_sp.svg" class="is-text icon_logout"width="20">
+                                        <p class="c-header-sp-menu_txt">ログアウト</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+                <ul class="c-header-linklist">
+                    <li class="c-header-linklist-guide"><a href="./guide.html">ご利用ガイド</a></li>
+                    <li class="c-header-linklist-mylist"><a href="./mylist.html">マイリスト</a></li>
+                    <li class="c-header-linklist-logout"><a href="./login.html">ログアウト</a></li>
+                </ul>
+                <div class="sp_header_bg"></div>
+            </div>
+        </div>
+        <!-- sticky category  -->
+        <div class="l-main-stickywrap">
+            <div class="l-main-sticky js-mainsticky">
+                <div class="l-main-tab">
+                    <ul class="c-main-tab">
+                        <li class="is-current"><a href="#">すべてのアイテム</a></li>
+                        <li><a href="#">ファッション・ビューティー</a></li>
+                        <li class="main_tab01" data-related-menu="main_tab01"><a href="#">食品</a></li>
+                        <li class="main_tab02" data-related-menu="main_tab02"><a href="#">雑貨</a></li>
+                        <li><a href="#">招待券・チャリティ</a></li>
+                        <li class="main_tab03" data-related-menu="main_tab02"><a href="#">特集</a></li>
                     </ul>
-                    <div class="sp_header_bg"></div>
                 </div>
             </div>
-            <!-- sticky category  -->
-            <div class="l-main-stickywrap" >
-              <div class="l-main-sticky js-mainsticky">
-                  <div class="l-main-tab">
-                      <ul class="c-main-tab">
-                          <li class="is-current"><a href="#">すべてのアイテム</a></li>
-                          <li><a href="#">ファッション・ビューティー</a></li>
-                          <li class="main_tab01" data-related-menu="main_tab01"><a href="#">食品</a></li>
-                          <li class="main_tab02" data-related-menu="main_tab02"><a href="#">雑貨</a></li>
-                          <li><a href="#">招待券・チャリティ</a></li>
-                          <li class="main_tab03" data-related-menu="main_tab02"><a href="#">特集</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <ul class="main_tab01">
-              <li><a href="#">01  </a></li>
-              <li><a href="#">和菓子</a></li>
-              <li><a href="#">惣菜・お弁当</a></li>
-              <li><a href="#">精肉・ハム・ソーセージ</a></li>
-              <li><a href="#">魚介・塩干物</a></li>
-              <li><a href="#">パン・ジャム</a></li>
-              <li><a href="#">フルーツ・野菜</a></li>
-              <li><a href="#">水・ドリンク</a></li>
-              <li><a href="#">ワイン・シャンパン</a></li>
-              <li><a href="#">ビール・洋酒</a></li>
-              <li><a href="#">日本酒・焼酎</a></li>
-              <li><a href="#">調味料</a></li>
-              <li><a href="#">米・米加工品</a></li>
-              <li><a href="#">麺類</a></li>
-              <li><a href="#">昆布・お吸い物</a></li>
-              <li><a href="#">うめぼし・漬物・佃煮</a></li>
-              <li><a href="#">のり・かつお削り・椎茸</a></li>
-              <li><a href="#">よりどりセット</a></li>
-              <li><a href="#">お買い得品</a></li>
-          </ul>
-          <ul class="main_tab02">
-              <li><a href="#">02</a></li>
-              <li><a href="#">和菓子</a></li>
-              <li><a href="#">惣菜・お弁当</a></li>
-              <li><a href="#">精肉・ハム・ソーセージ</a></li>
-              <li><a href="#">魚介・塩干物</a></li>
-              <li><a href="#">パン・ジャム</a></li>
-              <li><a href="#">フルーツ・野菜</a></li>
-              <li><a href="#">水・ドリンク</a></li>
-              <li><a href="#">ワイン・シャンパン</a></li>
-              <li><a href="#">ビール・洋酒</a></li>
-              <li><a href="#">日本酒・焼酎</a></li>
-              <li><a href="#">調味料</a></li>
-              <li><a href="#">米・米加工品</a></li>
-              <li><a href="#">麺類</a></li>
-              <li><a href="#">昆布・お吸い物</a></li>
-              <li><a href="#">うめぼし・漬物・佃煮</a></li>
-              <li><a href="#">のり・かつお削り・椎茸</a></li>
-              <li><a href="#">よりどりセット</a></li>
-              <li><a href="#">お買い得品</a></li>
-          </ul>
-          <ul class="main_tab03">
-              <li><a href="#">03</a></li>
-              <li><a href="#">和菓子</a></li>
-              <li><a href="#">惣菜・お弁当</a></li>
-              <li><a href="#">精肉・ハム・ソーセージ</a></li>
-              <li><a href="#">魚介・塩干物</a></li>
-              <li><a href="#">パン・ジャム</a></li>
-              <li><a href="#">フルーツ・野菜</a></li>
-              <li><a href="#">水・ドリンク</a></li>
-              <li><a href="#">ワイン・シャンパン</a></li>
-              <li><a href="#">ビール・洋酒</a></li>
-              <li><a href="#">日本酒・焼酎</a></li>
-              <li><a href="#">調味料</a></li>
-              <li><a href="#">米・米加工品</a></li>
-              <li><a href="#">麺類</a></li>
-              <li><a href="#">昆布・お吸い物</a></li>
-              <li><a href="#">うめぼし・漬物・佃煮</a></li>
-              <li><a href="#">のり・かつお削り・椎茸</a></li>
-              <li><a href="#">よりどりセット</a></li>
-              <li><a href="#">お買い得品</a></li>
-          </ul>
-          <!-- /sticky category  -->
-        </header>
+        </div>
+        <ul class="main_tab01">
+            <li><a href="#">01 </a></li>
+            <li><a href="#">和菓子</a></li>
+            <li><a href="#">惣菜・お弁当</a></li>
+            <li><a href="#">精肉・ハム・ソーセージ</a></li>
+            <li><a href="#">魚介・塩干物</a></li>
+            <li><a href="#">パン・ジャム</a></li>
+            <li><a href="#">フルーツ・野菜</a></li>
+            <li><a href="#">水・ドリンク</a></li>
+            <li><a href="#">ワイン・シャンパン</a></li>
+            <li><a href="#">ビール・洋酒</a></li>
+            <li><a href="#">日本酒・焼酎</a></li>
+            <li><a href="#">調味料</a></li>
+            <li><a href="#">米・米加工品</a></li>
+            <li><a href="#">麺類</a></li>
+            <li><a href="#">昆布・お吸い物</a></li>
+            <li><a href="#">うめぼし・漬物・佃煮</a></li>
+            <li><a href="#">のり・かつお削り・椎茸</a></li>
+            <li><a href="#">よりどりセット</a></li>
+            <li><a href="#">お買い得品</a></li>
+             <!-- 閉じるボタンを追加 -->
+             <div class="sp">
+                <a href="#" class="close-button">閉じる<span class="tab_close">✕</span>
+                </a>
+            </div>
+        </ul>
+        <ul class="main_tab02">
+            <li><a href="#">02</a></li>
+            <li><a href="#">和菓子</a></li>
+            <li><a href="#">惣菜・お弁当</a></li>
+            <li><a href="#">精肉・ハム・ソーセージ</a></li>
+            <li><a href="#">魚介・塩干物</a></li>
+            <li><a href="#">パン・ジャム</a></li>
+            <li><a href="#">フルーツ・野菜</a></li>
+            <li><a href="#">水・ドリンク</a></li>
+            <li><a href="#">ワイン・シャンパン</a></li>
+            <li><a href="#">ビール・洋酒</a></li>
+            <li><a href="#">日本酒・焼酎</a></li>
+            <li><a href="#">調味料</a></li>
+            <li><a href="#">米・米加工品</a></li>
+            <li><a href="#">麺類</a></li>
+            <li><a href="#">昆布・お吸い物</a></li>
+            <li><a href="#">うめぼし・漬物・佃煮</a></li>
+            <li><a href="#">のり・かつお削り・椎茸</a></li>
+            <li><a href="#">よりどりセット</a></li>
+            <li><a href="#">お買い得品</a></li>
+                             <!-- 閉じるボタンを追加 -->
+                             <div class="sp">
+                                <a href="#" class="close-button">閉じる<span class="tab_close">✕</span>
+                                </a>
+                            </div>
+        </ul>
+        <ul class="main_tab03">
+            <li><a href="#">03</a></li>
+            <li><a href="#">和菓子</a></li>
+            <li><a href="#">惣菜・お弁当</a></li>
+            <li><a href="#">精肉・ハム・ソーセージ</a></li>
+            <li><a href="#">魚介・塩干物</a></li>
+            <li><a href="#">パン・ジャム</a></li>
+            <li><a href="#">フルーツ・野菜</a></li>
+            <li><a href="#">水・ドリンク</a></li>
+            <li><a href="#">ワイン・シャンパン</a></li>
+            <li><a href="#">ビール・洋酒</a></li>
+            <li><a href="#">日本酒・焼酎</a></li>
+            <li><a href="#">調味料</a></li>
+            <li><a href="#">米・米加工品</a></li>
+            <li><a href="#">麺類</a></li>
+            <li><a href="#">昆布・お吸い物</a></li>
+            <li><a href="#">うめぼし・漬物・佃煮</a></li>
+            <li><a href="#">のり・かつお削り・椎茸</a></li>
+            <li><a href="#">よりどりセット</a></li>
+            <li><a href="#">お買い得品</a></li>
+                             <!-- 閉じるボタンを追加 -->
+                             <div class="sp">
+                                <a href="#" class="close-button">閉じる<span class="tab_close">✕</span>
+                                </a>
+                            </div>
+        </ul>
+        <!-- /sticky category  -->
+    </header>
+
+
+
 
         <main class="l-main" id="page_top">
-
+            <!-- 左ナビ /-->
+            <div class="l-hamburger-navwrap">
+              <nav class="l-hamburger-nav">
+                  <ul class="c-hamburger-nav-large">
+                      <li class="is-current hamburger-navitem"><a href="./top.html">すべてのアイテムを見る</a></li>
+                      <li class="js-hamburger-nav-slide hamburger-navitem"><a href=""
+                              class="is-category">カテゴリ</a>
+                              <ul class="c-hamburger-nav-middle">
+                                  <li class="sub_category"><a href="./category.html">ファッション・ビューティ</a></li>
+                                  <li class="sub_category"><a href="./category.html">雑貨・ホビー</a></li>
+                                  <li class="sub_category"><a href="./category.html">リビング・ダイニング</a></li>
+                                  <li class="sub_category"><a href="./category.html">健康・防災</a></li>
+                                  <li class="sub_category"><a href="./category.html">家電</a></li>
+                                  <li class="sub_category"><a href="./category.html">生鮮食品</a></li>
+                                  <li class="sub_category"><a href="./category.html">食品</a></li>
+                                  <li class="sub_category"><a href="./category.html">ドリンク・酒</a></li>
+                                  <li class="sub_category"><a href="./category.html">招待券・チャリティ</a></li>
+                              </ul>
+                              </li>
+                              <li class="hamburger-navitem"><a href="">閲覧履歴</a></li>
+                  </ul>
+                  <ul class="c-hamburger-nav-footnav">
+                      <li><a href="./guide.html">ご利用ガイド</a></li>
+                      <li><a href="./faq.html">よくあるご質問</a></li>
+                      <li><a href="./inquire.html">お問い合わせ</a></li>
+                      <li><a href="./shurui.html">酒類販売管理者標識</a></li>
+                      <li><a href="./privacypolicy.html">プライバシーポリシー</a></li>
+                  </ul>
+                  <div class="c-hamburger-nav-login-sp">
+                      <a href="./login.html"
+                          class="c-hamburger-nav-loginbtn">
+                          <span>ログアウト</span></a></div>
+                  <div class="c-hamburger-nav-logo"><a href="#"><img src="./images/assets/f_logo_bk.svg"></a></div>
+                  <div class="c-hamburger-nav-copy"><small>All rights reserved by Takashimaya Co.,Ltd.</small></div>
+              </nav>
+          </div>
+          <!-- /左ナビ -->
 
             <!-- メインカラム /-->
             <section class="l-mainitem">
