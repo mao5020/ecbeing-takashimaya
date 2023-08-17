@@ -31,14 +31,23 @@
         media="screen and (max-width: 750px)">
     <link href="./css/style_sp_header.css" rel="stylesheet" type="text/css" charset="UTF-8"
         media="screen and (max-width: 750px)">
+    <link href="./css/style_sp_category_s.css" rel="stylesheet" type="text/css" charset="UTF-8"
+        media="screen and (max-width: 750px)">
 
 
     <script type='text/javascript' src='./javascript/jquery.min.js'></script>
     <script type='text/javascript' src='./javascript/masonry.pkgd.min.js'></script>
     <script type='text/javascript' src='./javascript/slick.min.js'></script>
     <script type='text/javascript' src='./javascript/style.js'></script>
-
-
+    <script>
+        // ビューポートの幅に応じてJSファイルを動的に読み込む
+        if (window.innerWidth <= 768) {  // 例: 768px以下のデバイスと判断
+            var script = document.createElement('script');
+            script.src = './javascript/style_sp.js';
+            script.type = 'text/javascript';
+            document.head.appendChild(script);
+        }
+    </script>
 </head>
 
 <body id="top">
@@ -190,7 +199,6 @@
                 <li class="pc"><a href="#"><img src="images/assets/feature_banner02.jpg" alt=""></a></li>
                 <li class="pc"><a href="#"><img src="images/assets/feature_banner03.jpg" alt=""></a></li>
                 <li class="pc"><a href="#"><img src="images/assets/feature_banner04.jpg" alt=""></a></li>
-
                 <!-- 閉じるボタンを追加 -->
                 <div class="sp">
                     <a href="#" class="close-button">閉じる<span class="tab_close">✕</span>
@@ -1267,7 +1275,7 @@
             </div>
             <!-- /マイリスト -->
 
-
+        <!-- モーダルALL-->
 
             <!-- モーダル本体 modal01-->
             <div id="modal01" class="js-modal modal">
@@ -1292,15 +1300,13 @@
                                 <div class="modal-slider_item"><img src="./images/assets/item01.jpg" width=""></div>
                             </div>
                             <div class="l-modal-item-content modal_txt_area">
-                                <h2 class="c-itemdetail-title">モーダル用デザイン仮表示</h2>
+                                <h2 class="c-itemdetail-title">商品名：モーダル用デザイン仮表示</h2>
                                 <h3 class="c-itemdetail-subtitle">メインキャッチコピーが入ります。メインキャッチコピーが入ります。</h3>
                                 <div class="">
-
-                                    <div class="content">
+                                    <div class="content hide">
                                         <div class="text c-itemdetail-text">
                                             キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。
                                         </div>
-
                                         <dl class="c-itemdetail-detail">
                                             <dt>＜商品内容＞</dt>
                                             <dd>商品内容が入ります。商品内容が入ります。商品内容が入ります。商品内容が入ります。商品内容が入ります。商品内容が入ります。</dd>
@@ -1315,8 +1321,10 @@
                                             ※注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります
                                         </p>
                                         <p class="c-itemdetail-apply-num">申込番号：ABCDEF-123</p>
+                                        <div class="more">
+                                            <p class="more-btn">続きを見る</p>
+                                        </div>
                                     </div>
-
                                 </div>
 
                                 <div class="l-itemdetail-sku">
@@ -1339,10 +1347,8 @@
                                     <p class="c-itemdetail-sku-text">
                                         ※○や△の商品でも、お申し込み状況によっては、お届けに時間がかかる場合や商品をご用意できない場合がございます。</p>
                                 </div>
-
                             </div>
                             <div class="l-modal-item_btn_area">
-
                                 <div class="l-modal-item-share is-category">
                                     <div class="c-modal-item-share-close js-modal-item-share-close"></div>
                                     <ul class="c-modal-item-share">
@@ -1373,16 +1379,17 @@
 
 
                             <!-- 関連商品 -->
-                            <div class="">
-                                <!-- <div class="c-modal-close "></div> -->
-                                <div class="">
-                                    <div class="relation-items">
-                                        <div class="c-modal-item-relation-title ">1.[商品名] の関連商品</div>
+
+
+                            <div class="relation-items">
+                                <div class="c-modal-item-relation-title ">1.[商品名] の関連商品</div>
+                                <div class="c-modal-item-relation-list-wrap-box">
+                                    <div class="c-modal-item-relation-list-wrap">
                                         <ul class="c-modal-item-relation-list is-grid1">
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn "></div>
@@ -1391,7 +1398,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1400,7 +1407,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1409,7 +1416,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1418,7 +1425,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1460,15 +1467,13 @@
                                 <div class="modal-slider_item"><img src="./images/assets/item02.jpg" width=""></div>
                             </div>
                             <div class="l-modal-item-content modal_txt_area">
-                                <h2 class="c-itemdetail-title">モーダル用デザイン仮表示</h2>
+                                <h2 class="c-itemdetail-title">商品名：モーダル用デザイン仮表示</h2>
                                 <h3 class="c-itemdetail-subtitle">メインキャッチコピーが入ります。メインキャッチコピーが入ります。</h3>
                                 <div class="">
-
-                                    <div class="content">
+                                    <div class="content hide">
                                         <div class="text c-itemdetail-text">
                                             キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。
                                         </div>
-
                                         <dl class="c-itemdetail-detail">
                                             <dt>＜商品内容＞</dt>
                                             <dd>商品内容が入ります。商品内容が入ります。商品内容が入ります。商品内容が入ります。商品内容が入ります。商品内容が入ります。</dd>
@@ -1483,8 +1488,10 @@
                                             ※注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります
                                         </p>
                                         <p class="c-itemdetail-apply-num">申込番号：ABCDEF-123</p>
+                                        <div class="more">
+                                            <p class="more-btn">続きを見る</p>
+                                        </div>
                                     </div>
-
                                 </div>
 
                                 <div class="l-itemdetail-sku">
@@ -1507,10 +1514,8 @@
                                     <p class="c-itemdetail-sku-text">
                                         ※○や△の商品でも、お申し込み状況によっては、お届けに時間がかかる場合や商品をご用意できない場合がございます。</p>
                                 </div>
-
                             </div>
                             <div class="l-modal-item_btn_area">
-
                                 <div class="l-modal-item-share is-category">
                                     <div class="c-modal-item-share-close js-modal-item-share-close"></div>
                                     <ul class="c-modal-item-share">
@@ -1541,16 +1546,17 @@
 
 
                             <!-- 関連商品 -->
-                            <div class="">
-                                <!-- <div class="c-modal-close "></div> -->
-                                <div class="">
-                                    <div class="relation-items">
-                                        <div class="c-modal-item-relation-title ">1.[商品名] の関連商品</div>
+
+
+                            <div class="relation-items">
+                                <div class="c-modal-item-relation-title ">1.[商品名] の関連商品</div>
+                                <div class="c-modal-item-relation-list-wrap-box">
+                                    <div class="c-modal-item-relation-list-wrap">
                                         <ul class="c-modal-item-relation-list is-grid1">
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn "></div>
@@ -1559,7 +1565,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1568,7 +1574,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1577,7 +1583,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1586,7 +1592,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1603,6 +1609,7 @@
                 </div>
             </div>
             <!-- /モーダル本体02 -->
+
 
             <!-- モーダル本体 modal03-->
             <div id="modal03" class="js-modal modal">
@@ -1627,15 +1634,13 @@
                                 <div class="modal-slider_item"><img src="./images/assets/item03.jpg" width=""></div>
                             </div>
                             <div class="l-modal-item-content modal_txt_area">
-                                <h2 class="c-itemdetail-title">モーダル用デザイン仮表示</h2>
+                                <h2 class="c-itemdetail-title">商品名：モーダル用デザイン仮表示</h2>
                                 <h3 class="c-itemdetail-subtitle">メインキャッチコピーが入ります。メインキャッチコピーが入ります。</h3>
                                 <div class="">
-
-                                    <div class="content">
+                                    <div class="content hide">
                                         <div class="text c-itemdetail-text">
                                             キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。
                                         </div>
-
                                         <dl class="c-itemdetail-detail">
                                             <dt>＜商品内容＞</dt>
                                             <dd>商品内容が入ります。商品内容が入ります。商品内容が入ります。商品内容が入ります。商品内容が入ります。商品内容が入ります。</dd>
@@ -1650,8 +1655,10 @@
                                             ※注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります
                                         </p>
                                         <p class="c-itemdetail-apply-num">申込番号：ABCDEF-123</p>
+                                        <div class="more">
+                                            <p class="more-btn">続きを見る</p>
+                                        </div>
                                     </div>
-
                                 </div>
 
                                 <div class="l-itemdetail-sku">
@@ -1674,10 +1681,8 @@
                                     <p class="c-itemdetail-sku-text">
                                         ※○や△の商品でも、お申し込み状況によっては、お届けに時間がかかる場合や商品をご用意できない場合がございます。</p>
                                 </div>
-
                             </div>
                             <div class="l-modal-item_btn_area">
-
                                 <div class="l-modal-item-share is-category">
                                     <div class="c-modal-item-share-close js-modal-item-share-close"></div>
                                     <ul class="c-modal-item-share">
@@ -1708,16 +1713,17 @@
 
 
                             <!-- 関連商品 -->
-                            <div class="">
-                                <!-- <div class="c-modal-close "></div> -->
-                                <div class="">
-                                    <div class="relation-items">
-                                        <div class="c-modal-item-relation-title ">1.[商品名] の関連商品</div>
+
+
+                            <div class="relation-items">
+                                <div class="c-modal-item-relation-title ">1.[商品名] の関連商品</div>
+                                <div class="c-modal-item-relation-list-wrap-box">
+                                    <div class="c-modal-item-relation-list-wrap">
                                         <ul class="c-modal-item-relation-list is-grid1">
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn "></div>
@@ -1726,7 +1732,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1735,7 +1741,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1744,7 +1750,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1753,7 +1759,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1795,15 +1801,13 @@
                                 <div class="modal-slider_item"><img src="./images/assets/item04.jpg" width=""></div>
                             </div>
                             <div class="l-modal-item-content modal_txt_area">
-                                <h2 class="c-itemdetail-title">モーダル用デザイン仮表示</h2>
+                                <h2 class="c-itemdetail-title">商品名：モーダル用デザイン仮表示</h2>
                                 <h3 class="c-itemdetail-subtitle">メインキャッチコピーが入ります。メインキャッチコピーが入ります。</h3>
                                 <div class="">
-
-                                    <div class="content">
+                                    <div class="content hide">
                                         <div class="text c-itemdetail-text">
                                             キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。キャッチコピーが入ります。
                                         </div>
-
                                         <dl class="c-itemdetail-detail">
                                             <dt>＜商品内容＞</dt>
                                             <dd>商品内容が入ります。商品内容が入ります。商品内容が入ります。商品内容が入ります。商品内容が入ります。商品内容が入ります。</dd>
@@ -1818,8 +1822,10 @@
                                             ※注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります注意書きが入ります
                                         </p>
                                         <p class="c-itemdetail-apply-num">申込番号：ABCDEF-123</p>
+                                        <div class="more">
+                                            <p class="more-btn">続きを見る</p>
+                                        </div>
                                     </div>
-
                                 </div>
 
                                 <div class="l-itemdetail-sku">
@@ -1842,10 +1848,8 @@
                                     <p class="c-itemdetail-sku-text">
                                         ※○や△の商品でも、お申し込み状況によっては、お届けに時間がかかる場合や商品をご用意できない場合がございます。</p>
                                 </div>
-
                             </div>
                             <div class="l-modal-item_btn_area">
-
                                 <div class="l-modal-item-share is-category">
                                     <div class="c-modal-item-share-close js-modal-item-share-close"></div>
                                     <ul class="c-modal-item-share">
@@ -1876,16 +1880,17 @@
 
 
                             <!-- 関連商品 -->
-                            <div class="">
-                                <!-- <div class="c-modal-close "></div> -->
-                                <div class="">
-                                    <div class="relation-items">
-                                        <div class="c-modal-item-relation-title ">1.[商品名] の関連商品</div>
+
+
+                            <div class="relation-items">
+                                <div class="c-modal-item-relation-title ">1.[商品名] の関連商品</div>
+                                <div class="c-modal-item-relation-list-wrap-box">
+                                    <div class="c-modal-item-relation-list-wrap">
                                         <ul class="c-modal-item-relation-list is-grid1">
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn "></div>
@@ -1894,7 +1899,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1903,7 +1908,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1912,7 +1917,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1921,7 +1926,7 @@
                                             <li class="c-item-list c-modal-item-relation-item">
                                                 <a href="#" class="" data-item="item2">
                                                     <figure><img src="./images/assets/item02.jpg"></figure>
-                                                    <div class="c-item-name">札幌バルナバハム　ハム・ソーセージセット</div>
+                                                    <div class="c-item-name pc">札幌バルナバハム　ハム・ソーセージセット</div>
                                                 </a>
                                                 <div class="c-item-mylist">
                                                     <div class="c-item-mylist-btn js-itembtn is-on"></div>
@@ -1938,6 +1943,7 @@
                 </div>
             </div>
             <!-- /モーダル本体04 -->
+        <!-- /モーダルALL -->
 
         </main>
         <footer>
