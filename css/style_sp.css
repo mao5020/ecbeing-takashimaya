@@ -1110,7 +1110,7 @@ ul.main_tab03{
 
 
 .c-mylist-list-wrap {
-    height: calc(100vh - 365px);
+    /* height: calc(100vh - 365px); */
     overflow-y: auto;
     /* 縦方向のスクロールを許可 */
     width: 100%;
@@ -1167,7 +1167,8 @@ ul.main_tab03{
     margin: 0 auto;
     padding: 15px 0 0 0;
     flex-wrap: wrap;
-    gap: 24px 14px;
+    gap: 35px 14px;
+    margin-bottom: 15px;
 }
 
 .l-mylist_container {
@@ -1957,6 +1958,10 @@ ul.main_tab03{
 }
 
 
+.c-itemdetail-attention, .c-modal-item-attention{
+    border-radius:0;
+}
+
 /* mylist */
 .l-mylist-refine {
     border: none;
@@ -2121,7 +2126,7 @@ ul.main_tab03{
     margin: 0 auto;
     text-align: center;
     box-sizing: border-box;
-    padding: 200px 0 0;
+    padding: 140px 0 0;
     overflow: hidden;
     background: rgba(0, 0, 0, 60%);
 }
@@ -2291,16 +2296,18 @@ a {
 }
 
 .container_login {
-    background-image: url(../images/login/login_bg_img_sp.jpg);
-    background-color: #CDE9E5;
-    /* background-blend-mode: multiply; */
+    background-image: url(../images/login/login_bg_img_2_sp.jpg);
+    background-color: rgb(205 233 229 / 60%);
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
+
     background-size: cover;
     background-position: bottom;
     z-index: -2;
     position: relative;
     width: 100%;
     margin: 0 auto;
+    /* opacity: 0.8; */
 }
 
 .inner_login {
