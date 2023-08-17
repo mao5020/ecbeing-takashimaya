@@ -1073,6 +1073,10 @@ ul.main_tab03 li{
 
 .l-mylistwrap {}
 
+.c-itemdetail-sku-text, .c-modal-item-sku-text{
+    margin-bottom: 22px;
+}
+
 .c-itemdetail-mylist-empty-title {
     font-size: 16px;
 }
@@ -1080,6 +1084,8 @@ ul.main_tab03 li{
 .c-itemdetail-mylist-empty-text br {
     display: inline-block;
 }
+
+
 
 
 .l-mylistwrap_sp {
@@ -1338,6 +1344,13 @@ ul.main_tab03 li{
     font-size: 14px;
 }
 
+.c-itemdetail-list{
+    border: 1px solid #ADADAD;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
 .c-itemdetail-list .c-modal-item-imgnum-wrap {
     bottom: -10px;
     right: 10px;
@@ -1416,6 +1429,24 @@ ul.main_tab03 li{
 
 .c-modal-item-btn-mylist {
     margin-left: 5px;
+}
+
+.c-modal-item-btn-submit a{
+
+    font-size: 16px;
+}
+
+.c-modal-item-btn-mylist.is-category a {
+    background-color: #fff;
+    border-radius: 30px;
+    color: #A38A32;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+.c-modal-item-btn-under{
+    width: 100%;
+
 }
 
 .c-modal-item-btn-submit a,
@@ -1575,20 +1606,82 @@ ul.main_tab03 li{
 }
 
 
+
+
 /* 関連商品 */
+
+.relation-items{
+    width: 100%;
+}
+
 .c-modal-item-relation-title {
-    text-align: center;
+    text-align: left;
+    font-size: 16px;
+    padding-bottom:15px;
+    border-bottom: 1px solid #313131;
+    font-weight: bold;
+    color: #000;
+
+}
+
+.c-modal-item-relation-list-wrap{
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    /* height: 95px; */
+    max-height: 180px;
+    border-bottom: none;
+    position: relative;
+}
+
+.c-modal-item-relation-list-wrap-box{
+    width: 100%;
+    position: relative;
+}
+
+.c-modal-item-relation-list-wrap-box::before{
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: calc(40% - 8px);
+    margin: auto 0;
+    width: 18px;
+    height: 18px;
+  background-color: #313131;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+
+
+.c-modal-item-relation-list-wrap-box::after{
+    content: "";
+    position: absolute;
+    right: 3px;
+    top: calc(40% - 2px);
+    margin: auto 0;
+    width: 4px;
+    height: 4px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    z-index: 1;
 }
 
 .c-modal-item-relation-list {
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 5px;
+    flex-wrap: nowrap;
+    width: 475px;
 }
 
 .c-modal-item-relation-item {
     position: relative;
-    width: calc((100% / 2) - 10px);
+    width: calc((100% / 3) - 5px);
     margin: 0 0 20px;
+    /* height: 95px; */
 }
 
 .c-modal-relation-name {
@@ -1960,7 +2053,7 @@ ul.main_tab03 li{
 }
 
 .c-itemdetail-list .l-modal-item-content {
-    margin: 0 4%;
+    margin: 0 auto;
 }
 
 .c-itemdetail-sku-explain dd,
@@ -2049,7 +2142,7 @@ ul.main_tab03 li{
 
 .c-itemdetail-title,
 .c-modal-item-title {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .mylist_btn_wrap {
@@ -2150,6 +2243,21 @@ ul.main_tab03 li{
 }
 
 /*モーダルを閉じるボタンの指定*/
+
+.modal-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -20px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+
 .modal-close_mylist {
     position: absolute;
     display: flex;
@@ -2544,3 +2652,72 @@ a {
     display: none;
     /* clear: both; */
 }
+
+/* モーダル */
+
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 40px 0;
+    overflow: scroll;
+    background: rgba(0, 0, 0, 60%);
+}
+
+.modal_txt_area{
+    width: 100%;
+    max-width: none;
+  }
+
+
+.l-modal-item_btn_area{
+    width: 100%;
+    max-width: 960px;
+    padding: 0 0 25px 0;
+    margin: 0 auto;
+  }
+
+
+/* モーダル用スライダー */
+
+.modal_slider{
+    margin: 0 auto;
+  }
+
+
+
+  .justify-content-center{
+
+    justify-content: center;
+    gap: 30px;
+
+  }
+
+
+  .modal-slider-item-imgwrap,
+  .modal-slider-img img {
+    max-width: 100%;
+    width: 295px;
+  }
+
+  .modal-slider_item{
+    width: 295px;
+    height: 295px;
+  }
+
+  .modal-slider_item img{
+    width: 295px;
+    height: 295px;
+  }
+
+  .modal-slider .slick-arrow{
+    height: 295px;
+    width: 35px;
+  }

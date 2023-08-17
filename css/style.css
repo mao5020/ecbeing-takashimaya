@@ -1079,7 +1079,6 @@ _:-ms-fullscreen, :root .c-item-list-ul.is-grid1 .c-item-list:nth-child(24n){
   font-size: 14px;
   font-weight: bold;
   width: 160px;
-  margin-bottom: 10px;
 }
 
 .c-itemdetail-sku-explain{
@@ -3842,7 +3841,6 @@ body.fixed {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 5px solid #313131;
-
 }
 
 .c-itemdetail-sku-select,
