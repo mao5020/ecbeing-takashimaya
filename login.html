@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<meta name="Description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<meta property="og:title" content="">
-	<meta property="og:description" content="">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="">
-	<meta property="og:site_name" content="">
-	<meta property="og:image" content="">
-	<meta property="fb:admins" content="">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="">
-	<meta name="twitter:description" content="">
-	<meta name="twitter:url" content="">
-	<meta name="twitter:image" content="" />
-
-	<link rel="icon" href="./images/common/favicon.ico">
-	<link rel="apple-touch-icon" href="./images/common/favicon.ico">
-	<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" charset="UTF-8"
-		media="only screen and (min-width: 750px)">
-	<link href="./css/style_sp.css" rel="stylesheet" type="text/css" charset="UTF-8"
-		media="screen and (max-width: 750px)">
-	<script type='text/javascript' src='./javascript/jquery.min.js'></script>
-	<script type="text/javascript">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:image" content="">
+    <meta property="fb:admins" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:image" content="" />
+    <link rel="icon" href="./images/common/favicon.ico">
+    <link rel="apple-touch-icon" href="./images/common/favicon.ico">
+    <link href="./css/style.css" rel="stylesheet" type="text/css" media="all" charset="UTF-8" media="only screen and (min-width: 750px)">
+    <link href="./css/style_sp.css" rel="stylesheet" type="text/css" charset="UTF-8" media="screen and (max-width: 750px)">
+    <script type='text/javascript' src='./javascript/jquery.min.js'></script>
+    <script type="text/javascript">
 		function PopupWindow(pUrl) {
 			var mWinName = 'myPop';
 			var mOption = 'width=620, height=520, location=no, menubar=no, toolbar=no, scrollbars=no, resizable=yes';
@@ -41,74 +36,79 @@
 			document.mainform.submit();
 		}
 	</script>
-
-</head>
-
-<body class="login_body">
-
-	<!-- MAIN CONTENTS START -->
-	<div id="container_login" class="container_login">
-		<div class="l-wrapall" id="l-wrap">
-			<div class="inner_login">
-				<div class="inner_logo">
-					<img src="./images/assets/logo.png" width="186" class="login_logo">
-					<h2 class="logo_sub_ttl">お申し込み専用サイト</h2>
-				</div>
-				<div class="cnt">
+  </head>
+  <body class="login_body">
+    <!-- MAIN CONTENTS START -->
+    <div id="container_login" class="container_login">
+      <div class="l-wrapall" id="l-wrap">
+        <div class="inner_login">
+          <div class="inner_logo">
+            <img src="./images/assets/logo.png" width="186" class="login_logo">
+            <h2 class="logo_sub_ttl">お申し込み専用サイト</h2>
+          </div>
+          <div class="cnt">
 					<form method="post" action="login.php" name="mainform">
-						<input type="hidden" name="methods" id="methods" value="">
-						<input type="hidden" name="ckdelivery" id="ckdelivery" value="">
-						<dl>
-							<dt>ID番号</dt>
-							<dd class="cnt_id"><input name="userid" id="userid" type="text" value="" size="" maxlength="16"
-									class="box" /></dd>
-							<dt>パスワード</dt>
-							<dd><input name="passwd" id="passwd" type="password" value="" size="" maxlength="10" class="box"
-									AUTOCOMPLETE="OFF" /><span class="c-login-eye"></span></dd>
+            <input type="hidden" name="methods" id="methods" value="">
+            <input type="hidden" name="ckdelivery" id="ckdelivery" value="">
+            <dl>
+              <dt>ID番号</dt>
+              <dd class="cnt_id">
+                <input name="userid" id="userid" type="text" value="" size="" maxlength="16" class="box" />
+              </dd>
 						</dl>
-						<div id="login_enter" class="login_enter"><a href="./top.html" class="">ログイン</a></div>
-						<div class="">
-							<p class="cmt1">ID番号・パスワードはお申し込みハガキ
-								<br class="sp">またはカードに記載されています。<br>
-								詳しくは <a href="#" onClick="javascript:PopupWindow(this.href); return false;">こちら</a>
-								をご覧ください。</p>
-						</div>
-					</form>
-				</div>
-				<ul class="cmt2">
-					<li>有効期限内であれば、商品のお申込みが完了するまで、同一のID番号・パスワードで何度でもログインできます。<br>
-						お申し込み完了前にログアウトしても、失効することはありません。
-					</li>
-					<li>お申し込みがお済みのお客様は、再度ログインしていただくと、
-						商品の出荷状況がご確認いただけます。
-					</li>
-				</ul>
-			</div>
-			<div class="login_inner_sp_half sp"></div>
-		</div>
-		</form>
-
-	</div>
-	<!-- MAIN CONTENTS END -->
-
-
-	<!-- FOOTER START -->
-	<footer class="footer-login">
-		<div class="footer-inner">
-			<ul class="footer_content">
-				<li class="footer_content_item"><a href="">ご利用ガイド</a></li>
-				<li class="footer_content_item"><a href="">よくある質問</a></li>
-				<li class="footer_content_item"><a href="">お問い合わせ</a></li>
-				<li class="footer_content_item"><a href="">酒類販売管理者標識</a></li>
-				<li class="footer_content_item"><a href="">プライバシーポリシー</a></li>
-			</ul>
-			<img class="footer_logo" src="./images/assets/f_logo.png" alt="">
-			<p class="footer_copy">All rights reserved by Takashimaya Co.,Ltd.</p>
-		</div>
-	</footer>
-
-	<!-- FOOTER END -->
-
-</body>
-
+						<dl>
+              <dt>パスワード</dt>
+              <dd>
+                <input name="passwd" id="passwd" type="password" value="" size="" maxlength="10" class="box" AUTOCOMPLETE="OFF" />
+              </dd>
+						</dl>
+            <div id="login_enter" class="login_enter">
+              <a href="./top.html" class="">ログイン</a>
+            </div>
+            <div class="">
+              <p class="cmt1">ID番号・パスワードはお申し込みハガキ 
+                <br class="sp">またはカードに記載されています。
+                <br>詳しくは 
+                <a href="#" onClick="javascript:PopupWindow(this.href); return false;">こちら</a>をご覧ください。
+              </p>
+            </div>
+            </form>
+          </div>
+          <ul class="cmt2">
+            <li>有効期限内であれば、商品のお申込みが完了するまで、同一のID番号・パスワードで何度でもログインできます。
+              <br>お申し込み完了前にログアウトしても、失効することはありません。 
+            </li>
+            <li>お申し込みがお済みのお客様は、再度ログインしていただくと、 商品の出荷状況がご確認いただけます。 </li>
+          </ul>
+        </div>
+        <div class="login_inner_sp_half sp"></div>
+      </div>
+    </div>
+    <!-- MAIN CONTENTS END -->
+    <!-- FOOTER START -->
+    <footer class="footer-login">
+      <div class="footer-inner">
+        <ul class="footer_content">
+          <li class="footer_content_item">
+            <a href="">ご利用ガイド</a>
+          </li>
+          <li class="footer_content_item">
+            <a href="">よくある質問</a>
+          </li>
+          <li class="footer_content_item">
+            <a href="">お問い合わせ</a>
+          </li>
+          <li class="footer_content_item">
+            <a href="">酒類販売管理者標識</a>
+          </li>
+          <li class="footer_content_item">
+            <a href="">プライバシーポリシー</a>
+          </li>
+        </ul>
+        <img class="footer_logo" src="./images/assets/f_logo.png" alt="">
+        <p class="footer_copy">All rights reserved by Takashimaya Co.,Ltd.</p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+  </body>
 </html>

@@ -1,23 +1,5 @@
 $(function(){
 
-	// FVスライダー
-	// $(function () {
-	// 	$(".top-slider").slick({
-	// 		arrows: true,
-	// 		autoplay: false,
-	// 		autoplaySpeed: 2000,
-	// 		centerMode: true,
-	// 		centerPadding: "22%",
-	// 		dots: true,
-	// 		slidesToShow: 1,
-	// 		// fade: true,
-	// 		speed: 400,
-	// 		variableWidth: true,
-	// 	});
-	// });
-
-
-
 	$(function () {
 		$(".top-slider").slick({
 				arrows: true,
@@ -56,29 +38,6 @@ $(function(){
 				$('.l-mylistwrap').toggleClass('js-mylist-show');
 		});
 });
-
-
-
-
-
-	// spメニュー表示
-  //   $('.c-header-menu a').on('click', function() {
-  //       $('.sp_header_bg').addClass('is-show');
-  //       $('.l-hamburger-nav').addClass('is-show');
-  //   });
-  //   $('.sp_header_bg,.c-hamburger-nav_close').on('click', function() {
-  //       $('.l-hamburger-nav').removeClass('is-show');
-  //       if (!$('.c-header-search-wrap-sp.is-show').length) {
-  //       	$('.sp_header_bg').removeClass('is-show');
-  //       }
-  //   });
-
-	// 	$('.js-hamburger-nav-slide').on('click', function() {
-	// 		if ($('.l-hamburger-nav').hasClass('is-show')) {
-	// 				$('.c-hamburger-nav-middle').slideToggle();
-	// 				$(this).toggleClass('is-show');
-	// 		}
-	// });
 
 
 	$('.c-header-menu a').on('click', function() {
@@ -307,56 +266,6 @@ $('.js-hamburger-nav-slide').on('click', function() {
 		});
 	});
 
-	// $(document).ready(function() {
-	// 	// 変数定義
-	// 	const mainTabs = $('li.main_tab01, li.main_tab02, li.main_tab03');
-	// 	const subMenus = $('ul.main_tab01, ul.main_tab02, ul.main_tab03');
-	// 	const allElements = mainTabs.add(subMenus);
-
-	// 	// サブメニューとメインタブの表示を制御する関数
-	// 	function toggleVisibility(tabClass) {
-	// 			subMenus.removeClass('is-visible').filter('.' + tabClass).addClass('is-visible');
-	// 			mainTabs.removeClass('active').filter('.' + tabClass).addClass('active');
-	// 	}
-
-	// 	// メインタブにマウスをオーバー
-	// 	mainTabs.on('mouseenter', function() {
-	// 			const tabClass = $(this).attr('class').split(' ')[0];
-	// 			toggleVisibility(tabClass);
-	// 	});
-
-	// 	// サブメニューやメインタブからマウスを外す
-	// 	allElements.on('mouseleave', function() {
-	// 			const mainElement = $(this).get(0);
-	// 			const childElement = $(this).find('li, ul').get(0);
-	// 			if (mainElement && !mainElement.matches(':hover') && childElement && !childElement.matches(':hover')) {
-	// 					subMenus.removeClass('is-visible');
-	// 					mainTabs.removeClass('active');
-	// 			}
-	// 	});
-
-	// 	// メインメニュー全体のマウスオーバーイベント
-	// 	$('.c-main-tab li').on('mouseenter', function() {
-	// 			if (!$(this).is(mainTabs)) {
-	// 					subMenus.removeClass('is-visible');
-	// 					mainTabs.removeClass('active');
-	// 			}
-	// 	});
-
-	// 	// body要素上でのマウスオーバーイベント
-	// 	$('body').on('mouseover', function(e) {
-	// 			if (!$(e.target).closest('.c-main-tab, ul.main_tab01, ul.main_tab02, ul.main_tab03').length) {
-	// 					subMenus.removeClass('is-visible');
-	// 					mainTabs.removeClass('active');
-	// 			}
-	// 	});
-	// });
-
-
-
-
-
-
 	$(document).ready(function() {
     // 変数定義
     const mainTabs = $('li.main_tab01, li.main_tab02, li.main_tab03');
@@ -423,36 +332,9 @@ $('.js-hamburger-nav-slide').on('click', function() {
 	}
 	$(window).on('load', function() {
 		scrollTop();
-		// fixedElement();
-		// fixedMainSticky();
-		// renderMasonry();
-		// itemMylistBtn();
-		// itemModalMylistBtn();
-		// itemMylistRemoveBtn();
-		// modalItemView();
-		// modalItemHide();
-		// modalItemSlidedown();
-		// modalItemRelation();
-		// modalRelationMylistBtn();
-		// modalItemShare();
-		// spFooterSticky();
-		// spFooterSort();
-		// itemDetailRefine();
-		// itemDetailView();
-		// mylistRelation();
-		// myListRefine();
-		// myListMylistBtn();
-		// myListExplanModal();
-		// myListExplanModalDel();
-		// itemDetailSticky();
 		categoryItemRefine();
-		// itemShakeAnime();
-		// modalItemLast();
-		// privacypolicyAgree();
 		naviSpCategory();
-		// viewLoading();
 		viewTablet();
-		// demoDelete();
 	});
 });
 
@@ -469,3 +351,17 @@ const categoryItemRefine = function() {
     return false;
   });
 }
+
+$(document).ready(function(){
+	// c-item-mylist-btnをクリックしたときのイベントハンドラ
+	$('.c-item-mylist-btn').on('click', function(){
+			// is-onクラスが存在するか確認
+			if($(this).hasClass('is-on')){
+					// is-onクラスが存在する場合、削除
+					$(this).removeClass('is-on');
+			} else {
+					// is-onクラスが存在しない場合、追加
+					$(this).addClass('is-on');
+			}
+	});
+});
