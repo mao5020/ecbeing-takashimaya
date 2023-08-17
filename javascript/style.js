@@ -455,3 +455,17 @@ $('.js-hamburger-nav-slide').on('click', function() {
 		// demoDelete();
 	});
 });
+
+
+const categoryItemRefine = function() {
+  $('.js-category-itemrefine').on('click', function() {
+    let categoryItemRefineArea = $('.l-itemrefine-list-wrap');
+    $(this).toggleClass('is-show');
+    $(categoryItemRefineArea).slideToggle();
+
+    // Toggle the border class when the refine area is shown
+    $('.c-itemrefine-title').toggleClass('is-show', $(this).hasClass('is-show'));
+
+    return false;
+  });
+}
