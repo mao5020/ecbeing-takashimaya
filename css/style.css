@@ -410,13 +410,24 @@ ul.main_tab02,
 ul.main_tab03{
   display: none;
   background-color: #fff;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 50px 90px;
   /* display: flex; */
   flex-wrap: wrap;
   row-gap: 20px;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+ul.main_tab03{
+  gap: 15px;
+  padding: 50px 38px;
+  justify-content: center;
+}
+
+ul.main_tab03 li{
+  width: calc(25% - 15px);
+ max-width: 220px;
 }
 
 .main_tab01.is-visible,
