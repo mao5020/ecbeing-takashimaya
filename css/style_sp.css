@@ -652,7 +652,7 @@ ul.main_tab03{
   background-color: #fff;
   width: 100%;
   margin: 0 auto;
-  padding: 40px 20px 70px 20px;
+  padding: 40px 20px 90px 20px;
   /* display: flex; */
   flex-wrap: wrap;
   row-gap: 20px;
@@ -661,6 +661,15 @@ ul.main_tab03{
   gap:20px ;
   position: relative;
 
+}
+
+ul.main_tab03{
+      padding: 20px 20px 50px 20px;
+}
+
+ul.main_tab03 li{
+    width: calc(50% - 10px);
+    max-width: none;
 }
 
 .main_tab01.is-visible,
