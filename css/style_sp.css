@@ -761,6 +761,7 @@ ul.main_tab03 li {
 .c-main-tab {
   justify-content: flex-start;
   gap: 40px;
+  padding-right: 15px;
 }
 
 .c-main-tab li {
@@ -1066,6 +1067,7 @@ ul.main_tab03 li {
 .c-mylist-list-wrap {
   overflow-y: auto;
   width: 100%;
+  height: calc(100vh - 380px);
 }
 
 .c-mylist-list-wrap::-webkit-scrollbar {
