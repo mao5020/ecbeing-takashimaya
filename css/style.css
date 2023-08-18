@@ -3035,7 +3035,7 @@ footer {
 }
 
 .c-mylist-list-wrap {
-  height: calc(100vh - 304px);
+  height: calc(100vh - 380px);
   overflow-y: auto;
   /* 縦方向のスクロールを許可 */
   width: 230px;
