@@ -3,6 +3,15 @@
 html {
   -webkit-text-size-adjust: 100%;
 }
+body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
 
 
 /* スマートフォン・タブレットで見たときは"sp"のclassがついた画像が表示される */
@@ -1067,7 +1076,7 @@ ul.main_tab03 li {
 .c-mylist-list-wrap {
   overflow-y: auto;
   width: 100%;
-  height: calc(100vh - 300px);
+  height: calc(100vh - 380px);
 }
 
 .c-mylist-list-wrap::-webkit-scrollbar {
