@@ -365,3 +365,18 @@ $(document).ready(function(){
 			}
 	});
 });
+
+$(document).ready(function() {
+	$('.c-modal-item-btn-mylist.modal-btn-l').on('click', function() {
+			// is-categoryクラスをトグル形式で変更
+			$(this).toggleClass('is-category');
+			
+			// 子要素のjs-modal-mylistのテキストを確認してtoggle形式で変更
+			var $mylist = $(this).find('.js-modal-mylist');
+			if ($mylist.text() === "マイリストから外す") {
+					$mylist.text("マイリストに追加"); // あるいはもとのテキストに戻すような処理
+			} else {
+					$mylist.text("マイリストから外す");
+			}
+	});
+});

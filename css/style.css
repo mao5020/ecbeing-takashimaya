@@ -3056,16 +3056,15 @@ footer {
 .c-mylist-title,
 .c-mylist-linkwrap {
   max-height: 100vh;
-  /* この値は適宜調整してください。表示させたい高さに合わせます。 */
   overflow-y: auto;
-  /* 縦方向のスクロールを許可 */
   width: 245px;
   position: sticky;
-  /* 固定表示する要素を指定 */
   top: 0;
-  /* 上端に固定 */
   z-index: 1;
-  /* 他の要素よりも前面に表示させるため */
+}
+
+.c-mylist-title{
+  overflow-y: hidden;
 }
 
 .c-mylist-list-wrap ul {
@@ -4553,4 +4552,8 @@ body.fixed {
 
 .sp-only {
   display: none;
+}
+
+.js-modal-mylist{
+  pointer-events: none
 }
