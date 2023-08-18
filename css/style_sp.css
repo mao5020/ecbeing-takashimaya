@@ -1067,7 +1067,7 @@ ul.main_tab03 li {
 .c-mylist-list-wrap {
   overflow-y: auto;
   width: 100%;
-  height: 365px;
+  height: calc(100vh - 300px);
 }
 
 .c-mylist-list-wrap::-webkit-scrollbar {
