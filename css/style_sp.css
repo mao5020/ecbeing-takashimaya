@@ -1943,7 +1943,7 @@ ul.main_tab03 li {
 
 .c-itemrefine-list .c-itemrefine-icon::after {
   left: 3px;
-  top: 7px;
+  top: 6px;
 }
 
 .c-itemrefine-list.is-current .c-itemrefine-icon::after {
@@ -2667,15 +2667,6 @@ a {
   top: 3px;
 }
 
-.c-itemrefine-list .c-itemrefine-icon::after {
-  top: 7px;
-  background: url(../images/assets/sp_batsu_bk.svg) no-repeat;
-  background-size: contain;
-  width: 6px;
-  height: 6px;
-  left: 4px;
-}
-
 .c-itemrefine-list .c-itemrefine-icon {
   left: 8px;
 }
@@ -2698,7 +2689,6 @@ a {
 
 .number_box {
   font-size: 14px;
-  /* margin-bottom: 10px; */
   padding: 0;
 }
 
@@ -2922,4 +2912,17 @@ a {
 
 .modal-slider .slick-slide {
   display: inline-block;
+}
+
+.c-itemrefine-list.is-active .c-itemrefine-icon::after{
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background: url(../images/assets/batsu_bk.svg) no-repeat;
+  background-size: contain;
+  left: 4px;
+  top: 7px;
+  margin: auto;
 }

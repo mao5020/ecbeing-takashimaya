@@ -2504,17 +2504,12 @@ input[type="submit"].c-modal-last-input-submit {
   width: 18px;
   height: 18px;
   position: absolute;
-  background: #ac8445;
+  background: #dcdcdc;
   border-radius: 50%;
   top: 4px;
   left: 3px;
 }
-
-.c-itemrefine-list.is-current .c-itemrefine-icon::before {
-  background: #dcdcdc;
-}
-
-.c-itemrefine-list .c-itemrefine-icon::after {
+/* .c-itemrefine-list .c-itemrefine-icon::after {
   content: "";
   display: inline-block;
   width: 8px;
@@ -2525,9 +2520,9 @@ input[type="submit"].c-modal-last-input-submit {
   left: 8px;
   top: 9px;
   margin: auto;
-}
+} */
 
-.c-itemrefine-list.is-current .c-itemrefine-icon::after {
+.c-itemrefine-list .c-itemrefine-icon::after {
   content: "";
   display: inline-block;
   width: 8px;
@@ -3982,7 +3977,6 @@ body.fixed {
 
 .c-itemrefine-title.is-show {
   border-right: none;
-  /* Remove the border when the refine area is shown */
 }
 
 .l-itemrefine-wrap .c-itemrefine-title p {
@@ -4038,11 +4032,12 @@ body.fixed {
 }
 
 
-.c-itemrefine-list.is-current a {
+.c-itemrefine-list a {
   border: 1px solid #ADADAD;
   background: #fff;
   color: #ADADAD;
 }
+
 
 .c-itemrefine-list .c-itemrefine-icon::before {
   content: "";
@@ -4050,17 +4045,37 @@ body.fixed {
   width: 18px;
   height: 18px;
   position: absolute;
-  background: #FAF5E4;
+  background: #dcdcdc;
   border-radius: 50%;
   top: 4px;
   left: 3px;
 }
 
-.c-itemrefine-list.is-current .c-itemrefine-icon::before {
-  background: #dcdcdc;
-}
 
 .c-itemrefine-list .c-itemrefine-icon::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background: url(../images/common/icon_submit.png) no-repeat;
+  background-size: contain;
+  left: 8px;
+  top: 9px;
+  margin: auto;
+}
+
+
+.c-itemrefine-list.is-active a{
+  border: 1px solid #A38A32;
+  color: #A38A32;
+}
+
+.c-itemrefine-list.is-active .c-itemrefine-icon::before{
+  background: #FAF5E4;
+}
+
+.c-itemrefine-list.is-active .c-itemrefine-icon::after {
   content: "";
   display: inline-block;
   width: 8px;
@@ -4073,18 +4088,6 @@ body.fixed {
   margin: auto;
 }
 
-.c-itemrefine-list.is-current .c-itemrefine-icon::after {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  background: url(../images/common/icon_submit.png) no-repeat;
-  background-size: contain;
-  left: 8px;
-  top: 9px;
-  margin: auto;
-}
 
 .l-item-filter {
   width: 100%;

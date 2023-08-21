@@ -376,3 +376,13 @@ $(document).ready(function() {
 		}
 	});
 });
+
+$(document).ready(function() {
+  $('.c-itemrefine-list').click(function(event) {
+    // 以下の行で、デフォルトのリンククリック動作を無効化します。
+    event.preventDefault();
+
+    // is-active クラスの有無をトグルする
+    $(this).toggleClass('is-active');
+  });
+});
